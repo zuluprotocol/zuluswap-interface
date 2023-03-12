@@ -1,5 +1,5 @@
-import { Currency } from '@kyberswap/ks-sdk-core'
-import { FeeAmount, computePoolAddress } from '@kyberswap/ks-sdk-elastic'
+import { Currency } from '@zuluswap/zs-sdk-core'
+import { FeeAmount, computePoolAddress } from '@zuluswap/zs-sdk-elastic'
 import { useMemo } from 'react'
 
 import { EVMNetworkInfo } from 'constants/networks/type'

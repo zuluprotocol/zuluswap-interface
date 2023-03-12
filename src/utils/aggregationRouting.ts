@@ -1,5 +1,5 @@
-import { ZERO } from '@kyberswap/ks-sdk-classic'
-import { ChainId, Currency, CurrencyAmount, Percent, Rounding, Token, WETH } from '@kyberswap/ks-sdk-core'
+import { ZERO } from '@zuluswap/zs-sdk-classic'
+import { ChainId, Currency, CurrencyAmount, Percent, Rounding, Token, WETH } from '@zuluswap/zs-sdk-core'
 import JSBI from 'jsbi'
 
 import { ETHER_ADDRESS } from 'constants/index'

@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { PublicKey } from '@solana/web3.js'
 
 export interface NetworkInfo {
@@ -85,13 +85,13 @@ export interface EVMNetworkInfo extends NetworkInfo {
   }
   readonly averageBlockTimeInSeconds: number
   readonly deBankSlug: string
-  readonly kyberDAO?: {
+  readonly zuluDAO?: {
     readonly staking: string
     readonly dao: string
     readonly rewardsDistributor: string
     readonly daoStatsApi: string
-    readonly KNCAddress: string
-    readonly KNCLAddress: string
+    readonly ZPXAddress: string
+    readonly ZPXLAddress: string
   }
 }
 

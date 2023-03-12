@@ -1,4 +1,4 @@
-name: 'KyberSwap Interface Release'
+name: 'ZuluSwap Interface Release'
 
 on:
   workflow_dispatch:
@@ -72,7 +72,7 @@ jobs:
       - prepare
       - build
     env:
-      SERVICE: kyberswap-interface
+      SERVICE: zuluswap-interface
       VERSION_TAG: ${{ needs.prepare.outputs.version_tag }}
       BUILD_DATE: ${{ needs.prepare.outputs.build_date }}
     runs-on: ubuntu-20.04
@@ -115,13 +115,13 @@ jobs:
           context: .
           push: true
           labels: |
-            kyber.network.schema-version=1.0
-            kyber.network.vcs-ref=${{ github.sha }}
-            kyber.network.version=${{ env.VERSION_TAG }}
-            kyber.network.name=${{ env.SERVICE }}
+            zulu.network.schema-version=1.0
+            zulu.network.vcs-ref=${{ github.sha }}
+            zulu.network.version=${{ env.VERSION_TAG }}
+            zulu.network.name=${{ env.SERVICE }}
           tags: |
-            asia.gcr.io/kyber-operation/core/${{ env.SERVICE }}:latest
-            asia.gcr.io/kyber-operation/core/${{ env.SERVICE }}:${{ env.VERSION_TAG }}
+            asia.gcr.io/zulu-operation/core/${{ env.SERVICE }}:latest
+            asia.gcr.io/zulu-operation/core/${{ env.SERVICE }}:${{ env.VERSION_TAG }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new
 
@@ -149,7 +149,7 @@ jobs:
       - name: Create tag
         run: |
           git tag -d "$VERSION_TAG" 2> /dev/null || echo "Release tag '$VERSION_TAG' does NOT exist"
-          git tag --annotate --message "KyberSwap Interface - $VERSION_TAG" "$VERSION_TAG"
+          git tag --annotate --message "ZuluSwap Interface - $VERSION_TAG" "$VERSION_TAG"
           git push origin "refs/tags/$VERSION_TAG"
 
       - name: Create release
@@ -158,4 +158,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: ${{ env.VERSION_TAG }}
           prerelease: false
-          title: 'KyberSwap Interface - ${{ env.VERSION_TAG }}'
+          title: 'ZuluSwap Interface - ${{ env.VERSION_TAG }}'

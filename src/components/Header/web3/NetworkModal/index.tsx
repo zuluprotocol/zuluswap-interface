@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { UnsupportedChainIdError } from '@web3-react/core'
 import { X } from 'react-feather'

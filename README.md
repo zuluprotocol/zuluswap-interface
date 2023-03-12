@@ -1,14 +1,14 @@
-# KyberSwap Interface
+# ZuluSwap Interface
 
-An open source interface for KyberSwap -- a protocol for decentralized exchange.
+An open source interface for ZuluSwap -- a protocol for decentralized exchange.
 Forked from [Uniswap/uniswap-interface](https://github.com/Uniswap/uniswap-interface)
 
-- Website: [kyberswap.com](https://kyberswap.com/)
-- Whitepaper: [Link](https://files.kyber.network/DMM-Feb21.pdf)
+- Website: [zuluswap.com](https://zuluswap.com/)
+- Whitepaper: [Link](https://files.zulu.network/DMM-Feb21.pdf)
 
-## Accessing the KyberSwap Interface
+## Accessing the ZuluSwap Interface
 
-To access the KyberSwap Interface, visit [kyberswap.com](https://kyberswap.com/)
+To access the ZuluSwap Interface, visit [zuluswap.com](https://zuluswap.com/)
 
 ## Development
 

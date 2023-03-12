@@ -1,6 +1,6 @@
 adpr:
   image:
-    repository: asia.gcr.io/kyber-operation/core/kyberswap-interface
+    repository: asia.gcr.io/zulu-operation/core/zuluswap-interface
     tagPrefix: adpr
   workflow:
     name: "Auto Deploy PR"

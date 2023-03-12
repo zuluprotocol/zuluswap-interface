@@ -112,32 +112,32 @@ function Tutorial({ customIcon, type, showTooltip }: Props) {
       case TutorialType.CLASSIC_ADD_LIQUIDITY:
         return (
           <Trans>
-            To learn more about how to add liquidity to KyberSwap Classic, view{' '}
-            <ExternalLink href="https://docs.kyberswap.com/Classic/guides/adding-liquidity-guide"> here</ExternalLink>
+            To learn more about how to add liquidity to ZuluSwap Classic, view{' '}
+            <ExternalLink href="https://docs.zuluswap.com/Classic/guides/adding-liquidity-guide"> here</ExternalLink>
           </Trans>
         )
 
       case TutorialType.ELASTIC_ADD_LIQUIDITY:
         return (
           <Trans>
-            To learn more about how to add liquidity to KyberSwap Elastic, view{' '}
-            <ExternalLink href="https://docs.kyberswap.com/guides/creating-a-pool"> here</ExternalLink>
+            To learn more about how to add liquidity to ZuluSwap Elastic, view{' '}
+            <ExternalLink href="https://docs.zuluswap.com/guides/creating-a-pool"> here</ExternalLink>
           </Trans>
         )
 
       case TutorialType.ELASTIC_INCREASE_LIQUIDITY:
         return (
           <Trans>
-            To learn more about how to increase liquidity to KyberSwap Elastic, view{' '}
-            <ExternalLink href="https://docs.kyberswap.com/guides/increase-liquidity"> here</ExternalLink>
+            To learn more about how to increase liquidity to ZuluSwap Elastic, view{' '}
+            <ExternalLink href="https://docs.zuluswap.com/guides/increase-liquidity"> here</ExternalLink>
           </Trans>
         )
 
       case TutorialType.ELASTIC_REMOVE_LIQUIDITY:
         return (
           <Trans>
-            To learn more about how to remove liquidity on KyberSwap Elastic, view{' '}
-            <ExternalLink href="https://docs.kyberswap.com/guides/remove-liquidity"> here</ExternalLink>
+            To learn more about how to remove liquidity on ZuluSwap Elastic, view{' '}
+            <ExternalLink href="https://docs.zuluswap.com/guides/remove-liquidity"> here</ExternalLink>
           </Trans>
         )
 

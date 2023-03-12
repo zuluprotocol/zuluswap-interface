@@ -1,4 +1,4 @@
-import { Position } from '@kyberswap/ks-sdk-elastic'
+import { Position } from '@zuluswap/zs-sdk-elastic'
 import { Trans } from '@lingui/macro'
 import { useState } from 'react'
 import { useMedia } from 'react-use'

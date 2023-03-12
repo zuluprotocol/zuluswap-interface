@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { useLazyGetKyberswapConfigurationQuery } from 'services/ksSetting'
+import { useLazyGetZuluswapConfigurationQuery } from 'services/ksSetting'
 
 import { useActiveWeb3React, useWeb3React, useWeb3Solana } from 'hooks'
 import useDebounce from 'hooks/useDebounce'
@@ -21,7 +21,7 @@ export default function Updater(): null {
     blockNumber: null,
   })
 
-  const [fetchConfig] = useLazyGetKyberswapConfigurationQuery()
+  const [fetchConfig] = useLazyGetZuluswapConfigurationQuery()
 
   // re-fetch config
   useEffect(() => {

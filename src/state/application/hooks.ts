@@ -1,5 +1,5 @@
 import { ApolloClient, NormalizedCacheObject } from '@apollo/client'
-import { ChainId, NativeCurrency, Token } from '@kyberswap/ks-sdk-core'
+import { ChainId, NativeCurrency, Token } from '@zuluswap/zs-sdk-core'
 import { Connection } from '@solana/web3.js'
 import dayjs from 'dayjs'
 import { ethers } from 'ethers'
@@ -20,7 +20,7 @@ import {
 import { OUTSITE_FARM_REWARDS_QUERY, ZERO_ADDRESS } from 'constants/index'
 import { NETWORKS_INFO, isEVM, isSolana } from 'constants/networks'
 import ethereumInfo from 'constants/networks/ethereum'
-import { KNC } from 'constants/tokens'
+import { ZPX } from 'constants/tokens'
 import { VERSION } from 'constants/v2'
 import { useActiveWeb3React } from 'hooks/index'
 import { useAppSelector } from 'state/hooks'
@@ -36,7 +36,7 @@ import {
   setAnnouncementDetail,
   setOpenModal,
   updateETHPrice,
-  updateKNCPrice,
+  updateZPXPrice,
   updatePrommETHPrice,
 } from './actions'
 
@@ -310,7 +310,7 @@ let fetchingETHPrice = false
 export function useETHPrice(version: string = VERSION.CLASSIC): AppState['application']['ethPrice'] {
   const dispatch = useDispatch()
   const { isEVM, chainId } = useActiveWeb3React()
-  const { elasticClient, classicClient, blockClient } = useKyberSwapConfig()
+  const { elasticClient, classicClient, blockClient } = useZuluSwapConfig()
 
   const ethPrice = useSelector((state: AppState) =>
     version === VERSION.ELASTIC ? state.application.prommEthPrice : state.application.ethPrice,
@@ -351,51 +351,51 @@ export function useETHPrice(version: string = VERSION.CLASSIC): AppState['applic
 }
 
 /**
- * Gets the current price of KNC by ETH
+ * Gets the current price of ZPX by ETH
  */
-export const getKNCPriceByETH = async (chainId: ChainId, apolloClient: ApolloClient<NormalizedCacheObject>) => {
-  let kncPriceByETH = 0
+export const getZPXPriceByETH = async (chainId: ChainId, apolloClient: ApolloClient<NormalizedCacheObject>) => {
+  let zpxPriceByETH = 0
 
   try {
     const result = await apolloClient.query({
-      query: TOKEN_DERIVED_ETH(KNC[chainId].address),
+      query: TOKEN_DERIVED_ETH(ZPX[chainId].address),
       fetchPolicy: 'no-cache',
     })
 
     const derivedETH = result?.data?.tokens[0]?.derivedETH
 
-    kncPriceByETH = parseFloat(derivedETH) || 0
+    zpxPriceByETH = parseFloat(derivedETH) || 0
   } catch (e) {
     console.log(e)
   }
 
-  return kncPriceByETH
+  return zpxPriceByETH
 }
 
-export function useKNCPrice(): AppState['application']['kncPrice'] {
+export function useZPXPrice(): AppState['application']['zpxPrice'] {
   const dispatch = useDispatch()
   const ethPrice = useETHPrice()
   const { isEVM, chainId } = useActiveWeb3React()
   const blockNumber = useBlockNumber()
-  const { classicClient } = useKyberSwapConfig()
+  const { classicClient } = useZuluSwapConfig()
 
-  const kncPrice = useSelector((state: AppState) => state.application.kncPrice)
+  const zpxPrice = useSelector((state: AppState) => state.application.zpxPrice)
 
   useEffect(() => {
     if (!isEVM) return
-    async function checkForKNCPrice() {
-      const kncPriceByETH = await getKNCPriceByETH(chainId, classicClient)
-      const kncPrice = ethPrice.currentPrice && kncPriceByETH * parseFloat(ethPrice.currentPrice)
-      dispatch(updateKNCPrice(kncPrice?.toString()))
+    async function checkForZPXPrice() {
+      const zpxPriceByETH = await getZPXPriceByETH(chainId, classicClient)
+      const zpxPrice = ethPrice.currentPrice && zpxPriceByETH * parseFloat(ethPrice.currentPrice)
+      dispatch(updateZPXPrice(zpxPrice?.toString()))
     }
-    checkForKNCPrice()
-  }, [kncPrice, dispatch, ethPrice.currentPrice, isEVM, classicClient, chainId, blockNumber])
+    checkForZPXPrice()
+  }, [zpxPrice, dispatch, ethPrice.currentPrice, isEVM, classicClient, chainId, blockNumber])
 
-  return kncPrice
+  return zpxPrice
 }
 
 /**
- * Gets the current price of KNC by ETH
+ * Gets the current price of ZPX by ETH
  */
 const getTokenPriceByETH = async (tokenAddress: string, apolloClient: ApolloClient<NormalizedCacheObject>) => {
   let tokenPriceByETH = 0
@@ -437,7 +437,7 @@ export function useTokensPrice(tokens: (Token | NativeCurrency | null | undefine
 
   const { chainId, isEVM } = useActiveWeb3React()
   const [prices, setPrices] = useState<number[]>([])
-  const { elasticClient, classicClient } = useKyberSwapConfig()
+  const { elasticClient, classicClient } = useZuluSwapConfig()
 
   const ethPriceParsed = ethPrice?.currentPrice ? parseFloat(ethPrice.currentPrice) : undefined
 
@@ -538,7 +538,7 @@ function getDefaultConfig(chainId: ChainId) {
   }
 }
 
-type KyberSwapConfig = {
+type ZuluSwapConfig = {
   rpc: string
   prochart: boolean
   blockClient: ApolloClient<NormalizedCacheObject>
@@ -548,7 +548,7 @@ type KyberSwapConfig = {
   connection: Connection | undefined
 }
 
-export const useKyberSwapConfig = (customChainId?: ChainId): KyberSwapConfig => {
+export const useZuluSwapConfig = (customChainId?: ChainId): ZuluSwapConfig => {
   const storeChainId = useAppSelector(state => state.user.chainId) || ChainId.MAINNET
   const chainId = customChainId || storeChainId
 

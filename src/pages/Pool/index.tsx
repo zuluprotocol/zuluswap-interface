@@ -1,5 +1,5 @@
-import { JSBI, Pair } from '@kyberswap/ks-sdk-classic'
-import { Token, TokenAmount } from '@kyberswap/ks-sdk-core'
+import { JSBI, Pair } from '@zuluswap/zs-sdk-classic'
+import { Token, TokenAmount } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { rgba } from 'polished'
 import { useMemo, useState } from 'react'

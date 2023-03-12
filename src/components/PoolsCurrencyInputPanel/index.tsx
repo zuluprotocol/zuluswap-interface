@@ -1,5 +1,5 @@
-import { Pair } from '@kyberswap/ks-sdk-classic'
-import { Currency } from '@kyberswap/ks-sdk-core'
+import { Pair } from '@zuluswap/zs-sdk-classic'
+import { Currency } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import React, { useCallback, useState } from 'react'
 import { X } from 'react-feather'

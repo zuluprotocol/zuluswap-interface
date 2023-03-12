@@ -19,7 +19,7 @@ import DiscoverNavItem from './DiscoverNavItem'
 import AboutNavGroup from './groups/AboutNavGroup'
 import AnalyticNavGroup from './groups/AnalyticNavGroup'
 import EarnNavGroup from './groups/EarnNavGroup'
-import KyberDAONavGroup from './groups/KyberDaoGroup'
+import ZuluDAONavGroup from './groups/ZuluDaoGroup'
 import SwapNavGroup from './groups/SwapNavGroup'
 import { StyledNavExternalLink, StyledNavLink } from './styleds'
 
@@ -197,7 +197,7 @@ export default function Header() {
           </CampaignWrapper>
 
           <DiscoverNavItem />
-          <KyberDAONavGroup />
+          <ZuluDAONavGroup />
 
           <AnalyticNavGroup />
           <AboutNavGroup />
@@ -207,7 +207,7 @@ export default function Header() {
                 mixpanelHandler(MIXPANEL_TYPE.BLOG_MENU_CLICKED)
               }}
               target="_blank"
-              href="https://blog.kyberswap.com"
+              href="https://blog.zuluswap.com"
             >
               <Trans>Blog</Trans>
             </StyledNavExternalLink>

@@ -2,7 +2,7 @@ import { gql, useLazyQuery } from '@apollo/client'
 import { defaultAbiCoder } from '@ethersproject/abi'
 import { getCreate2Address } from '@ethersproject/address'
 import { keccak256 } from '@ethersproject/solidity'
-import { Currency, CurrencyAmount } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount } from '@zuluswap/zs-sdk-core'
 import { BigNumber } from 'ethers'
 import { Interface } from 'ethers/lib/utils'
 import { useCallback, useEffect, useRef } from 'react'
@@ -13,7 +13,7 @@ import ELASTIC_FARM_ABI from 'constants/abis/v2/farm.json'
 import { NETWORKS_INFO, isEVM } from 'constants/networks'
 import { useActiveWeb3React } from 'hooks'
 import { useMulticallContract } from 'hooks/useContract'
-import { useKyberSwapConfig } from 'state/application/hooks'
+import { useZuluSwapConfig } from 'state/application/hooks'
 import { useAppSelector } from 'state/hooks'
 import { usePoolBlocks } from 'state/prommPools/hooks'
 
@@ -41,7 +41,7 @@ const useGetUserFarmingInfo = (interval?: boolean) => {
   const dispatch = useDispatch()
   const { chainId, account } = useActiveWeb3React()
   const multicallContract = useMulticallContract()
-  const { elasticClient } = useKyberSwapConfig()
+  const { elasticClient } = useZuluSwapConfig()
 
   const elasticFarm = useAppSelector(state => state.elasticFarm[chainId || 1]) || defaultChainData
 

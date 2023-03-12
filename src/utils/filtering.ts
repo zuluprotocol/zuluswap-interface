@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@kyberswap/ks-sdk-core'
+import { ChainId, Token } from '@zuluswap/zs-sdk-core'
 
 import { TokenInfo } from 'state/lists/wrappedTokenInfo'
 import { isAddress } from 'utils'

@@ -9,7 +9,7 @@ const useSelectedDexes = () => {
   const dexes =
     selectedDexes?.length === allDexes?.length
       ? ''
-      : selectedDexes?.join(',').replace('kyberswapv1', 'kyberswap,kyberswap-static') || ''
+      : selectedDexes?.join(',').replace('zuluswapv1', 'zuluswap,zuluswap-static') || ''
 
   return dexes
 }

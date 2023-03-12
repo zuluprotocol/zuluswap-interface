@@ -1,6 +1,6 @@
 import { parseUnits } from '@ethersproject/units'
-import { Trade } from '@kyberswap/ks-sdk-classic'
-import { ChainId, Currency, CurrencyAmount, TradeType } from '@kyberswap/ks-sdk-core'
+import { Trade } from '@zuluswap/zs-sdk-classic'
+import { ChainId, Currency, CurrencyAmount, TradeType } from '@zuluswap/zs-sdk-core'
 import { t } from '@lingui/macro'
 import JSBI from 'jsbi'
 import { ParsedUrlQuery } from 'querystring'

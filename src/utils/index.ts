@@ -1,6 +1,6 @@
 import { ApolloClient, NormalizedCacheObject } from '@apollo/client'
 import { BigNumber } from '@ethersproject/bignumber'
-import { ChainId, Currency, CurrencyAmount, Percent, Token, WETH } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency, CurrencyAmount, Percent, Token, WETH } from '@zuluswap/zs-sdk-core'
 import { PublicKey } from '@solana/web3.js'
 import dayjs from 'dayjs'
 import JSBI from 'jsbi'
@@ -10,7 +10,7 @@ import { GET_BLOCK, GET_BLOCKS } from 'apollo/queries'
 import { ENV_LEVEL } from 'constants/env'
 import { DEFAULT_GAS_LIMIT_MARGIN, ZERO_ADDRESS } from 'constants/index'
 import { NETWORKS_INFO, NETWORKS_INFO_CONFIG, isEVM } from 'constants/networks'
-import { KNC, KNCL_ADDRESS } from 'constants/tokens'
+import { ZPX, ZPXL_ADDRESS } from 'constants/tokens'
 import { ENV_TYPE } from 'constants/type'
 import { EVMWalletInfo, SUPPORTED_WALLET, SolanaWalletInfo, WalletInfo } from 'constants/wallets'
 import store from 'state'
@@ -353,12 +353,12 @@ export const getTokenLogoURL = (inputAddress: string, chainId: ChainId): string 
   }
 
   if (chainId !== ChainId.ETHW) {
-    if (address.toLowerCase() === KNC[chainId].address.toLowerCase()) {
-      return 'https://raw.githubusercontent.com/KyberNetwork/kyberswap-interface/develop/src/assets/images/KNC.svg'
+    if (address.toLowerCase() === ZPX[chainId].address.toLowerCase()) {
+      return 'https://raw.githubusercontent.com/ZuluNetwork/zuluswap-interface/develop/src/assets/images/ZPX.svg'
     }
 
-    if (address.toLowerCase() === KNCL_ADDRESS.toLowerCase()) {
-      return 'https://raw.githubusercontent.com/KyberNetwork/kyberswap-interface/develop/src/assets/images/KNCL.png'
+    if (address.toLowerCase() === ZPXL_ADDRESS.toLowerCase()) {
+      return 'https://raw.githubusercontent.com/ZuluNetwork/zuluswap-interface/develop/src/assets/images/ZPXL.png'
     }
 
     // WBTC

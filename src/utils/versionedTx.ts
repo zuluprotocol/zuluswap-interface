@@ -19,7 +19,7 @@ import { wait } from './retry'
 const connection = new Connection(solanaInfo.defaultRpcUrl, { commitment: 'confirmed' })
 const lookupTablesByPoolPromise = (async () => {
   let fetchCount = 0
-  const authority = new PublicKey('9YqphVt2hdE7RaL3YBCCP49thJbSovwgZQhyHjvgi1L3') // Kyber's lookuptable account owner
+  const authority = new PublicKey('9YqphVt2hdE7RaL3YBCCP49thJbSovwgZQhyHjvgi1L3') // Zulu's lookuptable account owner
   const fetch = async (): Promise<{ [tableAddress: string]: PublicKey }> => {
     try {
       fetchCount++

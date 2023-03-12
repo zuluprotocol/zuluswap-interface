@@ -1,12 +1,12 @@
 import { gql, useLazyQuery } from '@apollo/client'
-import { CurrencyAmount, Token, TokenAmount, WETH } from '@kyberswap/ks-sdk-core'
-import { FeeAmount, Pool, Position } from '@kyberswap/ks-sdk-elastic'
+import { CurrencyAmount, Token, TokenAmount, WETH } from '@zuluswap/zs-sdk-core'
+import { FeeAmount, Pool, Position } from '@zuluswap/zs-sdk-elastic'
 import { useEffect } from 'react'
 
 import { ZERO_ADDRESS } from 'constants/index'
 import { NativeCurrencies } from 'constants/tokens'
 import { useActiveWeb3React } from 'hooks'
-import { useKyberSwapConfig } from 'state/application/hooks'
+import { useZuluSwapConfig } from 'state/application/hooks'
 import { useAppDispatch, useAppSelector } from 'state/hooks'
 import { isAddressString } from 'utils'
 
@@ -143,7 +143,7 @@ const FarmUpdaterV1: React.FC<CommonProps> = ({ interval }) => {
   const dispatch = useAppDispatch()
   const { chainId } = useActiveWeb3React()
   const elasticFarm = useAppSelector(state => state.elasticFarm)[chainId || 1] || defaultChainData
-  const { elasticClient } = useKyberSwapConfig()
+  const { elasticClient } = useZuluSwapConfig()
 
   const [getElasticFarms, { data, error }] = useLazyQuery(ELASTIC_FARM_QUERY, {
     client: elasticClient,

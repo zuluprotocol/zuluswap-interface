@@ -1,4 +1,4 @@
-import { Currency, Fraction } from '@kyberswap/ks-sdk-core'
+import { Currency, Fraction } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import JSBI from 'jsbi'
 import { useEffect, useMemo, useState } from 'react'
@@ -257,7 +257,7 @@ export default function CreateReferral() {
                   <br />
                   Read more{' '}
                   <a
-                    href="https://docs.kyberswap.com/guides/referral-fee-program/index.html"
+                    href="https://docs.zuluswap.com/guides/referral-fee-program/index.html"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -339,7 +339,7 @@ export default function CreateReferral() {
                 <InfoHelper
                   placement="top"
                   size={12}
-                  text={t`You can include the chain in your referral link so referees are automatically re-directed to this network on KyberSwap. You will still earn commission on trades that are made on other chains and use your referral link`}
+                  text={t`You can include the chain in your referral link so referees are automatically re-directed to this network on ZuluSwap. You will still earn commission on trades that are made on other chains and use your referral link`}
                   width="300px"
                 />
               </Text>

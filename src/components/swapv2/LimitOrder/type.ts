@@ -1,4 +1,4 @@
-import { ChainId, Currency } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency } from '@zuluswap/zs-sdk-core'
 
 export enum LimitOrderStatus {
   // status from BE

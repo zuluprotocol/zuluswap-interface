@@ -15,7 +15,7 @@ import { TRANSACTION_GROUP, TRANSACTION_TYPE, TransactionDetails } from 'state/t
 const MAP_ICON_BY_GROUP: { [group in TRANSACTION_GROUP]: ReactNode } = {
   [TRANSACTION_GROUP.SWAP]: <Repeat size={16} />,
   [TRANSACTION_GROUP.LIQUIDITY]: <LiquidityIcon />,
-  [TRANSACTION_GROUP.KYBERDAO]: <VoteIcon size={22} />,
+  [TRANSACTION_GROUP.ZULUDAO]: <VoteIcon size={22} />,
   [TRANSACTION_GROUP.OTHER]: null,
 }
 
@@ -25,9 +25,9 @@ const MAP_ICON_BY_TYPE: Partial<Record<TRANSACTION_TYPE, ReactNode>> = {
   [TRANSACTION_TYPE.APPROVE]: <ApproveIcon width={20} height={22} />,
   [TRANSACTION_TYPE.CLAIM_REWARD]: <MoneyBag size={18} />,
   [TRANSACTION_TYPE.TRANSFER_TOKEN]: <SendIcon />,
-  [TRANSACTION_TYPE.KYBERDAO_STAKE]: <StakeIcon size={18} />,
-  [TRANSACTION_TYPE.KYBERDAO_MIGRATE]: <ThunderIcon />,
-  [TRANSACTION_TYPE.KYBERDAO_UNSTAKE]: <StakeIcon size={18} style={{ transform: 'scaleY(-1)' }} />,
+  [TRANSACTION_TYPE.ZULUDAO_STAKE]: <StakeIcon size={18} />,
+  [TRANSACTION_TYPE.ZULUDAO_MIGRATE]: <ThunderIcon />,
+  [TRANSACTION_TYPE.ZULUDAO_UNSTAKE]: <StakeIcon size={18} style={{ transform: 'scaleY(-1)' }} />,
 }
 
 const Icon = ({ txs }: { txs: TransactionDetails }) => {

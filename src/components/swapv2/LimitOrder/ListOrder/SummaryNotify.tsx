@@ -1,4 +1,4 @@
-import { Currency } from '@kyberswap/ks-sdk-core'
+import { Currency } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { ReactNode } from 'react'
 import { Text } from 'rebass'

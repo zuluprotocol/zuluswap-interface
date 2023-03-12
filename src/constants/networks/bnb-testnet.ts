@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 
 import BnbLogo from 'assets/images/bnb-logo.png'
 import BSC from 'assets/networks/bsc-network.png'
@@ -58,7 +58,7 @@ const bnbTestnetInfo: EVMNetworkInfo = {
     fairlaunchV2: EMPTY_ARRAY,
   },
   elastic: {
-    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-bsc',
+    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/zulunetwork/zuluswap-elastic-bsc',
     startBlock: 18532980,
     coreFactory: '0x2D2B8D5093d0288Da2473459545FE7a2f057bd7D',
     nonfungiblePositionManager: '0xe0a4C2a9343A79A1F5b1505C036d033C8A178F90',

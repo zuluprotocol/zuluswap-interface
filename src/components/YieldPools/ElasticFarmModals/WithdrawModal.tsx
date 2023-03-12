@@ -1,4 +1,4 @@
-import { Position, computePoolAddress } from '@kyberswap/ks-sdk-elastic'
+import { Position, computePoolAddress } from '@zuluswap/zs-sdk-elastic'
 import { Trans } from '@lingui/macro'
 import { BigNumber } from 'ethers'
 import { useEffect, useMemo, useRef, useState } from 'react'

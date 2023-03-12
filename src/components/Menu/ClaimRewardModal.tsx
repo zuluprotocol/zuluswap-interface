@@ -6,7 +6,7 @@ import { ButtonPrimary } from 'components/Button'
 import CurrencyLogo from 'components/CurrencyLogo'
 import { RowBetween } from 'components/Row'
 import TransactionConfirmationModal, { TransactionErrorContent } from 'components/TransactionConfirmationModal'
-import { KNC } from 'constants/tokens'
+import { ZPX } from 'constants/tokens'
 import { useActiveWeb3React } from 'hooks'
 import useClaimReward from 'hooks/useClaimReward'
 import useTheme from 'hooks/useTheme'
@@ -73,7 +73,7 @@ function ClaimRewardModal() {
           <Trans>If your wallet is eligible, you will be able to claim your reward below. You can claim:</Trans>
         </Text>
         <Text fontSize={32} lineHeight="38px" fontWeight={500}>
-          <CurrencyLogo currency={KNC[chainId]} /> {rewardAmounts} KNC
+          <CurrencyLogo currency={ZPX[chainId]} /> {rewardAmounts} ZPX
         </Text>
         <ButtonPrimary disabled={!isCanClaim} onClick={claimRewardsCallback}>
           <Trans>Claim</Trans>
@@ -90,7 +90,7 @@ function ClaimRewardModal() {
       attemptingTxn={attemptingTxn}
       hash={txHash}
       content={modalContent}
-      pendingText={t`Claiming ${rewardAmounts} KNC`}
+      pendingText={t`Claiming ${rewardAmounts} ZPX`}
     />
   )
 }

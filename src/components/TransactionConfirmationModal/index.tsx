@@ -1,4 +1,4 @@
-import { ChainId, Currency, Token } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency, Token } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import React, { useState } from 'react'
 import { ArrowUpCircle, BarChart2 } from 'react-feather'

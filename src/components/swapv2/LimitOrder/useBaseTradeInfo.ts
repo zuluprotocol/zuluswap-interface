@@ -1,4 +1,4 @@
-import { Currency, WETH } from '@kyberswap/ks-sdk-core'
+import { Currency, WETH } from '@zuluswap/zs-sdk-core'
 import { ethers } from 'ethers'
 import { useCallback, useMemo, useState } from 'react'
 
@@ -15,7 +15,7 @@ export type BaseTradeInfo = {
   invertRate: number
 }
 
-// 1 knc = ?? usdt
+// 1 zpx = ?? usdt
 export default function useBaseTradeInfo(currencyIn: Currency | undefined, currencyOut: Currency | undefined) {
   const { chainId } = useActiveWeb3React()
   const { library } = useWeb3React()

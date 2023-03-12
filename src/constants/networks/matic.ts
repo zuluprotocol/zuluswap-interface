@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 
 import Polygon from 'assets/networks/polygon-network.png'
 import { KS_SETTING_API } from 'constants/env'
@@ -31,12 +31,12 @@ const maticInfo: EVMNetworkInfo = {
     decimal: 18,
     minForGas: 10 ** 17,
   },
-  defaultRpcUrl: 'https://polygon.kyberengineering.io',
+  defaultRpcUrl: 'https://polygon.zuluengineering.io',
   multicall: '0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4',
   classic: {
-    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-polygon',
+    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/zulunetwork/zuluswap-exchange-polygon',
     // defaultSubgraph: (
-    //   'https://polygon-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-polygon',
+    //   'https://polygon-graph.zuluengineering.io/subgraphs/name/zulunetwork/zuluswap-exchange-polygon',
     // ),
     static: {
       zap: '0x2abE8750e4a65584d7452316356128C936273e0D',
@@ -61,7 +61,7 @@ const maticInfo: EVMNetworkInfo = {
     fairlaunchV2: ['0xFFD22921947D75342BFE1f8efAcEE4B8B3b5183F', '0x0bAF410dcfCf168f659f46bF1e28D29f68a25E77'],
   },
   elastic: {
-    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-matic',
+    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/zulunetwork/zuluswap-elastic-matic',
     startBlock: 29347468,
     coreFactory: '0x5F1dddbf348aC2fbe22a163e30F99F9ECE3DD50a',
     nonfungiblePositionManager: '0x2B1c7b41f6A8F2b2bc45C3233a5d5FB3cD6dC9A8',

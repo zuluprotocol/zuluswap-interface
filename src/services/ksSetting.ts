@@ -1,9 +1,9 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 import { KS_SETTING_API } from 'constants/env'
 
-export type KyberswapConfigurationResponse = {
+export type ZuluswapConfigurationResponse = {
   data: {
     config: {
       prochart: boolean
@@ -15,7 +15,7 @@ export type KyberswapConfigurationResponse = {
   }
 }
 
-export type KyberswapGlobalConfigurationResponse = {
+export type ZuluswapGlobalConfigurationResponse = {
   data: {
     config: {
       aggregator: string
@@ -29,26 +29,26 @@ const ksSettingApi = createApi({
     baseUrl: `${KS_SETTING_API}/v1`,
   }),
   endpoints: builder => ({
-    getKyberswapConfiguration: builder.query<KyberswapConfigurationResponse, { chainId: ChainId }>({
+    getZuluswapConfiguration: builder.query<ZuluswapConfigurationResponse, { chainId: ChainId }>({
       query: ({ chainId }) => ({
         url: '/configurations/fetch',
         params: {
-          serviceCode: `kyberswap-${chainId}`,
+          serviceCode: `zuluswap-${chainId}`,
         },
       }),
     }),
 
-    getKyberswapGlobalConfiguration: builder.query<KyberswapGlobalConfigurationResponse, void>({
+    getZuluswapGlobalConfiguration: builder.query<ZuluswapGlobalConfigurationResponse, void>({
       query: () => ({
         url: '/configurations/fetch',
         params: {
-          serviceCode: `kyberswap`,
+          serviceCode: `zuluswap`,
         },
       }),
     }),
   }),
 })
 
-export const { useLazyGetKyberswapConfigurationQuery, useGetKyberswapGlobalConfigurationQuery } = ksSettingApi
+export const { useLazyGetZuluswapConfigurationQuery, useGetZuluswapGlobalConfigurationQuery } = ksSettingApi
 
 export default ksSettingApi

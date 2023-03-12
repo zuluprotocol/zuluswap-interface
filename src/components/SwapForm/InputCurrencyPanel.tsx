@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount } from '@zuluswap/zs-sdk-core'
 import { useEffect } from 'react'
 
 import CurrencyInputPanel from 'components/CurrencyInputPanel'

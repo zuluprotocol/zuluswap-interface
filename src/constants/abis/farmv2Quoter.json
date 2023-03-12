@@ -1,6 +1,6 @@
 [
   {
-    "inputs": [{ "internalType": "contract IKyberSwapElasticLMV3", "name": "_farmSC", "type": "address" }],
+    "inputs": [{ "internalType": "contract IZuluSwapElasticLMV3", "name": "_farmSC", "type": "address" }],
     "stateMutability": "nonpayable",
     "type": "constructor"
   },
@@ -8,7 +8,7 @@
   {
     "inputs": [],
     "name": "farmSC",
-    "outputs": [{ "internalType": "contract IKyberSwapElasticLMV3", "name": "", "type": "address" }],
+    "outputs": [{ "internalType": "contract IZuluSwapElasticLMV3", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },

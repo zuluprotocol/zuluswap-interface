@@ -47,7 +47,7 @@ type LimitOrderAnnouncement = {
   filledTakingAmount: string
   makerAssetLogoURL: string
   takerAssetLogoURL: string
-  kyberswapURL: string
+  zuluswapURL: string
   status: LimitOrderStatus
   // for partial fill
   filledPercent: string

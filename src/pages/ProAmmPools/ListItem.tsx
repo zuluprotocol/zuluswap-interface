@@ -1,4 +1,4 @@
-import { ChainId, Token, WETH } from '@kyberswap/ks-sdk-core'
+import { ChainId, Token, WETH } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { rgba } from 'polished'
 import { BarChart2, Plus, Share2 } from 'react-feather'

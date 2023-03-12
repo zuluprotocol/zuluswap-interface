@@ -1,4 +1,4 @@
-import { ChainId, Fraction } from '@kyberswap/ks-sdk-core'
+import { ChainId, Fraction } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { isAddress } from 'ethers/lib/utils'
 import JSBI from 'jsbi'
@@ -488,7 +488,7 @@ export default function SwapForm() {
                 <ExternalLink href="https://multichain.org/">
                   <img
                     src={isDark ? MultichainLogoLight : MultichainLogoDark}
-                    alt="kyberswap with multichain"
+                    alt="zuluswap with multichain"
                     height={13}
                   />
                 </ExternalLink>

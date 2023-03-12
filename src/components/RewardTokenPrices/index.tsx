@@ -1,11 +1,11 @@
-import { Currency, WETH } from '@kyberswap/ks-sdk-core'
+import { Currency, WETH } from '@zuluswap/zs-sdk-core'
 import React, { useEffect, useRef } from 'react'
 import ScrollContainer from 'react-indiana-drag-scroll'
 import styled from 'styled-components'
 
 import CurrencyLogo from 'components/CurrencyLogo'
 import { ZERO_ADDRESS } from 'constants/index'
-import { KNC } from 'constants/tokens'
+import { ZPX } from 'constants/tokens'
 import { useActiveWeb3React } from 'hooks'
 import useThrottle from 'hooks/useThrottle'
 import { useTokenPrices } from 'state/tokenPrices/hooks'
@@ -87,13 +87,13 @@ const RewardTokenPrices = ({ style = {}, rewardTokens }: { style?: React.CSSProp
       ? rewardTokens.filter(token => token.wrapped.address !== WETH[chainId].address)
       : rewardTokens
 
-  // Sort the list of reward tokens in order: KNC -> Native token -> Other tokens
+  // Sort the list of reward tokens in order: ZPX -> Native token -> Other tokens
   rewardTokens.sort(function (tokenA, tokenB) {
-    if (tokenA.wrapped.address === KNC[chainId].address) {
+    if (tokenA.wrapped.address === ZPX[chainId].address) {
       return -1
     }
 
-    if (tokenB.wrapped.address === KNC[chainId].address) {
+    if (tokenB.wrapped.address === ZPX[chainId].address) {
       return 1
     }
 

@@ -37,12 +37,12 @@ export enum ApplicationModal {
   YOUR_CAMPAIGN_TRANSACTIONS,
   ETH_POW_ACK,
 
-  // KyberDAO
+  // ZuluDAO
   SWITCH_TO_ETHEREUM,
   DELEGATE_CONFIRM,
-  YOUR_TRANSACTIONS_STAKE_KNC,
-  MIGRATE_KNC,
-  KYBER_DAO_CLAIM,
+  YOUR_TRANSACTIONS_STAKE_ZPX,
+  MIGRATE_ZPX,
+  ZULU_DAO_CLAIM,
 
   TIME_DROPDOWN,
 }
@@ -70,7 +70,7 @@ export const updateETHPrice = createAction<{
   pricePercentChange: number
 }>('application/updateETHPrice')
 
-export const updateKNCPrice = createAction<string | undefined>('application/updateKNCPrice')
+export const updateZPXPrice = createAction<string | undefined>('application/updateZPXPrice')
 
 export const updateServiceWorker = createAction<ServiceWorkerRegistration>('application/updateServiceWorker')
 

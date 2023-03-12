@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, Percent, TokenAmount } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount, Fraction, Percent, TokenAmount } from '@zuluswap/zs-sdk-core'
 import JSBI from 'jsbi'
 
 import { basisPointsToPercent } from 'utils'

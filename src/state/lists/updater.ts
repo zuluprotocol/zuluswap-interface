@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 

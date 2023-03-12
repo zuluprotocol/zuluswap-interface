@@ -1,4 +1,4 @@
-import { Currency, Price, Rounding } from '@kyberswap/ks-sdk-core'
+import { Currency, Price, Rounding } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { rgba } from 'polished'
 import { useState } from 'react'

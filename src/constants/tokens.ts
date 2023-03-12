@@ -1,4 +1,4 @@
-import { ChainId, NativeCurrency, Token } from '@kyberswap/ks-sdk-core'
+import { ChainId, NativeCurrency, Token } from '@zuluswap/zs-sdk-core'
 
 import { NETWORKS_INFO, SUPPORTED_NETWORKS } from './networks'
 
@@ -240,8 +240,8 @@ export const CORRELATED_COINS_ADDRESS: { [chainId in ChainId]: string[][] } = {
       '0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0', //wstETH
     ],
     [
-      '0xdd974D5C2e2928deA5F71b9825b8b646686BD200', //KNCL
-      '0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202', //KNC
+      '0xdd974D5C2e2928deA5F71b9825b8b646686BD200', //ZPXL
+      '0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202', //ZPX
     ],
   ],
   [ChainId.ETHW]: [],
@@ -488,84 +488,84 @@ export const WBTC_ARBITRUM = new Token(
   'Wrapped BTC',
 )
 
-export const KNC_ADDRESS = '0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202'
-export const KNCL_ADDRESS = '0xdd974D5C2e2928deA5F71b9825b8b646686BD200'
+export const ZPX_ADDRESS = '0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202'
+export const ZPXL_ADDRESS = '0xdd974D5C2e2928deA5F71b9825b8b646686BD200'
 
 // todo: make it nullable
-export const KNC: { [chainId in ChainId]: Token } = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, KNC_ADDRESS, 18, 'KNC', 'Kyber Network Crystal'),
-  [ChainId.ETHW]: new Token(ChainId.ETHW, KNC_ADDRESS, 18, 'KNC', 'Kyber Network Crystal'),
+export const ZPX: { [chainId in ChainId]: Token } = {
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, ZPX_ADDRESS, 18, 'ZPX', 'Zulu Network Crystal'),
+  [ChainId.ETHW]: new Token(ChainId.ETHW, ZPX_ADDRESS, 18, 'ZPX', 'Zulu Network Crystal'),
   [ChainId.GÖRLI]: new Token(
     ChainId.GÖRLI,
     '0xd19e5119Efc73FeA1e70f9fbbc105DaB89D914e4',
     18,
-    'KNC',
-    'Kyber Network Crystal',
+    'ZPX',
+    'Zulu Network Crystal',
   ),
   [ChainId.MATIC]: new Token(
     ChainId.MATIC,
     '0x1C954E8fe737F99f68Fa1CCda3e51ebDB291948C',
     18,
-    'KNC',
-    'Kyber Network Crystal',
+    'ZPX',
+    'Zulu Network Crystal',
   ),
   [ChainId.MUMBAI]: new Token(
     ChainId.MUMBAI,
     '0xFD1f9381Cb641Dc76Fe8087dbcf8ea84a2c77cbE',
     18,
-    'KNC',
-    'Kyber Network Crystal',
+    'ZPX',
+    'Zulu Network Crystal',
   ),
   [ChainId.BSCTESTNET]: new Token(
     ChainId.BSCTESTNET,
     '0x51E8D106C646cA58Caf32A47812e95887C071a62',
     18,
-    'KNC',
-    'Kyber Network Crystal',
+    'ZPX',
+    'Zulu Network Crystal',
   ),
   [ChainId.BSCMAINNET]: new Token(
     ChainId.BSCMAINNET,
     '0xfe56d5892BDffC7BF58f2E84BE1b2C32D21C308b',
     18,
-    'KNC',
-    'Kyber Network Crystal',
+    'ZPX',
+    'Zulu Network Crystal',
   ),
-  [ChainId.AVAXTESTNET]: new Token(ChainId.AVAXTESTNET, KNC_ADDRESS, 18, 'KNC', 'Kyber Network Crystal'),
+  [ChainId.AVAXTESTNET]: new Token(ChainId.AVAXTESTNET, ZPX_ADDRESS, 18, 'ZPX', 'Zulu Network Crystal'),
   [ChainId.AVAXMAINNET]: new Token(
     ChainId.AVAXMAINNET,
     '0x39fC9e94Caeacb435842FADeDeCB783589F50f5f',
     18,
-    'KNC',
-    'Kyber Network Crystal',
+    'ZPX',
+    'Zulu Network Crystal',
   ),
-  [ChainId.FANTOM]: new Token(ChainId.FANTOM, KNC_ADDRESS, 18, 'KNC', 'Kyber Network Crystal'),
-  [ChainId.CRONOS]: new Token(ChainId.CRONOS, KNC_ADDRESS, 18, 'KNC', 'Kyber Network Crystal'),
-  [ChainId.AURORA]: new Token(ChainId.AURORA, KNC_ADDRESS, 18, 'KNC', 'Kyber Network Crystal'),
+  [ChainId.FANTOM]: new Token(ChainId.FANTOM, ZPX_ADDRESS, 18, 'ZPX', 'Zulu Network Crystal'),
+  [ChainId.CRONOS]: new Token(ChainId.CRONOS, ZPX_ADDRESS, 18, 'ZPX', 'Zulu Network Crystal'),
+  [ChainId.AURORA]: new Token(ChainId.AURORA, ZPX_ADDRESS, 18, 'ZPX', 'Zulu Network Crystal'),
   [ChainId.BTTC]: new Token(
     ChainId.BTTC,
     '0x18fA72e0EE4C580a129b0CE5bD0694d716C7443E',
     18,
-    'KNC_b',
-    'Kyber Network Crystal v2 - BSC',
+    'ZPX_b',
+    'Zulu Network Crystal v2 - BSC',
   ),
 
-  // UPDATE WHEN HAS BRIDGE KNC
-  [ChainId.ARBITRUM]: new Token(ChainId.ARBITRUM, KNC_ADDRESS, 18, 'KNC', 'Kyber Network Crystal'),
-  [ChainId.VELAS]: new Token(ChainId.VELAS, KNC_ADDRESS, 18, 'KNC', 'Kyber Network Crystal'),
-  [ChainId.OASIS]: new Token(ChainId.OASIS, KNC_ADDRESS, 18, 'KNC', 'Kyber Network Crystal'),
+  // UPDATE WHEN HAS BRIDGE ZPX
+  [ChainId.ARBITRUM]: new Token(ChainId.ARBITRUM, ZPX_ADDRESS, 18, 'ZPX', 'Zulu Network Crystal'),
+  [ChainId.VELAS]: new Token(ChainId.VELAS, ZPX_ADDRESS, 18, 'ZPX', 'Zulu Network Crystal'),
+  [ChainId.OASIS]: new Token(ChainId.OASIS, ZPX_ADDRESS, 18, 'ZPX', 'Zulu Network Crystal'),
   [ChainId.OPTIMISM]: new Token(
     ChainId.OPTIMISM,
     '0xa00e3a3511aac35ca78530c85007afcd31753819',
     18,
-    'KNC',
-    'Kyber Network Crystal',
+    'ZPX',
+    'Zulu Network Crystal',
   ),
   [ChainId.SOLANA]: new Token(
     ChainId.SOLANA,
-    'KNCkfGAnBUvoG5EJipAzSBjjaF8iNL4ivYsBS14DKdg',
+    'ZPXkfGAnBUvoG5EJipAzSBjjaF8iNL4ivYsBS14DKdg',
     18,
-    'KNC',
-    'Kyber Network Crystal',
+    'ZPX',
+    'Zulu Network Crystal',
   ), // todo namgold: not exists yet
 }
 
@@ -595,5 +595,5 @@ export const DEFAULT_OUTPUT_TOKEN_BY_CHAIN: Partial<Record<ChainId, Token>> = {
   [ChainId.OASIS]: USDC[ChainId.OASIS],
   [ChainId.BTTC]: USDT[ChainId.BTTC], // USDT_b
   [ChainId.SOLANA]: USDC[ChainId.SOLANA],
-  [ChainId.GÖRLI]: KNC[ChainId.GÖRLI],
+  [ChainId.GÖRLI]: ZPX[ChainId.GÖRLI],
 }

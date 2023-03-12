@@ -1,5 +1,5 @@
-import { Price, Token } from '@kyberswap/ks-sdk-core'
-import { tickToPrice } from '@kyberswap/ks-sdk-elastic'
+import { Price, Token } from '@zuluswap/zs-sdk-core'
+import { tickToPrice } from '@zuluswap/zs-sdk-elastic'
 
 export function getTickToPrice(baseToken?: Token, quoteToken?: Token, tick?: number): Price<Token, Token> | undefined {
   if (!baseToken || !quoteToken || typeof tick !== 'number') {

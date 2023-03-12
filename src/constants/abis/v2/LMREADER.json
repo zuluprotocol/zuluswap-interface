@@ -2,7 +2,7 @@
   { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
   {
     "inputs": [
-      { "internalType": "contract IKyberSwapElasticLMV2", "name": "lm", "type": "address" },
+      { "internalType": "contract IZuluSwapElasticLMV2", "name": "lm", "type": "address" },
       { "internalType": "uint256", "name": "pId", "type": "uint256" },
       { "internalType": "uint256[]", "name": "tokenIds", "type": "uint256[]" }
     ],

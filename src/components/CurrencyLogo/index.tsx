@@ -1,4 +1,4 @@
-import { Currency } from '@kyberswap/ks-sdk-core'
+import { Currency } from '@zuluswap/zs-sdk-core'
 import React, { memo, useMemo } from 'react'
 import styled from 'styled-components'
 

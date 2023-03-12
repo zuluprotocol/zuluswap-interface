@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 
 import Polygon from 'assets/networks/polygon-network.png'
 import { KS_SETTING_API } from 'constants/env'
@@ -52,7 +52,7 @@ const mumbaiInfo: EVMNetworkInfo = {
     fairlaunchV2: EMPTY_ARRAY,
   },
   elastic: {
-    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-matic', //todo: not exits yet
+    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/zulunetwork/zuluswap-elastic-matic', //todo: not exits yet
     startBlock: 29347468,
     coreFactory: '0x5F1dddbf348aC2fbe22a163e30F99F9ECE3DD50a',
     nonfungiblePositionManager: '0x2B1c7b41f6A8F2b2bc45C3233a5d5FB3cD6dC9A8',

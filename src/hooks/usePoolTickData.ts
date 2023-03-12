@@ -1,12 +1,12 @@
 import { useQuery } from '@apollo/client'
-import { Currency } from '@kyberswap/ks-sdk-core'
-import { FeeAmount, TICK_SPACINGS, tickToPrice } from '@kyberswap/ks-sdk-elastic'
+import { Currency } from '@zuluswap/zs-sdk-core'
+import { FeeAmount, TICK_SPACINGS, tickToPrice } from '@zuluswap/zs-sdk-elastic'
 import JSBI from 'jsbi'
 import { useMemo } from 'react'
 
 import { ALL_TICKS, Tick } from 'apollo/queries/promm'
 import { useActiveWeb3React } from 'hooks'
-import { useKyberSwapConfig } from 'state/application/hooks'
+import { useZuluSwapConfig } from 'state/application/hooks'
 import computeSurroundingTicks from 'utils/computeSurroundingTicks'
 
 import { PoolState, usePool } from './usePools'
@@ -29,7 +29,7 @@ const getActiveTick = (tickCurrent: number | undefined, feeAmount: FeeAmount | u
 
 const useAllTicks = (poolAddress: string) => {
   const { isEVM } = useActiveWeb3React()
-  const { elasticClient } = useKyberSwapConfig()
+  const { elasticClient } = useZuluSwapConfig()
 
   return useQuery(ALL_TICKS(poolAddress?.toLowerCase()), {
     client: elasticClient,

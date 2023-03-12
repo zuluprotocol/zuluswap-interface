@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount } from '@zuluswap/zs-sdk-core'
 
 import CurrencyInputPanel from 'components/CurrencyInputPanel'
 import { WrapType } from 'hooks/useWrapCallback'

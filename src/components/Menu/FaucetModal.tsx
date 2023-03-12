@@ -1,4 +1,4 @@
-import { Fraction, WETH } from '@kyberswap/ks-sdk-core'
+import { Fraction, WETH } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { BigNumber } from 'ethers'
 import JSBI from 'jsbi'

@@ -1,4 +1,4 @@
-import { Currency, Token, WETH } from '@kyberswap/ks-sdk-core'
+import { Currency, Token, WETH } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { rgba } from 'polished'
 import { CSSProperties, memo, useMemo } from 'react'

@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { Dispatch, SetStateAction } from 'react'
 import { X } from 'react-feather'
@@ -6,7 +6,7 @@ import { Flex, Text } from 'rebass'
 import styled from 'styled-components'
 
 import { ButtonEmpty } from 'components/Button'
-import { Kyber } from 'components/Icons'
+import { Zulu } from 'components/Icons'
 import Modal from 'components/Modal'
 import { NETWORKS_INFO, TRENDING_SOON_SUPPORTED_NETWORKS } from 'constants/networks'
 import useTheme from 'hooks/useTheme'
@@ -113,7 +113,7 @@ export default function TrueSightNetworkModal({
                           style={{ width: '24px', marginRight: '8px' }}
                         />
                       ) : (
-                        <Kyber size={24} style={{ marginRight: '8px' }} color={theme.background} />
+                        <Zulu size={24} style={{ marginRight: '8px' }} color={theme.background} />
                       )}
                       <NetworkLabel>{key ? NETWORKS_INFO[key].name : t`All Chains`}</NetworkLabel>
                     </ListItem>
@@ -138,7 +138,7 @@ export default function TrueSightNetworkModal({
                         style={{ width: '24px', marginRight: '8px' }}
                       />
                     ) : (
-                      <Kyber size={24} style={{ marginRight: '8px' }} />
+                      <Zulu size={24} style={{ marginRight: '8px' }} />
                     )}
                     <NetworkLabel>{key ? NETWORKS_INFO[key].name : t`All Chains`}</NetworkLabel>
                   </ListItem>

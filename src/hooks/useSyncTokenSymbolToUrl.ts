@@ -1,4 +1,4 @@
-import { ChainId, Currency } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency } from '@zuluswap/zs-sdk-core'
 import { stringify } from 'querystring'
 import { useCallback, useEffect, useRef } from 'react'
 import { Params, useLocation, useNavigate, useParams } from 'react-router-dom'

@@ -1,4 +1,4 @@
-import { Currency, Token } from '@kyberswap/ks-sdk-core'
+import { Currency, Token } from '@zuluswap/zs-sdk-core'
 
 import Modal from 'components/Modal'
 import { ImportToken } from 'components/SearchModal/ImportToken'

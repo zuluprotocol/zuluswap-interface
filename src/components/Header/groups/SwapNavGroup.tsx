@@ -125,7 +125,7 @@ const SwapNavGroup = () => {
 
                   <img
                     src={isDark ? MultichainLogoLight : MultichainLogoDark}
-                    alt="kyberswap with multichain"
+                    alt="zuluswap with multichain"
                     height={10}
                   />
                 </Flex>

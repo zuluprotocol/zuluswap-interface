@@ -321,8 +321,8 @@ export default function Menu() {
                   title={'About'}
                   link={'/about'}
                   options={[
-                    { link: '/about/kyberswap', label: 'Kyberswap' },
-                    { link: '/about/knc', label: 'KNC' },
+                    { link: '/about/zuluswap', label: 'Zuluswap' },
+                    { link: '/about/zpx', label: 'ZPX' },
                   ]}
                 />
               </MenuItem>
@@ -337,12 +337,12 @@ export default function Menu() {
               <MenuItem>
                 <NavDropDown
                   icon={<Info />}
-                  title={'KyberDAO'}
-                  link={'/kyberdao/stake-knc'}
+                  title={'ZuluDAO'}
+                  link={'/zuludao/stake-zpx'}
                   options={[
-                    { link: '/kyberdao/stake-knc', label: 'Stake KNC' },
-                    { link: '/kyberdao/vote', label: 'Vote' },
-                    { link: 'https://kyberswap.canny.io/feature-request', label: 'Feature Request', external: true },
+                    { link: '/zuludao/stake-zpx', label: 'Stake ZPX' },
+                    { link: '/zuludao/vote', label: 'Vote' },
+                    { link: 'https://zuluswap.canny.io/feature-request', label: 'Feature Request', external: true },
                   ]}
                 />
               </MenuItem>
@@ -365,21 +365,21 @@ export default function Menu() {
               </MenuItem>
             )}
             <MenuItem>
-              <ExternalLink href="https://docs.kyberswap.com">
+              <ExternalLink href="https://docs.zuluswap.com">
                 <BookOpen />
                 <Trans>Docs</Trans>
               </ExternalLink>
             </MenuItem>
 
             <MenuItem>
-              <ExternalLink href="https://kyberswap.canny.io/" onClick={toggle}>
+              <ExternalLink href="https://zuluswap.canny.io/" onClick={toggle}>
                 <RoadMapIcon />
                 <Trans>Roadmap</Trans>
               </ExternalLink>
             </MenuItem>
 
             <MenuItem>
-              <ExternalLink href="https://gov.kyber.org">
+              <ExternalLink href="https://gov.zulu.org">
                 <MessageCircle />
                 <Trans>Forum</Trans>
               </ExternalLink>
@@ -387,7 +387,7 @@ export default function Menu() {
 
             {under1440 && (
               <MenuItem>
-                <ExternalLink href="https://blog.kyberswap.com">
+                <ExternalLink href="https://blog.zuluswap.com">
                   <BlogIcon />
                   <Trans>Blog</Trans>
                 </ExternalLink>
@@ -395,7 +395,7 @@ export default function Menu() {
             )}
 
             <MenuItem>
-              <ExternalLink href={TERM_FILES_PATH.KYBERSWAP_TERMS}>
+              <ExternalLink href={TERM_FILES_PATH.ZULUSWAP_TERMS}>
                 <FileText />
                 <Trans>Terms</Trans>
               </ExternalLink>
@@ -407,7 +407,7 @@ export default function Menu() {
               </ExternalLink>
             </MenuItem>
             <MenuItem>
-              <ExternalLink href="https://support.kyberswap.com">
+              <ExternalLink href="https://support.zuluswap.com">
                 <HelpCircle size={20} />
                 <Trans>Help</Trans>
               </ExternalLink>
@@ -487,7 +487,7 @@ export default function Menu() {
             </AutoRow>
 
             <Text fontSize="10px" fontWeight={300} color={theme.subText} mt="16px" textAlign={'center'}>
-              kyberswap@{TAG}
+              zuluswap@{TAG}
             </Text>
           </>
         )}

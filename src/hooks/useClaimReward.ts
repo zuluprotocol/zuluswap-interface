@@ -1,5 +1,5 @@
 import { TransactionResponse } from '@ethersproject/providers'
-import { CurrencyAmount } from '@kyberswap/ks-sdk-core'
+import { CurrencyAmount } from '@zuluswap/zs-sdk-core'
 import { t } from '@lingui/macro'
 import { captureException } from '@sentry/react'
 import { BigNumber } from 'ethers'
@@ -7,7 +7,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import useSWR from 'swr'
 
 import { CLAIM_REWARDS_DATA_URL } from 'constants/networks'
-import { KNC } from 'constants/tokens'
+import { ZPX } from 'constants/tokens'
 import { useActiveWeb3React, useWeb3React } from 'hooks'
 import { useAllTransactions, useTransactionAdder } from 'state/transactions/hooks'
 import { TRANSACTION_TYPE } from 'state/transactions/type'
@@ -67,7 +67,7 @@ export default function useClaimReward() {
           const res = await rewardContract.getClaimedAmounts(phase.phaseId || 0, account || '', phase.tokens || [])
           if (res) {
             const remainAmounts = BigNumber.from(phase.reward.amounts[0]).sub(BigNumber.from(res[0])).toString()
-            setRewardAmounts(CurrencyAmount.fromRawAmount(KNC[chainId], remainAmounts).toSignificant(6))
+            setRewardAmounts(CurrencyAmount.fromRawAmount(ZPX[chainId], remainAmounts).toSignificant(6))
             if (remainAmounts !== '0') {
               setPhaseId(i)
               break
@@ -164,9 +164,9 @@ export default function useClaimReward() {
             hash: tx.hash,
             type: TRANSACTION_TYPE.CLAIM_REWARD,
             extraInfo: {
-              tokenAddress: KNC[chainId].address,
+              tokenAddress: ZPX[chainId].address,
               tokenAmount: rewardAmounts,
-              tokenSymbol: 'KNC',
+              tokenSymbol: 'ZPX',
             },
           })
         })

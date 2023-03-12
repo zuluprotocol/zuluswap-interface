@@ -6,7 +6,7 @@ export type BuildRoutePayload = {
   slippageTolerance: number
   sender: string
   recipient: string
-  source: 'kyberswap'
+  source: 'zuluswap'
   skipSimulateTx: boolean
 }
 

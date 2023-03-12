@@ -1,6 +1,6 @@
 import { defaultAbiCoder } from '@ethersproject/abi'
-import { Currency, CurrencyAmount, Token } from '@kyberswap/ks-sdk-core'
-import { FeeAmount, Position } from '@kyberswap/ks-sdk-elastic'
+import { Currency, CurrencyAmount, Token } from '@zuluswap/zs-sdk-core'
+import { FeeAmount, Position } from '@zuluswap/zs-sdk-elastic'
 import { t } from '@lingui/macro'
 import { BigNumber } from 'ethers'
 import { useCallback, useMemo, useState } from 'react'

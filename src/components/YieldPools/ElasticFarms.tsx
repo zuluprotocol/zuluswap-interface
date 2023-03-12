@@ -1,4 +1,4 @@
-import { computePoolAddress } from '@kyberswap/ks-sdk-elastic'
+import { computePoolAddress } from '@zuluswap/zs-sdk-elastic'
 import { Trans, t } from '@lingui/macro'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'

@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { ActionCreatorWithPayload, createAction } from '@reduxjs/toolkit'
 
 import { TokenMap } from 'hooks/Tokens'

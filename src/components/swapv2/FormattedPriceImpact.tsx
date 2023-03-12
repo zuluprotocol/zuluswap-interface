@@ -1,4 +1,4 @@
-import { Percent } from '@kyberswap/ks-sdk-core'
+import { Percent } from '@zuluswap/zs-sdk-core'
 import { Text } from 'rebass'
 import styled from 'styled-components'
 

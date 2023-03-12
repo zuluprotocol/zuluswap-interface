@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { t } from '@lingui/macro'
 import axios from 'axios'
 import { useMemo, useRef, useState } from 'react'

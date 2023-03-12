@@ -1,4 +1,4 @@
-import { Price } from '@kyberswap/ks-sdk-core'
+import { Price } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { transparentize } from 'polished'
 import React, { useState } from 'react'

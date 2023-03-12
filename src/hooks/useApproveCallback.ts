@@ -1,6 +1,6 @@
 import { MaxUint256 } from '@ethersproject/constants'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, CurrencyAmount } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount } from '@zuluswap/zs-sdk-core'
 import JSBI from 'jsbi'
 import { useCallback, useMemo } from 'react'
 

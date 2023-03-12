@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 
 import BnbLogo from 'assets/images/bnb-logo.png'
 import BSC from 'assets/networks/bsc-network.png'
@@ -32,10 +32,10 @@ const bnbInfo: EVMNetworkInfo = {
     decimal: 18,
     minForGas: 10 ** 16,
   },
-  defaultRpcUrl: 'https://bsc.kyberengineering.io',
+  defaultRpcUrl: 'https://bsc.zuluengineering.io',
   multicall: '0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4',
   classic: {
-    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-bsc',
+    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/zulunetwork/zuluswap-exchange-bsc',
     static: {
       zap: '0x2abE8750e4a65584d7452316356128C936273e0D',
       router: '0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0',
@@ -59,7 +59,7 @@ const bnbInfo: EVMNetworkInfo = {
     fairlaunchV2: ['0x3474b537da4358A08f916b1587dccdD9585376A4'],
   },
   elastic: {
-    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-bsc',
+    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/zulunetwork/zuluswap-elastic-bsc',
     startBlock: 18532980,
     coreFactory: '0x5F1dddbf348aC2fbe22a163e30F99F9ECE3DD50a',
     nonfungiblePositionManager: '0x2B1c7b41f6A8F2b2bc45C3233a5d5FB3cD6dC9A8',

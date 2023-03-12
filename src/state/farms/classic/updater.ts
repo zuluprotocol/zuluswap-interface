@@ -10,7 +10,7 @@ import { useActiveWeb3React } from 'hooks'
 import { useAllTokens } from 'hooks/Tokens'
 import { useFairLaunchContracts } from 'hooks/useContract'
 import { AppState } from 'state'
-import { useETHPrice, useKyberSwapConfig } from 'state/application/hooks'
+import { useETHPrice, useZuluSwapConfig } from 'state/application/hooks'
 import { setFarmsData, setLoading, setYieldPoolsError } from 'state/farms/classic/actions'
 import { FairLaunchVersion, Farm } from 'state/farms/classic/types'
 import { useAppDispatch } from 'state/hooks'
@@ -24,7 +24,7 @@ export default function Updater({ isInterval = true }: { isInterval?: boolean })
   const ethPriceRef = useRef(ethPrice.currentPrice)
   ethPriceRef.current = ethPrice.currentPrice
   const allTokens = useAllTokens()
-  const { classicClient, blockClient } = useKyberSwapConfig()
+  const { classicClient, blockClient } = useZuluSwapConfig()
 
   const farmsData = useSelector((state: AppState) => state.farms.data)
 

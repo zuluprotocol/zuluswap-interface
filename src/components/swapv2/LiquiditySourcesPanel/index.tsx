@@ -5,7 +5,7 @@ import { Box, Flex, Text } from 'rebass'
 import styled from 'styled-components'
 
 import Checkbox from 'components/CheckBox'
-import { kyberswapDexes } from 'constants/dexes'
+import { zuluswapDexes } from 'constants/dexes'
 import { ELASTIC_NOT_SUPPORTED } from 'constants/v2'
 import { useActiveWeb3React } from 'hooks'
 import useDebounce from 'hooks/useDebounce'
@@ -117,7 +117,7 @@ const LiquiditySourcesPanel: React.FC<Props> = ({ onBack }) => {
   const [excludeDexes, setExcludeDexes] = useExcludeDexes()
 
   const checkAllRef = useRef<HTMLInputElement | null>(null)
-  const kyberSwapRef = useRef<HTMLInputElement>(null)
+  const zuluSwapRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     const selectedDexes = dexes?.filter(item => !excludeDexes.includes(item.id)) || []
@@ -137,22 +137,22 @@ const LiquiditySourcesPanel: React.FC<Props> = ({ onBack }) => {
   }, [excludeDexes, dexes])
 
   const ksDexes = useMemo(
-    () => kyberswapDexes.filter(item => (ELASTIC_NOT_SUPPORTED[chainId] ? item.id !== 'kyberswapv2' : true)),
+    () => zuluswapDexes.filter(item => (ELASTIC_NOT_SUPPORTED[chainId] ? item.id !== 'zuluswapv2' : true)),
     [chainId],
   )
 
   useEffect(() => {
-    if (!kyberSwapRef.current) return
+    if (!zuluSwapRef.current) return
     const ksDexesId = ksDexes.map(i => i.id)
     if (ksDexesId.every(item => excludeDexes.includes(item))) {
-      kyberSwapRef.current.checked = false
-      kyberSwapRef.current.indeterminate = false
+      zuluSwapRef.current.checked = false
+      zuluSwapRef.current.indeterminate = false
     } else if (ksDexesId.some(item => excludeDexes.includes(item))) {
-      kyberSwapRef.current.checked = false
-      kyberSwapRef.current.indeterminate = true
+      zuluSwapRef.current.checked = false
+      zuluSwapRef.current.indeterminate = true
     } else {
-      kyberSwapRef.current.checked = true
-      kyberSwapRef.current.indeterminate = false
+      zuluSwapRef.current.checked = true
+      zuluSwapRef.current.indeterminate = false
     }
   }, [excludeDexes, ksDexes])
 
@@ -208,14 +208,14 @@ const LiquiditySourcesPanel: React.FC<Props> = ({ onBack }) => {
             <>
               <Source>
                 <Checkbox
-                  ref={kyberSwapRef}
+                  ref={zuluSwapRef}
                   checked={!ksDexes.map(i => i.id).every(item => excludeDexes.includes(item))}
                   onChange={e => {
                     if (e.target.checked) {
-                      setExcludeDexes(excludeDexes.filter(item => !item.includes('kyberswap')))
+                      setExcludeDexes(excludeDexes.filter(item => !item.includes('zuluswap')))
                     } else {
                       const newData = [
-                        ...excludeDexes.filter(item => !item.includes('kyberswap')),
+                        ...excludeDexes.filter(item => !item.includes('zuluswap')),
                         ...ksDexes.map(item => item.id),
                       ]
                       setExcludeDexes(newData)
@@ -223,9 +223,9 @@ const LiquiditySourcesPanel: React.FC<Props> = ({ onBack }) => {
                   }}
                 />
                 <ImageWrapper>
-                  <img src="https://kyberswap.com/favicon.ico" alt="ks logo" />
+                  <img src="https://zuluswap.com/favicon.ico" alt="ks logo" />
                 </ImageWrapper>
-                <SourceName>Kyberswap - All</SourceName>
+                <SourceName>Zuluswap - All</SourceName>
               </Source>
 
               {ksDexes
@@ -246,7 +246,7 @@ const LiquiditySourcesPanel: React.FC<Props> = ({ onBack }) => {
             </>
           )}
           {dexes
-            ?.filter(item => !item.id.includes('kyberswap') && item.name.toLowerCase().includes(debouncedSearchText))
+            ?.filter(item => !item.id.includes('zuluswap') && item.name.toLowerCase().includes(debouncedSearchText))
             .map(({ name, logoURL, id }) => (
               <Source key={name}>
                 <Checkbox checked={!excludeDexes.includes(id)} onChange={() => handleToggleDex(id)} />

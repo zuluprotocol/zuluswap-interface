@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base'
 import { PublicKey } from '@solana/web3.js'
 
@@ -45,7 +45,7 @@ const solanaInfo: SolanaNetworkInfo = {
   coingeckoNetworkId: 'solana',
   coingeckoNativeTokenId: 'solana',
   tokenListUrl: `${KS_SETTING_API}/v1/tokens?chainIds=${ChainId.SOLANA}&isWhitelisted=${true}`,
-  defaultRpcUrl: 'https://solana.kyberengineering.io',
+  defaultRpcUrl: 'https://solana.zuluengineering.io',
   trueSightId: NOT_SUPPORT,
   openBookAddress: new PublicKey('srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX'),
   dexToCompare: 'OrcaV2',

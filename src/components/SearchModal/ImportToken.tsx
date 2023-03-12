@@ -1,4 +1,4 @@
-import { Currency, Token } from '@kyberswap/ks-sdk-core'
+import { Currency, Token } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { transparentize } from 'polished'
 import { useCallback, useEffect } from 'react'

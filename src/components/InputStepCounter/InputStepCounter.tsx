@@ -1,4 +1,4 @@
-import { FeeAmount } from '@kyberswap/ks-sdk-elastic'
+import { FeeAmount } from '@zuluswap/zs-sdk-elastic'
 import { ReactNode, useCallback, useEffect, useState } from 'react'
 import { Minus, Plus } from 'react-feather'
 import styled, { css, keyframes } from 'styled-components'

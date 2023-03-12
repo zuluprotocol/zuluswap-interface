@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 
 // https://docs.google.com/spreadsheets/d/13TQu-5SqnCLK04diXCSm7kUrXh0PLfhcccG6kP_5VFY/edit#gid=514791511
 export const TOKEN_INFO_DESCRIPTION: { [key: string]: string } = {
@@ -83,21 +83,21 @@ export const TOKEN_INFO_DESCRIPTION: { [key: string]: string } = {
     <p>Steve Nguyen, a chief technical officer (CTO) and co-founder, masters at building gaming platforms and mobile apps. </p>
     
     <p>Corey Wilton, Pegaxy's chief marketing officer (CMO) and co-founder, is responsible for the strategy, development, and execution of marketing and advertising activities. He has extensive experience in digital marketing, blockchain, and gaming.</p>`,
-  knc: `<h3>What is Kyber Network Crystal (KNC)?</h3>
-      <p>The Kyber Network is a multi-chain crypto trading and liquidity hub that connects liquidity from different sources to provide secure and instant transactions on any decentralized application (DApp). The primary objective of Kyber Network is to provide an easy access to liquidity pools at the best rates for DeFi DApps, decentralized exchanges (DEXs), and other users.</p>
+  zpx: `<h3>What is Zulu Network Crystal (ZPX)?</h3>
+      <p>The Zulu Network is a multi-chain crypto trading and liquidity hub that connects liquidity from different sources to provide secure and instant transactions on any decentralized application (DApp). The primary objective of Zulu Network is to provide an easy access to liquidity pools at the best rates for DeFi DApps, decentralized exchanges (DEXs), and other users.</p>
       
-      <p>The utility token, known as Kyber Network Crystal (KNC), serves as the glue that binds various stakeholders in Kyber's ecosystem. Holders of KNC tokens can vote on significant proposals and participate in platform governance by staking their tokens in the KyberDAO, and earning staking rewards in Ethereum (ETH) earning from trading fees.</p>
+      <p>The utility token, known as Zulu Network Crystal (ZPX), serves as the glue that binds various stakeholders in Zulu's ecosystem. Holders of ZPX tokens can vote on significant proposals and participate in platform governance by staking their tokens in the ZuluDAO, and earning staking rewards in Ethereum (ETH) earning from trading fees.</p>
       
-      <p>KyberSwap powers 100+ integrated projects and has facilitated over US$7 billion worth of transactions for thousands of users since its inception. Currently deployed across 11 chains including Ethereum, BNB Chain, Polygon, Avalanche, Fantom, Cronos, Arbitrum, Velas, Aurora, Oasis and BitTorrent.</p>
+      <p>ZuluSwap powers 100+ integrated projects and has facilitated over US$7 billion worth of transactions for thousands of users since its inception. Currently deployed across 11 chains including Ethereum, BNB Chain, Polygon, Avalanche, Fantom, Cronos, Arbitrum, Velas, Aurora, Oasis and BitTorrent.</p>
       
-      <h3>Who Are the Founders of Kyber Network Crystal (KNC)?</h3>
+      <h3>Who Are the Founders of Zulu Network Crystal (ZPX)?</h3>
       <p>This project was founded by Loi Luu, Victor Tran and Yaron Velner, and currently has its headquarters in Singapore. </p>
       
-      <p>Loi Luu, a Founder and Chairman of Kyber Network, is an on-chain decentralized trading protocol for cryptocurrencies.</p>
+      <p>Loi Luu, a Founder and Chairman of Zulu Network, is an on-chain decentralized trading protocol for cryptocurrencies.</p>
       
-      <p>Victor Tran, a new CEO and Co-founder of Kyber Network, as well as a Forbes 30 under 30 Asia alumni. He was the CTO at Clixy and 24/7 Digital Group as well as a developer for several projects in Vietnam.</p>
+      <p>Victor Tran, a new CEO and Co-founder of Zulu Network, as well as a Forbes 30 under 30 Asia alumni. He was the CTO at Clixy and 24/7 Digital Group as well as a developer for several projects in Vietnam.</p>
       
-      <p>Yaron Velner, is now the CEO of B.Protocol, was a decentralized backup liquidity protocol. In October 2019, Velner left his position as CTO of Kyber, but he still remains as an advisor.</p>
+      <p>Yaron Velner, is now the CEO of B.Protocol, was a decentralized backup liquidity protocol. In October 2019, Velner left his position as CTO of Zulu, but he still remains as an advisor.</p>
       `,
   btt: `<h3>What is BitTorrent (BTT)?</h3>
       <p>BitTorrent is a popular peer-to-peer (P2P) file sharing and torrent platform that has recently become more decentralized. </p>
@@ -131,12 +131,12 @@ export const TOKEN_INFO_DESCRIPTION: { [key: string]: string } = {
 }
 
 const USDT_SUPPORTS = ['usdt.e', 'usdt_e', 'usdt_b', 'usdt_t']
-const KNC_SUPPORTS = ['knc_b', 'knc_e']
+const ZPX_SUPPORTS = ['zpx_b', 'zpx_e']
 USDT_SUPPORTS.forEach(key => {
   TOKEN_INFO_DESCRIPTION[key] = TOKEN_INFO_DESCRIPTION.usdt
 })
-KNC_SUPPORTS.forEach(key => {
-  TOKEN_INFO_DESCRIPTION[key] = TOKEN_INFO_DESCRIPTION.knc
+ZPX_SUPPORTS.forEach(key => {
+  TOKEN_INFO_DESCRIPTION[key] = TOKEN_INFO_DESCRIPTION.zpx
 })
 
 /**
@@ -153,32 +153,32 @@ export const WHITE_LIST_TOKEN_INFO_PAIR: {
     'axs-to-usdt': {},
     'dot-to-usdt': {},
     'tlm-to-usdt': { tlm: { name: 'Alien Worlds' } },
-    'knc-to-usdt': {},
+    'zpx-to-usdt': {},
   },
   [ChainId.MATIC]: {
     'pgx-to-usdt': {},
-    'knc-to-usdt': {},
+    'zpx-to-usdt': {},
   },
   [ChainId.BTTC]: {
     'btt-to-usdt_e': {},
     'btt-to-usdt_b': {},
     'btt-to-usdt_t': {},
-    'knc_e-to-usdt_e': {},
-    'knc_b-to-usdt_e': {},
-    'knc_e-to-usdt_b': {},
-    'knc_b-to-usdt_b': {},
-    'knc_e-to-usdt_t': {},
-    'knc_b-to-usdt_t': {},
+    'zpx_e-to-usdt_e': {},
+    'zpx_b-to-usdt_e': {},
+    'zpx_e-to-usdt_b': {},
+    'zpx_b-to-usdt_b': {},
+    'zpx_e-to-usdt_t': {},
+    'zpx_b-to-usdt_t': {},
   },
   [ChainId.MAINNET]: {
     'slp-to-usdt': {},
-    'knc-to-usdt': {},
+    'zpx-to-usdt': {},
   },
   [ChainId.AVAXMAINNET]: {
     'avax-to-usdt.e': {},
     'avax-to-usdt': {},
-    'knc-to-usdt': {},
-    'knc-to-usdt.e': {},
+    'zpx-to-usdt': {},
+    'zpx-to-usdt.e': {},
   },
 }
 

@@ -1,4 +1,4 @@
-import { ChainId, Currency, Token } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency, Token } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { stringify } from 'querystring'
 import { Suspense, lazy, useCallback, useEffect, useMemo, useRef, useState } from 'react'
@@ -316,8 +316,8 @@ export default function Swap() {
   return (
     <>
       {/**
-       * /swap/bnb/knc-to-usdt vs /swap/bnb/usdt-to-knc has same content
-       * => add canonical link that specify which is main page, => /swap/bnb/knc-to-usdt
+       * /swap/bnb/zpx-to-usdt vs /swap/bnb/usdt-to-zpx has same content
+       * => add canonical link that specify which is main page, => /swap/bnb/zpx-to-usdt
        */}
       <SEOSwap canonicalUrl={canonicalUrl} />
       <TutorialSwap />

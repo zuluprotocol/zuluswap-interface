@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { BigNumber, ethers } from 'ethers'
 import { useCallback, useEffect, useState } from 'react'
 
@@ -7,13 +7,13 @@ import { isEVM } from 'constants/networks'
 import { useActiveWeb3React } from 'hooks'
 import { useMulticallContract } from 'hooks/useContract'
 import useInterval from 'hooks/useInterval'
-import { useKyberSwapConfig } from 'state/application/hooks'
+import { useZuluSwapConfig } from 'state/application/hooks'
 import { WrappedTokenInfo } from 'state/lists/wrappedTokenInfo'
 
 export const useTokenBalanceOfAnotherChain = (chainId: ChainId | undefined, token: WrappedTokenInfo | undefined) => {
   const { account } = useActiveWeb3React()
   const [balance, setBalance] = useState('0')
-  const { provider } = useKyberSwapConfig()
+  const { provider } = useZuluSwapConfig()
 
   useEffect(() => {
     if (account && chainId && token && provider)

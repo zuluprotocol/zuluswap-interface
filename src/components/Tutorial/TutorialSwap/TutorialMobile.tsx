@@ -24,12 +24,12 @@ export default function TutorialMobile({ stopTutorial, steps }: { stopTutorial: 
         <div style={{ padding: 16, marginBottom: 3, width: '100%' }}>
           <Flex justifyContent="space-between" marginBottom="10px">
             <Text fontSize={16} fontWeight={500} color={theme.text}>
-              <Trans>Welcome to KyberSwap!</Trans>
+              <Trans>Welcome to ZuluSwap!</Trans>
             </Text>
             <X color={theme.subText} size={24} onClick={stopTutorial} />
           </Flex>
           <Text fontSize={12} color={theme.subText}>
-            <Trans>{steps.length} easy ways to get started with KyberSwap</Trans>
+            <Trans>{steps.length} easy ways to get started with ZuluSwap</Trans>
           </Text>
         </div>
         <div style={{ width: '100%' }}>

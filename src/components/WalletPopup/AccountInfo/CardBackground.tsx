@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-import { ReactComponent as KyberLogo } from 'assets/svg/kyber_logo.svg'
+import { ReactComponent as ZuluLogo } from 'assets/svg/zulu_logo.svg'
 
 const absoluteStyle = css`
   position: absolute;
@@ -75,7 +75,7 @@ const CardBackground: React.FC<Props> = ({ noLogo }) => {
       <Layer2 />
       {!noLogo && (
         <LogoWrapper>
-          <KyberLogo width="94px" height="auto" />
+          <ZuluLogo width="94px" height="auto" />
         </LogoWrapper>
       )}
     </BackgroundWrapper>

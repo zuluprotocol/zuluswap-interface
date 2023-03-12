@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount } from '@zuluswap/zs-sdk-core'
 import React from 'react'
 import { ArrowDown } from 'react-feather'
 import { Flex, Text } from 'rebass'

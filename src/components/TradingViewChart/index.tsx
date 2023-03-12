@@ -129,7 +129,7 @@ function ProLiveChart({
     }
 
     const widgetOptions: ChartingLibraryWidgetOptions = {
-      symbol: 'KNC',
+      symbol: 'ZPX',
       datafeed,
       interval: '1H' as ResolutionString,
       container: ref,

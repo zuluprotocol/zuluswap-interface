@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, Token } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency, CurrencyAmount, Token } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import JSBI from 'jsbi'
 import { stringify } from 'querystring'
@@ -57,7 +57,7 @@ import {
   Container,
   Dots,
   InfoComponentsWrapper,
-  KyberTag,
+  ZuluTag,
   LiveChartWrapper,
   PageWrapper,
   PriceImpactHigh,
@@ -686,8 +686,8 @@ export default function Swap() {
   return (
     <>
       {/**
-       * /swap/bnb/knc-to-usdt vs /swap/bnb/usdt-to-knc has same content
-       * => add canonical link that specify which is main page, => /swap/bnb/knc-to-usdt
+       * /swap/bnb/zpx-to-usdt vs /swap/bnb/usdt-to-zpx has same content
+       * => add canonical link that specify which is main page, => /swap/bnb/zpx-to-usdt
        */}
       <SEOSwap canonicalUrl={canonicalUrl} />
       <TutorialSwap />
@@ -832,7 +832,7 @@ export default function Swap() {
                       </AutoRow>
                       <Box sx={{ position: 'relative' }}>
                         {tradeComparer?.tradeSaved?.usd && comparedDex && (
-                          <KyberTag>
+                          <ZuluTag>
                             <Trans>You save</Trans>{' '}
                             {formattedNum(tradeComparer.tradeSaved.usd, true) +
                               ` (${
@@ -853,7 +853,7 @@ export default function Swap() {
                                   </Trans>{' '}
                                   <Trans>
                                     <Text color={theme.primary} fontWeight={500} as="span">
-                                      KyberSwap
+                                      ZuluSwap
                                     </Text>{' '}
                                     gets you the best token rates
                                   </Trans>
@@ -862,7 +862,7 @@ export default function Swap() {
                               size={14}
                               color={theme.apr}
                             />
-                          </KyberTag>
+                          </ZuluTag>
                         )}
 
                         <CurrencyInputPanel

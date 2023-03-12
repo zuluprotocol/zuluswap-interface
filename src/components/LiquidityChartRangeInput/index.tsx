@@ -1,5 +1,5 @@
-import { Currency, Price, Token } from '@kyberswap/ks-sdk-core'
-import { FeeAmount } from '@kyberswap/ks-sdk-elastic'
+import { Currency, Price, Token } from '@zuluswap/zs-sdk-core'
+import { FeeAmount } from '@zuluswap/zs-sdk-elastic'
 import { Trans } from '@lingui/macro'
 import { format } from 'd3'
 import { saturate } from 'polished'

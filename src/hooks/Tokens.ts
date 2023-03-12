@@ -1,5 +1,5 @@
 import { parseBytes32String } from '@ethersproject/strings'
-import { ChainId, Currency, NativeCurrency, Token } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency, NativeCurrency, Token } from '@zuluswap/zs-sdk-core'
 import axios from 'axios'
 import { arrayify } from 'ethers/lib/utils'
 import { useCallback, useMemo } from 'react'

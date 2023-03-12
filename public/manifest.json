@@ -1,6 +1,6 @@
 {
-  "short_name": "KyberSwap",
-  "name": "KyberSwap",
+  "short_name": "ZuluSwap",
+  "name": "ZuluSwap",
   "icons": [
     {
       "src": "./favicon.svg?version=1",
@@ -11,10 +11,10 @@
   "orientation": "portrait",
   "display": "standalone",
   "background_color": "#fff",
-  "homepage_url": "https://kyberswap.com",
+  "homepage_url": "https://zuluswap.com",
   "providedBy": {
-    "name": "KyberSwap",
-    "url": "https://kyberswap.com"
+    "name": "ZuluSwap",
+    "url": "https://zuluswap.com"
   },
   "start_url": ".",
   "theme_color": "#31cb9e",

@@ -1,7 +1,7 @@
 import { getAddress } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
-import { Pair } from '@kyberswap/ks-sdk-classic'
-import { ChainId, Currency, CurrencyAmount, Fraction, Price, Token, TokenAmount } from '@kyberswap/ks-sdk-core'
+import { Pair } from '@zuluswap/zs-sdk-classic'
+import { ChainId, Currency, CurrencyAmount, Fraction, Price, Token, TokenAmount } from '@zuluswap/zs-sdk-core'
 import { t } from '@lingui/macro'
 import JSBI from 'jsbi'
 import { useMemo } from 'react'
@@ -307,7 +307,7 @@ function useFarmRewardsPerTimeUnit(farm?: Farm): RewardPerTimeUnit[] {
 }
 /**
  * Get farm APR value in %
- * @param kncPriceUsd KNC price in USD
+ * @param zpxPriceUsd ZPX price in USD
  * @param poolLiquidityUsd Total pool liquidity in USD
  * @returns
  */

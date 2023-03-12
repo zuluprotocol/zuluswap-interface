@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'

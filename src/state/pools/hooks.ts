@@ -1,5 +1,5 @@
 import { ApolloClient, NormalizedCacheObject, useQuery } from '@apollo/client'
-import { ChainId, WETH } from '@kyberswap/ks-sdk-core'
+import { ChainId, WETH } from '@zuluswap/zs-sdk-core'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -14,7 +14,7 @@ import {
 } from 'apollo/queries'
 import { ONLY_DYNAMIC_FEE_CHAINS } from 'constants/networks'
 import { useActiveWeb3React } from 'hooks'
-import { useETHPrice, useKyberSwapConfig } from 'state/application/hooks'
+import { useETHPrice, useZuluSwapConfig } from 'state/application/hooks'
 import { AppState } from 'state/index'
 import { get24hValue, getBlocksFromTimestamps, getPercentChange, getTimestampsForChanges } from 'utils'
 
@@ -85,7 +85,7 @@ interface UserLiquidityPositionResult {
  */
 export function useUserLiquidityPositions(): UserLiquidityPositionResult {
   const { isEVM, account } = useActiveWeb3React()
-  const { classicClient } = useKyberSwapConfig()
+  const { classicClient } = useZuluSwapConfig()
   const { loading, error, data } = useQuery(USER_POSITIONS, {
     client: classicClient,
     variables: {
@@ -280,7 +280,7 @@ export function useResetPools(chainId: ChainId) {
 function usePoolCountInSubgraph(): number {
   const [poolCount, setPoolCount] = useState(0)
   const { isEVM, networkInfo } = useActiveWeb3React()
-  const { classicClient } = useKyberSwapConfig()
+  const { classicClient } = useZuluSwapConfig()
 
   useEffect(() => {
     if (!isEVM) return
@@ -315,7 +315,7 @@ export function useAllPoolsData(): {
   const error = useSelector((state: AppState) => state.pools.error)
 
   const { currentPrice: ethPrice } = useETHPrice()
-  const { classicClient, blockClient } = useKyberSwapConfig()
+  const { classicClient, blockClient } = useZuluSwapConfig()
 
   const poolCountSubgraph = usePoolCountInSubgraph()
   useEffect(() => {
@@ -381,7 +381,7 @@ export function useSinglePoolData(
   const [loading, setLoading] = useState<boolean>(false)
   const [error, setError] = useState<Error | undefined>(undefined)
   const [poolData, setPoolData] = useState<SubgraphPoolData>()
-  const { classicClient, blockClient } = useKyberSwapConfig()
+  const { classicClient, blockClient } = useZuluSwapConfig()
 
   useEffect(() => {
     if (!isEVM) return

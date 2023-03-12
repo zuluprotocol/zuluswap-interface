@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Token } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount, Token } from '@zuluswap/zs-sdk-core'
 import { t } from '@lingui/macro'
 import { useState } from 'react'
 

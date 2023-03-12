@@ -49,7 +49,7 @@ if (ENV_LEVEL > ENV_TYPE.LOCAL) {
     applicationId: '5bd0c243-6141-4bab-be21-5dac9b9efa9f',
     clientToken: 'pub9163f29b2cdb31314b89ae232af37d5a',
     site: 'datadoghq.eu',
-    service: 'kyberswap-interface',
+    service: 'zuluswap-interface',
 
     version: TAG,
     sampleRate: ENV_LEVEL === ENV_TYPE.PROD ? 10 : 100,
@@ -123,8 +123,8 @@ const ReactApp = () => {
   return (
     <StrictMode>
       <SEO
-        title="KyberSwap - Swap and earn tokens at the best rates"
-        description="KyberSwap is DeFi‚Äôs first Dynamic Market Maker; a decentralized exchange protocol that provides frictionless crypto liquidity with extremely high flexibility and capital efficiency. KyberSwap is the first major protocol in Kyber‚Äôs liquidity hub."
+        title="ZuluSwap - Swap and earn tokens at the best rates"
+        description="ZuluSwap is DeFi‚Äôs first Dynamic Market Maker; a decentralized exchange protocol that provides frictionless crypto liquidity with extremely high flexibility and capital efficiency. ZuluSwap is the first major protocol in Zulu‚Äôs liquidity hub."
       />
       <FixedGlobalStyle />
       <Provider store={store}>

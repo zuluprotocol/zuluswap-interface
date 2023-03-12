@@ -1,4 +1,4 @@
-import { ChainId, ChainType, getChainType } from '@kyberswap/ks-sdk-core'
+import { ChainId, ChainType, getChainType } from '@zuluswap/zs-sdk-core'
 
 import { SolanaNetworkInfo } from 'constants/networks/type'
 
@@ -181,11 +181,11 @@ export const TRENDING_SOON_SUPPORTED_NETWORKS: { [p: string]: ChainId } = {
 
 export const CLAIM_REWARDS_DATA_URL: { [chainId: number]: string } = {
   [ChainId.AVAXMAINNET]:
-    'https://raw.githubusercontent.com/KyberNetwork/avax-trading-contest-reward-distribution/develop/results/reward_proof.json',
+    'https://raw.githubusercontent.com/ZuluNetwork/avax-trading-contest-reward-distribution/develop/results/reward_proof.json',
   [ChainId.MATIC]:
-    'https://raw.githubusercontent.com/KyberNetwork/zkyber-reward-distribution/main/results/latest_merkle_data.json',
+    'https://raw.githubusercontent.com/ZuluNetwork/zzulu-reward-distribution/main/results/latest_merkle_data.json',
   [ChainId.BTTC]:
-    'https://raw.githubusercontent.com/KyberNetwork/trading-contest-reward-distribution/main/bttc/results/reward_proof.json',
+    'https://raw.githubusercontent.com/ZuluNetwork/trading-contest-reward-distribution/main/bttc/results/reward_proof.json',
 }
 
 export const DEFAULT_REWARDS: { [key: string]: string[] } = {

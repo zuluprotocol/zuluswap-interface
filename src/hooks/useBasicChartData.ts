@@ -1,4 +1,4 @@
-import { ChainId, Token, WETH } from '@kyberswap/ks-sdk-core'
+import { ChainId, Token, WETH } from '@zuluswap/zs-sdk-core'
 import axios from 'axios'
 import { getUnixTime, subHours } from 'date-fns'
 import { useMemo } from 'react'
@@ -9,7 +9,7 @@ import { COINGECKO_API_URL } from 'constants/index'
 import { NETWORKS_INFO } from 'constants/networks'
 import { useActiveWeb3React } from 'hooks'
 
-import { useKyberswapGlobalConfig } from './useKyberSwapConfig'
+import { useZuluswapGlobalConfig } from './useZuluSwapConfig'
 
 export enum LiveDataTimeframeEnum {
   HOUR = '1H',
@@ -60,7 +60,7 @@ const getClosestPrice = (prices: any[], time: number) => {
   return prices[closestIndex][0] - time > 10000000 ? 0 : prices[closestIndex][1]
 }
 
-const fetchKyberDataSWR = async (url: string) => {
+const fetchZuluDataSWR = async (url: string) => {
   const res = await axios.get(url, { timeout: 5000 })
   if (res.status === 204) {
     throw new Error('No content')
@@ -68,7 +68,7 @@ const fetchKyberDataSWR = async (url: string) => {
   return res.data
 }
 
-const fetchKyberDataSWRWithHeader = async (url: string) => {
+const fetchZuluDataSWRWithHeader = async (url: string) => {
   const res = await axios
     .get(url, {
       timeout: 5000,
@@ -106,7 +106,7 @@ const fetchCoingeckoDataSWR = async (tokenAddresses: any, chainId: any, timeFram
 
 export default function useBasicChartData(tokens: (Token | null | undefined)[], timeFrame: LiveDataTimeframeEnum) {
   const { chainId, isEVM, networkInfo } = useActiveWeb3React()
-  const { aggregatorDomain } = useKyberswapGlobalConfig()
+  const { aggregatorDomain } = useZuluswapGlobalConfig()
   const isReverse = useMemo(() => {
     if (!tokens || !tokens[0] || !tokens[1] || tokens[0].equals(tokens[1]) || tokens[0].chainId !== tokens[1].chainId)
       return false
@@ -133,16 +133,16 @@ export default function useBasicChartData(tokens: (Token | null | undefined)[], 
   })
 
   const {
-    data: kyberData,
-    error: kyberError,
-    isValidating: kyberLoading,
+    data: zuluData,
+    error: zuluError,
+    isValidating: zuluLoading,
   } = useSWR(
     coingeckoError && tokenAddresses[0] && tokenAddresses[1]
       ? `${PRICE_CHART_API}/price-chart?chainId=${chainId}&timeWindow=${timeFrame.toLowerCase()}&tokenIn=${
           tokenAddresses[0]
         }&tokenOut=${tokenAddresses[1]}`
       : null,
-    fetchKyberDataSWR,
+    fetchZuluDataSWR,
     {
       shouldRetryOnError: false,
       revalidateOnFocus: false,
@@ -150,21 +150,21 @@ export default function useBasicChartData(tokens: (Token | null | undefined)[], 
     },
   )
 
-  const isKyberDataNotValid = useMemo(() => {
-    if (kyberError || kyberData === null) return true
-    if (kyberData && kyberData.length === 0) return true
+  const isZuluDataNotValid = useMemo(() => {
+    if (zuluError || zuluData === null) return true
+    if (zuluData && zuluData.length === 0) return true
     if (
-      kyberData &&
-      kyberData.length > 0 &&
-      kyberData.every((item: any) => !item.token0Price || item.token0Price === '0')
+      zuluData &&
+      zuluData.length > 0 &&
+      zuluData.every((item: any) => !item.token0Price || item.token0Price === '0')
     )
       return true
     return false
-  }, [kyberError, kyberData])
+  }, [zuluError, zuluData])
 
   const chartData = useMemo(() => {
-    if (!isKyberDataNotValid && kyberData && kyberData.length > 0) {
-      return kyberData
+    if (!isZuluDataNotValid && zuluData && zuluData.length > 0) {
+      return zuluData
         .sort((a: any, b: any) => parseInt(a.timestamp) - parseInt(b.timestamp))
         .map((item: any) => {
           return {
@@ -179,15 +179,15 @@ export default function useBasicChartData(tokens: (Token | null | undefined)[], 
         return { time: item[0], value: closestPrice > 0 ? parseFloat((item[1] / closestPrice).toPrecision(6)) : 0 }
       })
     } else return []
-  }, [kyberData, coingeckoData, isKyberDataNotValid, isReverse])
+  }, [zuluData, coingeckoData, isZuluDataNotValid, isReverse])
 
-  const error = (!!kyberError && !!coingeckoError) || chartData.length === 0
+  const error = (!!zuluError && !!coingeckoError) || chartData.length === 0
 
-  const { data: liveKyberData } = useSWR(
-    !isKyberDataNotValid && kyberData && chainId
+  const { data: liveZuluData } = useSWR(
+    !isZuluDataNotValid && zuluData && chainId
       ? `${aggregatorDomain}/${networkInfo.aggregatorRoute}/tokens?ids=${tokenAddresses[0]},${tokenAddresses[1]}`
       : null,
-    fetchKyberDataSWRWithHeader,
+    fetchZuluDataSWRWithHeader,
     {
       refreshInterval: 60000,
       shouldRetryOnError: false,
@@ -197,7 +197,7 @@ export default function useBasicChartData(tokens: (Token | null | undefined)[], 
   )
 
   const { data: liveCoingeckoData } = useSWR(
-    isKyberDataNotValid && coingeckoData ? [tokenAddresses, chainId, 'live'] : null,
+    isZuluDataNotValid && coingeckoData ? [tokenAddresses, chainId, 'live'] : null,
     fetchCoingeckoDataSWR,
     {
       refreshInterval: 60000,
@@ -208,7 +208,7 @@ export default function useBasicChartData(tokens: (Token | null | undefined)[], 
   )
 
   const latestData = useMemo(() => {
-    if (isKyberDataNotValid) {
+    if (isZuluDataNotValid) {
       if (liveCoingeckoData) {
         const [data1, data2] = liveCoingeckoData
         if (data1.prices?.length > 0 && data2.prices?.length > 0) {
@@ -219,20 +219,20 @@ export default function useBasicChartData(tokens: (Token | null | undefined)[], 
         }
       }
     } else {
-      if (liveKyberData) {
+      if (liveZuluData) {
         const value =
-          liveKyberData && tokenAddresses[0] && tokenAddresses[1]
-            ? liveKyberData[tokenAddresses[0]]?.price / liveKyberData[tokenAddresses[1]]?.price
+          liveZuluData && tokenAddresses[0] && tokenAddresses[1]
+            ? liveZuluData[tokenAddresses[0]]?.price / liveZuluData[tokenAddresses[1]]?.price
             : 0
         if (value) return { time: new Date().getTime(), value: value }
       }
     }
     return null
-  }, [liveKyberData, liveCoingeckoData, isKyberDataNotValid, tokenAddresses])
+  }, [liveZuluData, liveCoingeckoData, isZuluDataNotValid, tokenAddresses])
 
   return {
     data: useMemo(() => (latestData ? [...chartData, latestData] : chartData), [latestData, chartData]),
     error: error,
-    loading: !tokenAddresses[0] || !tokenAddresses[1] || kyberLoading || coingeckoLoading,
+    loading: !tokenAddresses[0] || !tokenAddresses[1] || zuluLoading || coingeckoLoading,
   }
 }

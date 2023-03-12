@@ -124,8 +124,8 @@ export const Instruction = () => {
           <ExternalLink
             href={
               tab === VERSION.ELASTIC
-                ? 'https://docs.kyberswap.com/guides/creating-a-pool'
-                : 'https://docs.kyberswap.com/classic/guides/basic-pool-creation'
+                ? 'https://docs.zuluswap.com/guides/creating-a-pool'
+                : 'https://docs.zuluswap.com/classic/guides/basic-pool-creation'
             }
           >
             <Trans>Learn More ↗</Trans>

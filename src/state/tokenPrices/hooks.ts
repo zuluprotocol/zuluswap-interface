@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { PRICE_API } from 'constants/env'
 import { NETWORKS_INFO } from 'constants/networks'
 import { useActiveWeb3React } from 'hooks'
-import { useKyberswapGlobalConfig } from 'hooks/useKyberSwapConfig'
+import { useZuluswapGlobalConfig } from 'hooks/useZuluSwapConfig'
 import { useAppDispatch, useAppSelector } from 'state/hooks'
 import { isAddressString } from 'utils'
 
@@ -22,7 +22,7 @@ const useTokenPricesLocal = (
   const dispatch = useAppDispatch()
   const { chainId, isEVM } = useActiveWeb3React()
   const [loading, setLoading] = useState(true)
-  const { aggregatorDomain } = useKyberswapGlobalConfig()
+  const { aggregatorDomain } = useZuluswapGlobalConfig()
   const addressKeys = addresses
     .sort()
     .map(x => getAddress(x, isEVM))

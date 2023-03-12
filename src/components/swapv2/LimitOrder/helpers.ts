@@ -1,4 +1,4 @@
-import { Currency, Fraction } from '@kyberswap/ks-sdk-core'
+import { Currency, Fraction } from '@zuluswap/zs-sdk-core'
 import { t } from '@lingui/macro'
 import { ethers } from 'ethers'
 import JSBI from 'jsbi'
@@ -78,7 +78,7 @@ export const calcUsdPrices = ({
   const empty = { input: '', output: '', rawInput: 0 }
   if (!inputAmount || !priceUsdIn || !priceUsdOut || !outputAmount || !currencyIn || !currencyOut) return empty
   try {
-    const inputAmountInUsd = parseFraction(priceUsdIn.toString()) // 1 knc = ??? usd
+    const inputAmountInUsd = parseFraction(priceUsdIn.toString()) // 1 zpx = ??? usd
     const outputAmountInUsd = parseFraction(priceUsdOut.toString())
 
     const input = parseFraction(inputAmount, currencyIn.decimals).multiply(inputAmountInUsd)

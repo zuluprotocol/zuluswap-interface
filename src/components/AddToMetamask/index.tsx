@@ -1,5 +1,5 @@
-import { Token } from '@kyberswap/ks-sdk-core'
-import { createUserAssociatedTokenAccount } from '@kyberswap/ks-sdk-solana'
+import { Token } from '@zuluswap/zs-sdk-core'
+import { createUserAssociatedTokenAccount } from '@zuluswap/zs-sdk-solana'
 import { PublicKey } from '@solana/web3.js'
 import styled from 'styled-components'
 

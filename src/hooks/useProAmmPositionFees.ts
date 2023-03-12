@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { CurrencyAmount } from '@kyberswap/ks-sdk-core'
-import { Position } from '@kyberswap/ks-sdk-elastic'
+import { CurrencyAmount } from '@zuluswap/zs-sdk-core'
+import { Position } from '@zuluswap/zs-sdk-elastic'
 
 import { unwrappedToken } from 'utils/wrappedCurrency'
 

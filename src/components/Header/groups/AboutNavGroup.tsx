@@ -34,12 +34,12 @@ const AboutNavGroup = () => {
               flexDirection: 'column',
             }}
           >
-            <StyledNavLink id="about-kyberswap" to={`${APP_PATHS.ABOUT}/kyberswap`}>
-              <Trans>KyberSwap</Trans>
+            <StyledNavLink id="about-zuluswap" to={`${APP_PATHS.ABOUT}/zuluswap`}>
+              <Trans>ZuluSwap</Trans>
             </StyledNavLink>
 
-            <StyledNavLink id="about-knc" to={`${APP_PATHS.ABOUT}/knc`}>
-              <Trans> KNC</Trans>
+            <StyledNavLink id="about-zpx" to={`${APP_PATHS.ABOUT}/zpx`}>
+              <Trans> ZPX</Trans>
             </StyledNavLink>
           </Flex>
         }

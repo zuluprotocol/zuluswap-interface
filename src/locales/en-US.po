@@ -46,7 +46,7 @@ msgstr "- Remove send"
 msgid "1D"
 msgstr "1D"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "24H Trading Volume"
 msgstr "24H Trading Volume"
 
@@ -103,12 +103,12 @@ msgid "<0>Identify</0> the Elastic farm you would like to participate in"
 msgstr "<0>Identify</0> the Elastic farm you would like to participate in"
 
 #: src/pages/SwapV2/index.tsx
-msgid "<0>KyberSwap</0> gets you the best token rates"
-msgstr "<0>KyberSwap</0> gets you the best token rates"
+msgid "<0>ZuluSwap</0> gets you the best token rates"
+msgstr "<0>ZuluSwap</0> gets you the best token rates"
 
 #: src/pages/Bridge/Disclaimer.tsx
-msgid "<0>Multichain</0> is a well-known cross-chain router protocol that facilitates transfer of tokens between chains. However, in the event of a security breach on our partners platform, KyberSwap won't assume any liability for any losses incurred."
-msgstr "<0>Multichain</0> is a well-known cross-chain router protocol that facilitates transfer of tokens between chains. However, in the event of a security breach on our partners platform, KyberSwap won't assume any liability for any losses incurred."
+msgid "<0>Multichain</0> is a well-known cross-chain router protocol that facilitates transfer of tokens between chains. However, in the event of a security breach on our partners platform, ZuluSwap won't assume any liability for any losses incurred."
+msgstr "<0>Multichain</0> is a well-known cross-chain router protocol that facilitates transfer of tokens between chains. However, in the event of a security breach on our partners platform, ZuluSwap won't assume any liability for any losses incurred."
 
 #: src/components/YieldPools/ElasticFarmSummary/SummaryContent.tsx
 msgid "<0>Option 1:</0> Wait for the current market price of the pool to come back in your price range (i.e. for your liquidity position to become active again)"
@@ -134,17 +134,17 @@ msgstr "<0>Option 2</0>: Remove your liquidity position from the pool, create a 
 msgid "<0>Step: {stepNumber}/</0><1>{totalStep}</1>"
 msgstr "<0>Step: {stepNumber}/</0><1>{totalStep}</1>"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "<0>Swap</0> and <1>Earn</1> Tokens at the Best Rates"
 msgstr "<0>Swap</0> and <1>Earn</1> Tokens at the Best Rates"
 
 #: src/pages/Verify/index.tsx
-msgid "<0>Your email have been verified by KyberSwap.com.</0> If it has been more than a few days and you still haven’t receive any notification yet, please contact us through our channels. You will be redirected to our Swap page after {timeRedirect}s."
-msgstr "<0>Your email have been verified by KyberSwap.com.</0> If it has been more than a few days and you still haven’t receive any notification yet, please contact us through our channels. You will be redirected to our Swap page after {timeRedirect}s."
+msgid "<0>Your email have been verified by ZuluSwap.com.</0> If it has been more than a few days and you still haven’t receive any notification yet, please contact us through our channels. You will be redirected to our Swap page after {timeRedirect}s."
+msgstr "<0>Your email have been verified by ZuluSwap.com.</0> If it has been more than a few days and you still haven’t receive any notification yet, please contact us through our channels. You will be redirected to our Swap page after {timeRedirect}s."
 
 #: src/pages/BuyCrypto/index.tsx
-msgid "A cryptocurrency wallet gives you access to your digital tokens and acts as a gateway to many blockchain applications like KyberSwap. You can buy, store, send and swap tokens using this wallet.<0/><1/>On KyberSwap we support a list of wallets including: MetaMask, Coin98, Wallet Connect, Coinbase Wallet, Ledger and others"
-msgstr "A cryptocurrency wallet gives you access to your digital tokens and acts as a gateway to many blockchain applications like KyberSwap. You can buy, store, send and swap tokens using this wallet.<0/><1/>On KyberSwap we support a list of wallets including: MetaMask, Coin98, Wallet Connect, Coinbase Wallet, Ledger and others"
+msgid "A cryptocurrency wallet gives you access to your digital tokens and acts as a gateway to many blockchain applications like ZuluSwap. You can buy, store, send and swap tokens using this wallet.<0/><1/>On ZuluSwap we support a list of wallets including: MetaMask, Coin98, Wallet Connect, Coinbase Wallet, Ledger and others"
+msgstr "A cryptocurrency wallet gives you access to your digital tokens and acts as a gateway to many blockchain applications like ZuluSwap. You can buy, store, send and swap tokens using this wallet.<0/><1/>On ZuluSwap we support a list of wallets including: MetaMask, Coin98, Wallet Connect, Coinbase Wallet, Ledger and others"
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 #: src/components/swap/SwapModalFooter.tsx
@@ -156,9 +156,9 @@ msgstr "A portion of each trade ({0}%) goes to liquidity providers as a protocol
 msgid "A token pair can have multiple pools, each with a different swap fee. Your swap fee earnings will be automatically reinvested in your pool"
 msgstr "A token pair can have multiple pools, each with a different swap fee. Your swap fee earnings will be automatically reinvested in your pool"
 
-#: src/pages/About/AboutKyberSwap.tsx
-msgid "ABOUT KNC"
-msgstr "ABOUT KNC"
+#: src/pages/About/AboutZuluSwap.tsx
+msgid "ABOUT ZPX"
+msgstr "ABOUT ZPX"
 
 #: src/pages/Bridge/BridgeTransferHistory/index.tsx
 msgid "ACTION"
@@ -369,8 +369,8 @@ msgid "All-Time Low"
 msgstr "All-Time Low"
 
 #: src/components/Header/URLWarning.tsx
-#~ msgid "Always make sure the URL is<0>KyberSwap.com</0> - bookmark it to be safe."
-#~ msgstr "Always make sure the URL is<0>KyberSwap.com</0> - bookmark it to be safe."
+#~ msgid "Always make sure the URL is<0>ZuluSwap.com</0> - bookmark it to be safe."
+#~ msgstr "Always make sure the URL is<0>ZuluSwap.com</0> - bookmark it to be safe."
 
 #: src/pages/RemoveLiquidity/TokenPair.tsx
 #: src/pages/RemoveLiquidity/ZapOut.tsx
@@ -381,7 +381,7 @@ msgstr "Amount"
 msgid "Amount to remove"
 msgstr "Amount to remove"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Amplified Liquidity Pools"
 msgstr "Amplified Liquidity Pools"
 
@@ -417,21 +417,21 @@ msgstr "Analyze Wallet"
 msgid "Any referral commission will automatically be sent to this wallet address"
 msgstr "Any referral commission will automatically be sent to this wallet address"
 
-#: src/pages/About/AboutKyberSwap.tsx
-msgid "Anyone can access this liquidity from KyberSwap for their own use case e.g. Dapps, Aggregators."
-msgstr "Anyone can access this liquidity from KyberSwap for their own use case e.g. Dapps, Aggregators."
+#: src/pages/About/AboutZuluSwap.tsx
+msgid "Anyone can access this liquidity from ZuluSwap for their own use case e.g. Dapps, Aggregators."
+msgstr "Anyone can access this liquidity from ZuluSwap for their own use case e.g. Dapps, Aggregators."
 
 #: src/components/SearchModal/ImportToken.tsx
 #~ msgid "Anyone can create a token, including creating fake versions of existing tokens that claim to represent projects"
 #~ msgstr "Anyone can create a token, including creating fake versions of existing tokens that claim to represent projects"
 
-#: src/pages/About/AboutKyberSwap.tsx
-msgid "Anyone can provide liquidity to KyberSwap by depositing tokens e.g. Traders, Token Teams."
-msgstr "Anyone can provide liquidity to KyberSwap by depositing tokens e.g. Traders, Token Teams."
+#: src/pages/About/AboutZuluSwap.tsx
+msgid "Anyone can provide liquidity to ZuluSwap by depositing tokens e.g. Traders, Token Teams."
+msgstr "Anyone can provide liquidity to ZuluSwap by depositing tokens e.g. Traders, Token Teams."
 
-#: src/pages/About/AboutKyberSwap.tsx
-msgid "Applicable to KyberSwap Classic"
-msgstr "Applicable to KyberSwap Classic"
+#: src/pages/About/AboutZuluSwap.tsx
+msgid "Applicable to ZuluSwap Classic"
+msgstr "Applicable to ZuluSwap Classic"
 
 #: src/components/YieldPools/ElasticFarmGroup/index.tsx
 #: src/components/YieldPools/ListItem.tsx
@@ -499,7 +499,7 @@ msgstr ""
 msgid "Are you sure?"
 msgstr "Are you sure?"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "As Liquidity Providers, you can now supply liquidity to a pool within a custom price range. This allows your liquidity to be used more efficiently. Consequently, you will earn more trading fees on your liquidity."
 msgstr "As Liquidity Providers, you can now supply liquidity to a pool within a custom price range. This allows your liquidity to be used more efficiently. Consequently, you will earn more trading fees on your liquidity."
 
@@ -563,7 +563,7 @@ msgstr "Average estimated return based on yearly fees of the pool plus bonus rew
 msgid "Average estimated return based on yearly trading fees from the pool & additional bonus rewards if you participate in the farm"
 msgstr "Average estimated return based on yearly trading fees from the pool & additional bonus rewards if you participate in the farm"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "BONUS REWARDS"
 msgstr "BONUS REWARDS"
 
@@ -597,7 +597,7 @@ msgstr "Best for stable pairs"
 msgid "Best for very stable pairs"
 msgstr "Best for very stable pairs"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Best price guaranteed"
 msgstr "Best price guaranteed"
 
@@ -631,7 +631,7 @@ msgstr "Bridge"
 msgid "Bridge Assets"
 msgstr "Bridge Assets"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Bug Bounty"
 msgstr "Bug Bounty"
 
@@ -685,7 +685,7 @@ msgstr "Cannot get token info. Please try again later."
 msgid "ChainId: {chainId} not supported"
 msgstr "ChainId: {chainId} not supported"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Chains"
 msgstr "Chains"
 
@@ -715,12 +715,12 @@ msgid "Checking allowance..."
 msgstr "Checking allowance..."
 
 #: src/components/Tutorial/TutorialSwap/index.tsx
-msgid "Choose your preferred network. KyberSwap is a multi chain platform that supports over 12 networks!"
-msgstr "Choose your preferred network. KyberSwap is a multi chain platform that supports over 12 networks!"
+msgid "Choose your preferred network. ZuluSwap is a multi chain platform that supports over 12 networks!"
+msgstr "Choose your preferred network. ZuluSwap is a multi chain platform that supports over 12 networks!"
 
 #: src/components/Tutorial/TutorialSwap/index.tsx
-msgid "Choose your preferred wallet, connect it, and get started with KyberSwap!"
-msgstr "Choose your preferred wallet, connect it, and get started with KyberSwap!"
+msgid "Choose your preferred wallet, connect it, and get started with ZuluSwap!"
+msgstr "Choose your preferred wallet, connect it, and get started with ZuluSwap!"
 
 #: src/components/swapv2/TokenInfo.tsx
 msgid "Circulating Supply"
@@ -758,8 +758,8 @@ msgid "Claiming Rewards"
 msgstr "Claiming Rewards"
 
 #: src/components/Menu/ClaimRewardModal.tsx
-msgid "Claiming {rewardAmounts} KNC"
-msgstr "Claiming {rewardAmounts} KNC"
+msgid "Claiming {rewardAmounts} ZPX"
+msgstr "Claiming {rewardAmounts} ZPX"
 
 #: src/components/Menu/index.tsx
 msgid "Claiming..."
@@ -798,7 +798,7 @@ msgstr "Close the Solflare popup"
 msgid "Closed"
 msgstr "Closed"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Code Audited"
 msgstr "Code Audited"
 
@@ -824,7 +824,7 @@ msgstr "Commission (%) that is applied to each successful trade that uses your r
 msgid "Commission fee to be paid directly to your referrer"
 msgstr "Commission fee to be paid directly to your referrer"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Committed to Security"
 msgstr "Committed to Security"
 
@@ -915,7 +915,7 @@ msgid "Connecting Wallet"
 msgstr "Connecting Wallet"
 
 #: src/components/Menu/index.tsx
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Contact Us"
 msgstr "Contact Us"
 
@@ -938,8 +938,8 @@ msgstr "Covers smart-contracts"
 msgid "Create"
 msgstr "Create"
 
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Create New Pool"
 msgstr "Create New Pool"
 
@@ -1029,7 +1029,7 @@ msgstr "DATE | STATUS"
 #~ msgid "DEPOSIT"
 #~ msgstr "DEPOSIT"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "DEXs"
 msgstr "DEXs"
 
@@ -1085,7 +1085,7 @@ msgstr "Deposit your liquidity positions (NFT tokens) first to enable farming. O
 msgid "Deposit your liquidity positions (i.e. your NFT tokens) into the farming contract. Then stake them into the farm"
 msgstr "Deposit your liquidity positions (i.e. your NFT tokens) into the farming contract. Then stake them into the farm"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Deposit your tokens and farm attractive rewards. We collaborate with projects to get you the best rewards."
 msgstr "Deposit your tokens and farm attractive rewards. We collaborate with projects to get you the best rewards."
 
@@ -1158,9 +1158,9 @@ msgid "Do you wish to have a look?"
 msgstr "Do you wish to have a look?"
 
 #: src/components/Menu/index.tsx
-#: src/pages/About/AboutKNC.tsx
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZPX.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Docs"
 msgstr "Docs"
 
@@ -1202,12 +1202,12 @@ msgstr "Download a wallet"
 msgid "Dynamic Fee Range"
 msgstr "Dynamic Fee Range"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 #: src/pages/CreatePool/FeeTypeSelector.tsx
 msgid "Dynamic Fees"
 msgstr "Dynamic Fees"
 
-#: src/pages/About/AboutKNC.tsx
+#: src/pages/About/AboutZPX.tsx
 msgid "Dynamic Token Model"
 msgstr "Dynamic Token Model"
 
@@ -1220,15 +1220,15 @@ msgstr "ENDED"
 msgid "Earn"
 msgstr "Earn"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Earn More with Concentrated Liquidity"
 msgstr "Earn More with Concentrated Liquidity"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Earn more due to compounding"
 msgstr "Earn more due to compounding"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Earn more with your crypto assets"
 msgstr "Earn more with your crypto assets"
 
@@ -1400,11 +1400,11 @@ msgstr "Exchange rate is always 1 to 1."
 msgid "FEES (24H)"
 msgstr "FEES (24H)"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "FOR LIQUIDITY PROVIDERS"
 msgstr "FOR LIQUIDITY PROVIDERS"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "FOR TRADERS"
 msgstr "FOR TRADERS"
 
@@ -1536,10 +1536,10 @@ msgid "Filter tokens by chain"
 msgstr "Filter tokens by chain"
 
 #: src/components/SearchModal/CurrencySearch.tsx
-msgid "Find a token by searching for its name or symbol or by pasting its address below<0/><1/>You can select and trade any token on KyberSwap."
-msgstr "Find a token by searching for its name or symbol or by pasting its address below<0/><1/>You can select and trade any token on KyberSwap."
+msgid "Find a token by searching for its name or symbol or by pasting its address below<0/><1/>You can select and trade any token on ZuluSwap."
+msgstr "Find a token by searching for its name or symbol or by pasting its address below<0/><1/>You can select and trade any token on ZuluSwap."
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Find out more"
 msgstr "Find out more"
 
@@ -1547,7 +1547,7 @@ msgstr "Find out more"
 msgid "For a more detailed user guide, <0>click here.</0>"
 msgstr "For a more detailed user guide, <0>click here.</0>"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "For everyone"
 msgstr "For everyone"
 
@@ -1559,8 +1559,8 @@ msgid "Force Withdraw"
 msgstr "Force Withdraw"
 
 #: src/components/Menu/index.tsx
-#: src/pages/About/AboutKNC.tsx
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZPX.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Forum"
 msgstr "Forum"
 
@@ -1622,8 +1622,8 @@ msgstr "Get {0}-{1} LP ↗"
 msgid "Get {0}-{1} {2} LP ↗"
 msgstr "Get {0}-{1} {2} LP ↗"
 
-#: src/pages/About/AboutKNC.tsx
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZPX.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Github"
 msgstr "Github"
 
@@ -1643,7 +1643,7 @@ msgstr "Go to farm"
 msgid "Go to farm ↗"
 msgstr "Go to farm ↗"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "HIGHER RETURNS"
 msgstr "HIGHER RETURNS"
 
@@ -1813,12 +1813,12 @@ msgid "Imported"
 msgstr "Imported"
 
 #: src/hooks/useChangeNetwork.ts
-msgid "In order to use KyberSwap on {0}, you must accept the network in your wallet."
-msgstr "In order to use KyberSwap on {0}, you must accept the network in your wallet."
+msgid "In order to use ZuluSwap on {0}, you must accept the network in your wallet."
+msgstr "In order to use ZuluSwap on {0}, you must accept the network in your wallet."
 
 #: src/hooks/useChangeNetwork.ts
-msgid "In order to use KyberSwap on {0}, you must change the network in your wallet."
-msgstr "In order to use KyberSwap on {0}, you must change the network in your wallet."
+msgid "In order to use ZuluSwap on {0}, you must change the network in your wallet."
+msgstr "In order to use ZuluSwap on {0}, you must change the network in your wallet."
 
 #: src/components/Badge/RangeBadge.tsx
 #: src/state/farms/elastic/hooks.ts
@@ -1833,7 +1833,7 @@ msgstr "Include Chain"
 msgid "Include Tokens"
 msgstr "Include Tokens"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Includes DEX aggregation"
 msgstr "Includes DEX aggregation"
 
@@ -1961,94 +1961,94 @@ msgid "Invalid recipient"
 msgstr "Invalid recipient"
 
 #: src/components/Header/index.tsx
-msgid "KNC"
-msgstr "KNC"
+msgid "ZPX"
+msgstr "ZPX"
 
-#: src/pages/About/AboutKNC.tsx
-msgid "KNC enables KyberDAO to shape token behaviour and upgrades, making KNC much more adaptable and providing better support for innovation and growth."
-msgstr "KNC enables KyberDAO to shape token behaviour and upgrades, making KNC much more adaptable and providing better support for innovation and growth."
+#: src/pages/About/AboutZPX.tsx
+msgid "ZPX enables ZuluDAO to shape token behaviour and upgrades, making ZPX much more adaptable and providing better support for innovation and growth."
+msgstr "ZPX enables ZuluDAO to shape token behaviour and upgrades, making ZPX much more adaptable and providing better support for innovation and growth."
 
-#: src/pages/About/AboutKNC.tsx
-msgid "KNC holders can stake KNC in KyberDAO and vote on important decisions. Voters receive trading fees generated on KyberSwap and other benefits from ecosystem collaborations on Kyber."
-msgstr "KNC holders can stake KNC in KyberDAO and vote on important decisions. Voters receive trading fees generated on KyberSwap and other benefits from ecosystem collaborations on Kyber."
+#: src/pages/About/AboutZPX.tsx
+msgid "ZPX holders can stake ZPX in ZuluDAO and vote on important decisions. Voters receive trading fees generated on ZuluSwap and other benefits from ecosystem collaborations on Zulu."
+msgstr "ZPX holders can stake ZPX in ZuluDAO and vote on important decisions. Voters receive trading fees generated on ZuluSwap and other benefits from ecosystem collaborations on Zulu."
 
-#: src/pages/About/AboutKNC.tsx
-msgid "KNC is a utility and governance token and an integral part of Kyber Network and its product KyberSwap - the multi-chain decentralized exchange (DEX) protocol that provides the best rates for traders and maximizes earnings for liquidity providers."
-msgstr "KNC is a utility and governance token and an integral part of Kyber Network and its product KyberSwap - the multi-chain decentralized exchange (DEX) protocol that provides the best rates for traders and maximizes earnings for liquidity providers."
+#: src/pages/About/AboutZPX.tsx
+msgid "ZPX is a utility and governance token and an integral part of Zulu Network and its product ZuluSwap - the multi-chain decentralized exchange (DEX) protocol that provides the best rates for traders and maximizes earnings for liquidity providers."
+msgstr "ZPX is a utility and governance token and an integral part of Zulu Network and its product ZuluSwap - the multi-chain decentralized exchange (DEX) protocol that provides the best rates for traders and maximizes earnings for liquidity providers."
 
-#: src/pages/About/AboutKyberSwap.tsx
-msgid "KNC is a utility and governance token, and an integral part of Kyber Network and its flagship product KyberSwap. It is the glue that connects different stakeholders in Kyber's ecosystem"
-msgstr "KNC is a utility and governance token, and an integral part of Kyber Network and its flagship product KyberSwap. It is the glue that connects different stakeholders in Kyber's ecosystem"
+#: src/pages/About/AboutZuluSwap.tsx
+msgid "ZPX is a utility and governance token, and an integral part of Zulu Network and its flagship product ZuluSwap. It is the glue that connects different stakeholders in Zulu's ecosystem"
+msgstr "ZPX is a utility and governance token, and an integral part of Zulu Network and its flagship product ZuluSwap. It is the glue that connects different stakeholders in Zulu's ecosystem"
 
-#: src/pages/About/AboutKNC.tsx
-msgid "KNC is an ERC-20 token, so it can be stored in many Web3 wallets you control. Below are some examples."
-msgstr "KNC is an ERC-20 token, so it can be stored in many Web3 wallets you control. Below are some examples."
+#: src/pages/About/AboutZPX.tsx
+msgid "ZPX is an ERC-20 token, so it can be stored in many Web3 wallets you control. Below are some examples."
+msgstr "ZPX is an ERC-20 token, so it can be stored in many Web3 wallets you control. Below are some examples."
 
-#: src/pages/About/AboutKNC.tsx
-msgid "KNC token holders can benefit from our flagship product KyberSwap. Holders can stake their KNC & vote on initiatives to receive trading fees generated on KyberSwap! More trades on KyberSwap can generate more rewards for KNC holders!<0/><1/>KNC token is dynamic - it can be upgraded, minted or burned by KyberDAO to better support liquidity and growth."
-msgstr "KNC token holders can benefit from our flagship product KyberSwap. Holders can stake their KNC & vote on initiatives to receive trading fees generated on KyberSwap! More trades on KyberSwap can generate more rewards for KNC holders!<0/><1/>KNC token is dynamic - it can be upgraded, minted or burned by KyberDAO to better support liquidity and growth."
+#: src/pages/About/AboutZPX.tsx
+msgid "ZPX token holders can benefit from our flagship product ZuluSwap. Holders can stake their ZPX & vote on initiatives to receive trading fees generated on ZuluSwap! More trades on ZuluSwap can generate more rewards for ZPX holders!<0/><1/>ZPX token is dynamic - it can be upgraded, minted or burned by ZuluDAO to better support liquidity and growth."
+msgstr "ZPX token holders can benefit from our flagship product ZuluSwap. Holders can stake their ZPX & vote on initiatives to receive trading fees generated on ZuluSwap! More trades on ZuluSwap can generate more rewards for ZPX holders!<0/><1/>ZPX token is dynamic - it can be upgraded, minted or burned by ZuluDAO to better support liquidity and growth."
 
-#: src/pages/About/AboutKNC.tsx
-msgid "KYBER DAO"
-msgstr "KYBER DAO"
+#: src/pages/About/AboutZPX.tsx
+msgid "ZULU DAO"
+msgstr "ZULU DAO"
 
-#: src/pages/About/AboutKyberSwap.tsx
-msgid "Kyber Network Crystal (KNC)"
-msgstr "Kyber Network Crystal (KNC)"
+#: src/pages/About/AboutZuluSwap.tsx
+msgid "Zulu Network Crystal (ZPX)"
+msgstr "Zulu Network Crystal (ZPX)"
 
-#: src/pages/About/AboutKNC.tsx
-msgid "Kyber Network Crystal <0>(KNC)</0>"
-msgstr "Kyber Network Crystal <0>(KNC)</0>"
+#: src/pages/About/AboutZPX.tsx
+msgid "Zulu Network Crystal <0>(ZPX)</0>"
+msgstr "Zulu Network Crystal <0>(ZPX)</0>"
 
-#: src/pages/About/AboutKNC.tsx
-msgid "KyberDAO can propose various KNC incentives like liquidity mining rewards on KyberSwap on top of standard trading fees to provide more value to liquidity providers."
-msgstr "KyberDAO can propose various KNC incentives like liquidity mining rewards on KyberSwap on top of standard trading fees to provide more value to liquidity providers."
+#: src/pages/About/AboutZPX.tsx
+msgid "ZuluDAO can propose various ZPX incentives like liquidity mining rewards on ZuluSwap on top of standard trading fees to provide more value to liquidity providers."
+msgstr "ZuluDAO can propose various ZPX incentives like liquidity mining rewards on ZuluSwap on top of standard trading fees to provide more value to liquidity providers."
 
-#: src/pages/About/AboutKNC.tsx
-msgid "KyberDAO is a community platform that allows KNC token holders to participate in governance. KNC holders can stake KNC to vote on proposals. In return, they receive rewards from fees generated on KyberSwap through trading activities in Kyber Network."
-msgstr "KyberDAO is a community platform that allows KNC token holders to participate in governance. KNC holders can stake KNC to vote on proposals. In return, they receive rewards from fees generated on KyberSwap through trading activities in Kyber Network."
+#: src/pages/About/AboutZPX.tsx
+msgid "ZuluDAO is a community platform that allows ZPX token holders to participate in governance. ZPX holders can stake ZPX to vote on proposals. In return, they receive rewards from fees generated on ZuluSwap through trading activities in Zulu Network."
+msgstr "ZuluDAO is a community platform that allows ZPX token holders to participate in governance. ZPX holders can stake ZPX to vote on proposals. In return, they receive rewards from fees generated on ZuluSwap through trading activities in Zulu Network."
 
 #: src/components/Header/index.tsx
-msgid "KyberSwap"
-msgstr "KyberSwap"
+msgid "ZuluSwap"
+msgstr "ZuluSwap"
 
 #: src/components/Settings/index.tsx
-msgid "KyberSwap Guide"
-msgstr "KyberSwap Guide"
+msgid "ZuluSwap Guide"
+msgstr "ZuluSwap Guide"
 
-#: src/pages/About/AboutKyberSwap.tsx
-#~ msgid "KyberSwap is DeFi’s premier automated market maker, providing the best token prices for traders across multiple exchanges, and maximizing earnings for liquidity providers, in one decentralized platform."
-#~ msgstr "KyberSwap is DeFi’s premier automated market maker, providing the best token prices for traders across multiple exchanges, and maximizing earnings for liquidity providers, in one decentralized platform."
-
-#: src/components/Tutorial/TutorialSwap/index.tsx
-#: src/pages/About/KyberSwapGeneralIntro.tsx
-#: src/pages/About/KyberSwapGeneralIntro.tsx
-msgid "KyberSwap is a decentralized exchange (DEX) aggregator. We provide our traders with the <0>best token prices</0> by analyzing rates across thousands of exchanges instantly!"
-msgstr "KyberSwap is a decentralized exchange (DEX) aggregator. We provide our traders with the <0>best token prices</0> by analyzing rates across thousands of exchanges instantly!"
+#: src/pages/About/AboutZuluSwap.tsx
+#~ msgid "ZuluSwap is DeFi’s premier automated market maker, providing the best token prices for traders across multiple exchanges, and maximizing earnings for liquidity providers, in one decentralized platform."
+#~ msgstr "ZuluSwap is DeFi’s premier automated market maker, providing the best token prices for traders across multiple exchanges, and maximizing earnings for liquidity providers, in one decentralized platform."
 
 #: src/components/Tutorial/TutorialSwap/index.tsx
-#: src/pages/About/KyberSwapGeneralIntro.tsx
-#: src/pages/About/KyberSwapGeneralIntro.tsx
-msgid "KyberSwap is also an automated market maker (AMM) with industry-leading liquidity protocols and <0>concentrated liquidity</0>. Liquidity providers can add liquidity to our pools & <1>earn fees</1>!"
-msgstr "KyberSwap is also an automated market maker (AMM) with industry-leading liquidity protocols and <0>concentrated liquidity</0>. Liquidity providers can add liquidity to our pools & <1>earn fees</1>!"
+#: src/pages/About/ZuluSwapGeneralIntro.tsx
+#: src/pages/About/ZuluSwapGeneralIntro.tsx
+msgid "ZuluSwap is a decentralized exchange (DEX) aggregator. We provide our traders with the <0>best token prices</0> by analyzing rates across thousands of exchanges instantly!"
+msgstr "ZuluSwap is a decentralized exchange (DEX) aggregator. We provide our traders with the <0>best token prices</0> by analyzing rates across thousands of exchanges instantly!"
+
+#: src/components/Tutorial/TutorialSwap/index.tsx
+#: src/pages/About/ZuluSwapGeneralIntro.tsx
+#: src/pages/About/ZuluSwapGeneralIntro.tsx
+msgid "ZuluSwap is also an automated market maker (AMM) with industry-leading liquidity protocols and <0>concentrated liquidity</0>. Liquidity providers can add liquidity to our pools & <1>earn fees</1>!"
+msgstr "ZuluSwap is also an automated market maker (AMM) with industry-leading liquidity protocols and <0>concentrated liquidity</0>. Liquidity providers can add liquidity to our pools & <1>earn fees</1>!"
 
 #: src/pages/Bridge/Disclaimer.tsx
-msgid "KyberSwap strives to offer its users the best DeFi experience on a single platform. In order to do that, KyberSwap partners with 3rd party platforms like Multichain."
-msgstr "KyberSwap strives to offer its users the best DeFi experience on a single platform. In order to do that, KyberSwap partners with 3rd party platforms like Multichain."
+msgid "ZuluSwap strives to offer its users the best DeFi experience on a single platform. In order to do that, ZuluSwap partners with 3rd party platforms like Multichain."
+msgstr "ZuluSwap strives to offer its users the best DeFi experience on a single platform. In order to do that, ZuluSwap partners with 3rd party platforms like Multichain."
 
 #: src/pages/Verify/index.tsx
-msgid "KyberSwap team."
-msgstr "KyberSwap team."
+msgid "ZuluSwap team."
+msgstr "ZuluSwap team."
 
 #: src/components/Menu/AboutPageDropDown.tsx
-#~ msgid "Kyberswap"
-#~ msgstr "Kyberswap"
+#~ msgid "Zuluswap"
+#~ msgstr "Zuluswap"
 
-#: src/pages/About/AboutKNC.tsx
+#: src/pages/About/AboutZPX.tsx
 msgid "LIQUIDITY INCENTIVES"
 msgstr "LIQUIDITY INCENTIVES"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "LOWER SLIPPAGE"
 msgstr "LOWER SLIPPAGE"
 
@@ -2070,12 +2070,12 @@ msgid "Leaderboard refresh in"
 msgstr "Leaderboard refresh in"
 
 #: src/components/YieldPools/ElasticFarmGroup/Row.tsx
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Learn More"
 msgstr "Learn More"
 
@@ -2123,7 +2123,7 @@ msgstr "Liquidity data not available."
 msgid "Liquidity providers will earn this trading fee for each trade that uses this pool"
 msgstr "Liquidity providers will earn this trading fee for each trade that uses this pool"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "List your tokens permissionlessly"
 msgstr "List your tokens permissionlessly"
 
@@ -2160,7 +2160,7 @@ msgstr "Low TVL Pools"
 msgid "Lowest Gas"
 msgstr "Lowest Gas"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Lowest possible slippage"
 msgstr "Lowest possible slippage"
 
@@ -2186,8 +2186,8 @@ msgid "MORE INFORMATION"
 msgstr "MORE INFORMATION"
 
 #: src/components/Header/URLWarning.tsx
-#~ msgid "Make sure the URL is<0>KyberSwap.com</0>"
-#~ msgstr "Make sure the URL is<0>KyberSwap.com</0>"
+#~ msgid "Make sure the URL is<0>ZuluSwap.com</0>"
+#~ msgstr "Make sure the URL is<0>ZuluSwap.com</0>"
 
 #: src/components/SearchModal/Manage.tsx
 #~ msgid "Manage"
@@ -2222,7 +2222,7 @@ msgstr "Market Cap Rank"
 msgid "Max"
 msgstr "Max"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Max APR Available"
 msgstr "Max APR Available"
 
@@ -2309,9 +2309,9 @@ msgstr "Minimum amount you will receive or your transaction will revert"
 msgid "More info"
 msgstr "More info"
 
-#: src/pages/About/AboutKNC.tsx
-msgid "More information about KNC is available on:"
-msgstr "More information about KNC is available on:"
+#: src/pages/About/AboutZPX.tsx
+msgid "More information about ZPX is available on:"
+msgstr "More information about ZPX is available on:"
 
 #: src/components/SearchModal/bridge/CurrencySearchBridge.tsx
 msgid "Multichain doesn’t support this token yet. <0/>If you want to apply this token for cross-chain bridges on Multichain, please read more <1>here</1>"
@@ -2442,11 +2442,11 @@ msgstr "Next"
 msgid "No Farms found"
 msgstr "No Farms found"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "No KYC or sign-ups required"
 msgstr "No KYC or sign-ups required"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "No extra deposit or withdrawal fees"
 msgstr "No extra deposit or withdrawal fees"
 
@@ -2503,8 +2503,8 @@ msgid "Note: {warningToken} is now <10% of the pool. Pool might become inactive 
 msgstr "Note: {warningToken} is now <10% of the pool. Pool might become inactive if {warningToken} reaches 0%"
 
 #: src/pages/BuyCrypto/index.tsx
-msgid "Now that you have purchased your crypto, you can trade from over 20,000+ tokens on KyberSwap! We give you the best trading rates in the market!"
-msgstr "Now that you have purchased your crypto, you can trade from over 20,000+ tokens on KyberSwap! We give you the best trading rates in the market!"
+msgid "Now that you have purchased your crypto, you can trade from over 20,000+ tokens on ZuluSwap! We give you the best trading rates in the market!"
+msgstr "Now that you have purchased your crypto, you can trade from over 20,000+ tokens on ZuluSwap! We give you the best trading rates in the market!"
 
 #: src/pages/Campaign/index.tsx
 msgid "Number of Trades"
@@ -2530,7 +2530,7 @@ msgstr "Okay"
 msgid "On"
 msgstr "On"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "On-chain & Open Source"
 msgstr "On-chain & Open Source"
 
@@ -2605,7 +2605,7 @@ msgstr "Output is estimated. If the price changes by more than {0}% your transac
 msgid "Output is estimated. You will receive at least"
 msgstr "Output is estimated. You will receive at least"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "PREVENT SNIPING ATTACKS"
 msgstr "PREVENT SNIPING ATTACKS"
 
@@ -2617,7 +2617,7 @@ msgstr "Participants"
 msgid "Participate in our campaigns"
 msgstr "Participate in our campaigns"
 
-#: src/pages/About/AboutKNC.tsx
+#: src/pages/About/AboutZPX.tsx
 msgid "Participation Rewards"
 msgstr "Participation Rewards"
 
@@ -2722,7 +2722,7 @@ msgid "Powered By"
 msgstr "Powered By"
 
 #: src/components/swapv2/TokenInfo.tsx
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Powered by"
 msgstr "Powered by"
 
@@ -2837,7 +2837,7 @@ msgstr "RECEIVED AMOUNT"
 msgid "ROUTE"
 msgstr "ROUTE"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Rainmaker Yield Farming"
 msgstr "Rainmaker Yield Farming"
 
@@ -2985,11 +2985,11 @@ msgstr "SELECTED PRICE RANGE"
 msgid "STATUS"
 msgstr "STATUS"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Save time & effort"
 msgstr "Save time & effort"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Seamless liquidity."
 msgstr "Seamless liquidity."
 
@@ -3074,8 +3074,8 @@ msgid "Select fee tier"
 msgstr "Select fee tier"
 
 #: src/components/Tutorial/TutorialSwap/index.tsx
-msgid "Select from over thousands of tokens and start trading. KyberSwap finds you the best prices across multiple exchanges & combines them into one trade!"
-msgstr "Select from over thousands of tokens and start trading. KyberSwap finds you the best prices across multiple exchanges & combines them into one trade!"
+msgid "Select from over thousands of tokens and start trading. ZuluSwap finds you the best prices across multiple exchanges & combines them into one trade!"
+msgstr "Select from over thousands of tokens and start trading. ZuluSwap finds you the best prices across multiple exchanges & combines them into one trade!"
 
 #: src/components/Tutorial/TutorialSwap/constant.ts
 msgid "Select tokens to swap & start trading"
@@ -3162,7 +3162,7 @@ msgstr "Single Token"
 msgid "Slippage"
 msgstr "Slippage"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Sniping is where an attacker jumps in front of normal liquidity providers by adding and removing liquidity just before and right after a huge swap. To protect our liquidity providers, we have created an anti-sniping feature."
 msgstr "Sniping is where an attacker jumps in front of normal liquidity providers by adding and removing liquidity just before and right after a huge swap. To protect our liquidity providers, we have created an anti-sniping feature."
 
@@ -3195,13 +3195,13 @@ msgstr "Stablecoins"
 msgid "Stake"
 msgstr "Stake"
 
-#: src/pages/About/AboutKNC.tsx
-msgid "Stake KNC"
-msgstr "Stake KNC"
+#: src/pages/About/AboutZPX.tsx
+msgid "Stake ZPX"
+msgstr "Stake ZPX"
 
-#: src/pages/About/AboutKNC.tsx
-msgid "Stake KNC, Vote, Earn Rewards."
-msgstr "Stake KNC, Vote, Earn Rewards."
+#: src/pages/About/AboutZPX.tsx
+msgid "Stake ZPX, Vote, Earn Rewards."
+msgstr "Stake ZPX, Vote, Earn Rewards."
 
 #: src/components/YieldPools/ElasticFarmModals/StakeModal.tsx
 msgid "Stake Selected"
@@ -3271,9 +3271,9 @@ msgstr "Stands for amplification factor. Each pool can have its own AMP. Pools w
 msgid "Stands for amplification factor. Pools with a higher AMP provide higher capital efficiency within a particular price range. We recommend higher AMP for stable token pairs and lower AMP for volatile token pairs"
 msgstr "Stands for amplification factor. Pools with a higher AMP provide higher capital efficiency within a particular price range. We recommend higher AMP for stable token pairs and lower AMP for volatile token pairs"
 
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/KyberSwapGeneralIntro.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/ZuluSwapGeneralIntro.tsx
 msgid "Start Earning"
 msgstr "Start Earning"
 
@@ -3375,10 +3375,10 @@ msgstr "Swap Anyway"
 msgid "Swap Legacy"
 msgstr "Swap Legacy"
 
-#: src/pages/About/AboutKNC.tsx
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/KyberSwapGeneralIntro.tsx
+#: src/pages/About/AboutZPX.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/ZuluSwapGeneralIntro.tsx
 #: src/pages/BuyCrypto/index.tsx
 #: src/pages/Campaign/ModalRegisterCampaignSuccess.tsx
 msgid "Swap Now"
@@ -3389,8 +3389,8 @@ msgid "Swap now"
 msgstr "Swap now"
 
 #: src/pages/BuyCrypto/index.tsx
-msgid "Swap on KyberSwap"
-msgstr "Swap on KyberSwap"
+msgid "Swap on ZuluSwap"
+msgstr "Swap on ZuluSwap"
 
 #: src/pages/Campaign/CampaignButtonWithOptions.tsx
 #: src/pages/TrueSight/components/ButtonWithOptions.tsx
@@ -3398,7 +3398,7 @@ msgstr "Swap on KyberSwap"
 msgid "Swap on {0}"
 msgstr "Swap on {0}"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Swap your tokens at the best rates. No limits"
 msgstr "Swap your tokens at the best rates. No limits"
 
@@ -3407,15 +3407,15 @@ msgstr "Swap your tokens at the best rates. No limits"
 msgid "Symbol"
 msgstr "Symbol"
 
-#: src/pages/About/AboutKNC.tsx
+#: src/pages/About/AboutZPX.tsx
 msgid "TOKEN UTILITY"
 msgstr "TOKEN UTILITY"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "TVL From DEXs"
 msgstr "TVL From DEXs"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "TVL equivalent compared to AMMs"
 msgstr "TVL equivalent compared to AMMs"
 
@@ -3571,7 +3571,7 @@ msgstr "This pool require {0} LP Tokens. Get the LP Tokens <0>here ↗</0>"
 msgid "This token isn’t frequently swapped. Please do your own research before trading."
 msgstr "This token isn’t frequently swapped. Please do your own research before trading."
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Thousands of users and multiple decentralized applications are already providing and using our liquidity."
 msgstr "Thousands of users and multiple decentralized applications are already providing and using our liquidity."
 
@@ -3607,20 +3607,20 @@ msgid "To initialize this pool, select a starting price for the pool then enter 
 msgstr "To initialize this pool, select a starting price for the pool then enter your liquidity price range. Gas fees will be higher than usual due to initialization of the pool."
 
 #: src/components/Tutorial/index.tsx
-msgid "To learn more about how to add liquidity to KyberSwap Classic, view <0> here</0>"
-msgstr "To learn more about how to add liquidity to KyberSwap Classic, view <0> here</0>"
+msgid "To learn more about how to add liquidity to ZuluSwap Classic, view <0> here</0>"
+msgstr "To learn more about how to add liquidity to ZuluSwap Classic, view <0> here</0>"
 
 #: src/components/Tutorial/index.tsx
-msgid "To learn more about how to add liquidity to KyberSwap Elastic, view <0> here</0>"
-msgstr "To learn more about how to add liquidity to KyberSwap Elastic, view <0> here</0>"
+msgid "To learn more about how to add liquidity to ZuluSwap Elastic, view <0> here</0>"
+msgstr "To learn more about how to add liquidity to ZuluSwap Elastic, view <0> here</0>"
 
 #: src/components/Tutorial/index.tsx
-msgid "To learn more about how to increase liquidity to KyberSwap Elastic, view <0> here</0>"
-msgstr "To learn more about how to increase liquidity to KyberSwap Elastic, view <0> here</0>"
+msgid "To learn more about how to increase liquidity to ZuluSwap Elastic, view <0> here</0>"
+msgstr "To learn more about how to increase liquidity to ZuluSwap Elastic, view <0> here</0>"
 
 #: src/components/Tutorial/index.tsx
-msgid "To learn more about how to remove liquidity on KyberSwap Elastic, view <0> here</0>"
-msgstr "To learn more about how to remove liquidity on KyberSwap Elastic, view <0> here</0>"
+msgid "To learn more about how to remove liquidity on ZuluSwap Elastic, view <0> here</0>"
+msgstr "To learn more about how to remove liquidity on ZuluSwap Elastic, view <0> here</0>"
 
 #: src/components/SearchModal/ManageTokens.tsx
 #~ msgid "Token"
@@ -3650,7 +3650,7 @@ msgstr "Token name or tag"
 msgid "Token pool analytics →"
 msgstr "Token pool analytics →"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 #: src/pages/TrueSight/components/FilterBar/TrueSightSearchBox.tsx
 msgid "Tokens"
 msgstr "Tokens"
@@ -3667,11 +3667,11 @@ msgstr "Tokens we had discovered earlier to be Trending Soon"
 msgid "Top traded pairs"
 msgstr "Top traded pairs"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Total AMP Liquidity"
 msgstr "Total AMP Liquidity"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Total Earnings"
 msgstr "Total Earnings"
 
@@ -3703,7 +3703,7 @@ msgstr "Total Rewards"
 msgid "Total Supply"
 msgstr "Total Supply"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "Total Trading Volume"
 msgstr "Total Trading Volume"
 
@@ -3712,7 +3712,7 @@ msgid "Total Trading Volume:"
 msgstr "Total Trading Volume:"
 
 #: src/components/PoolList/ItemCard/TabInfoItems.tsx
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 #: src/pages/ProAmmPools/CardItem.tsx
 msgid "Total Value Locked"
 msgstr "Total Value Locked"
@@ -3821,8 +3821,8 @@ msgstr "Try to connect again"
 
 #: src/components/swapv2/PairSuggestion/ListPair.tsx
 #: src/components/swapv2/PairSuggestion/SearchInput.tsx
-msgid "Try typing \"10 ETH to KNC\""
-msgstr "Try typing \"10 ETH to KNC\""
+msgid "Try typing \"10 ETH to ZPX\""
+msgstr "Try typing \"10 ETH to ZPX\""
 
 #: src/pages/SwapV2/index.tsx
 msgid "Turn on Advanced Mode from settings to execute trades with high price impact"
@@ -4008,8 +4008,8 @@ msgstr "Vesting Schedules"
 msgid "View"
 msgstr "View"
 
-#: src/pages/About/AboutKyberSwap.tsx
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "View Farms"
 msgstr "View Farms"
 
@@ -4035,8 +4035,8 @@ msgstr "View chart"
 #~ msgstr "View list"
 
 #: src/components/Tutorial/TutorialSwap/constant.ts
-msgid "View our KyberSwap Guide again"
-msgstr "View our KyberSwap Guide again"
+msgid "View our ZuluSwap Guide again"
+msgstr "View our ZuluSwap Guide again"
 
 #: src/pages/ProAmmPools/ListItem.tsx
 msgid "View positions"
@@ -4077,15 +4077,15 @@ msgstr "Wallet Address or ENS name"
 msgid "Warning"
 msgstr "Warning"
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "We adjust trading fees dynamically based on market conditions to give you the best returns."
 msgstr "We adjust trading fees dynamically based on market conditions to give you the best returns."
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "We automatically reinvest your trading fee earnings by adding it back into the pool. And so you earn even more with less effort due to compounding."
 msgstr "We automatically reinvest your trading fee earnings by adding it back into the pool. And so you earn even more with less effort due to compounding."
 
-#: src/pages/About/AboutKyberSwap.tsx
+#: src/pages/About/AboutZuluSwap.tsx
 msgid "We can amplify liquidity pools to provide much higher capital efficiency and better slippage for you. Deposit less tokens and still achieve better liquidity and volume."
 msgstr "We can amplify liquidity pools to provide much higher capital efficiency and better slippage for you. Deposit less tokens and still achieve better liquidity and volume."
 
@@ -4094,8 +4094,8 @@ msgid "We could not find anything. Try again."
 msgstr "We could not find anything. Try again."
 
 #: src/components/Tutorial/TutorialSwap/index.tsx
-msgid "We created this <0>quick tutorial</0> guide for you to highlight KyberSwap's main features."
-msgstr "We created this <0>quick tutorial</0> guide for you to highlight KyberSwap's main features."
+msgid "We created this <0>quick tutorial</0> guide for you to highlight ZuluSwap's main features."
+msgstr "We created this <0>quick tutorial</0> guide for you to highlight ZuluSwap's main features."
 
 #: src/pages/TrueSight/components/TrendingLayout/index.tsx
 msgid "We discovered this on"
@@ -4105,9 +4105,9 @@ msgstr "We discovered this on"
 msgid "We don't recommend you create a pool and add liquidity on Ethereum PoW"
 msgstr "We don't recommend you create a pool and add liquidity on Ethereum PoW"
 
-#: src/pages/About/AboutKyberSwap.tsx
-msgid "We give liquidity providers the option of choosing between two liquidity protocols so they can earn passive income - KyberSwap Elastic and KyberSwap Classic. Simply deposit your liquidity and start earning."
-msgstr "We give liquidity providers the option of choosing between two liquidity protocols so they can earn passive income - KyberSwap Elastic and KyberSwap Classic. Simply deposit your liquidity and start earning."
+#: src/pages/About/AboutZuluSwap.tsx
+msgid "We give liquidity providers the option of choosing between two liquidity protocols so they can earn passive income - ZuluSwap Elastic and ZuluSwap Classic. Simply deposit your liquidity and start earning."
+msgstr "We give liquidity providers the option of choosing between two liquidity protocols so they can earn passive income - ZuluSwap Elastic and ZuluSwap Classic. Simply deposit your liquidity and start earning."
 
 #: src/components/swapv2/SwapModalHeader.tsx
 msgid "We may send multiple tx to complete the swap"
@@ -4137,33 +4137,33 @@ msgstr "Website"
 
 #: src/components/Tutorial/TutorialSwap/TutorialMobile.tsx
 #: src/components/Tutorial/TutorialSwap/constant.ts
-msgid "Welcome to KyberSwap!"
-msgstr "Welcome to KyberSwap!"
+msgid "Welcome to ZuluSwap!"
+msgstr "Welcome to ZuluSwap!"
 
 #: 
 #: 
-#~ msgid "What can KNC be used for?"
-#~ msgstr "What can KNC be used for?"
+#~ msgid "What can ZPX be used for?"
+#~ msgstr "What can ZPX be used for?"
 
-#: src/pages/About/AboutKNC.tsx
-msgid "What is KNC used for?"
-msgstr "What is KNC used for?"
+#: src/pages/About/AboutZPX.tsx
+msgid "What is ZPX used for?"
+msgstr "What is ZPX used for?"
 
 #: src/pages/RemoveLiquidityProAmm/index.tsx
 msgid "When you remove liquidity (even partially), you will receive 100% of your fee earnings"
 msgstr "When you remove liquidity (even partially), you will receive 100% of your fee earnings"
 
-#: src/pages/About/AboutKNC.tsx
-msgid "Where you can buy KNC"
-msgstr "Where you can buy KNC"
+#: src/pages/About/AboutZPX.tsx
+msgid "Where you can buy ZPX"
+msgstr "Where you can buy ZPX"
 
-#: src/pages/About/AboutKNC.tsx
-msgid "Where you can store KNC"
-msgstr "Where you can store KNC"
+#: src/pages/About/AboutZPX.tsx
+msgid "Where you can store ZPX"
+msgstr "Where you can store ZPX"
 
-#: src/pages/About/AboutKyberSwap.tsx
-msgid "With our Dynamic Trade Routing technology, we aggregate liquidity from multiple DEXs (including KyberSwap) and identify the best trade route for you."
-msgstr "With our Dynamic Trade Routing technology, we aggregate liquidity from multiple DEXs (including KyberSwap) and identify the best trade route for you."
+#: src/pages/About/AboutZuluSwap.tsx
+msgid "With our Dynamic Trade Routing technology, we aggregate liquidity from multiple DEXs (including ZuluSwap) and identify the best trade route for you."
+msgstr "With our Dynamic Trade Routing technology, we aggregate liquidity from multiple DEXs (including ZuluSwap) and identify the best trade route for you."
 
 #: src/components/YieldPools/ElasticFarmGroup/buttons.tsx
 msgid "Withdraw"
@@ -4257,8 +4257,8 @@ msgid "You can get in touch with us by joining our <0>Discord channel ↗</0> an
 msgstr "You can get in touch with us by joining our <0>Discord channel ↗</0> and we will assist you with your questions or transfer of rewards."
 
 #: src/pages/CreateReferral/index.tsx
-msgid "You can include the chain in your referral link so referees are automatically re-directed to this network on KyberSwap. You will still earn commission on trades that are made on other chains and use your referral link"
-msgstr "You can include the chain in your referral link so referees are automatically re-directed to this network on KyberSwap. You will still earn commission on trades that are made on other chains and use your referral link"
+msgid "You can include the chain in your referral link so referees are automatically re-directed to this network on ZuluSwap. You will still earn commission on trades that are made on other chains and use your referral link"
+msgstr "You can include the chain in your referral link so referees are automatically re-directed to this network on ZuluSwap. You will still earn commission on trades that are made on other chains and use your referral link"
 
 #: src/components/swapv2/SwapSettingsPanel/AdvancedModeSetting.tsx
 msgid "You can make trades with high price impact and without any confirmation prompts. Enable at your own risk"
@@ -4289,8 +4289,8 @@ msgid "You can repeat these instructions anytime by clicking on the \"View\" but
 msgstr "You can repeat these instructions anytime by clicking on the \"View\" button under Preferences."
 
 #: src/components/SearchModal/CurrencySearch.tsx
-msgid "You can search and select <0>any token</0> on KyberSwap"
-msgstr "You can search and select <0>any token</0> on KyberSwap"
+msgid "You can search and select <0>any token</0> on ZuluSwap"
+msgstr "You can search and select <0>any token</0> on ZuluSwap"
 
 #: src/components/SearchModal/bridge/CurrencySearchBridge.tsx
 msgid "You can select and transfer any token supported by Multichain from one chain to another"
@@ -4398,8 +4398,8 @@ msgid "You will accumulate farming rewards as long as your liquidity position is
 msgstr "You will accumulate farming rewards as long as your liquidity position is active."
 
 #: src/components/Header/web3/WalletModal/Option.tsx
-msgid "You will need to install {0} extension/dapp before you can connect with it on KyberSwap. Get it <0>here↗</0>"
-msgstr "You will need to install {0} extension/dapp before you can connect with it on KyberSwap. Get it <0>here↗</0>"
+msgid "You will need to install {0} extension/dapp before you can connect with it on ZuluSwap. Get it <0>here↗</0>"
+msgstr "You will need to install {0} extension/dapp before you can connect with it on ZuluSwap. Get it <0>here↗</0>"
 
 #: src/components/YieldPools/ProMMFarmModals/WithdrawModal.tsx
 #~ msgid "You will need to unstake your liquidity first before withdrawing it back to your wallet"
@@ -4708,8 +4708,8 @@ msgstr "{0} Fees Earned"
 #~ msgstr "{0} added"
 
 #: src/components/Tutorial/TutorialSwap/TutorialMobile.tsx
-msgid "{0} easy ways to get started with KyberSwap"
-msgstr "{0} easy ways to get started with KyberSwap"
+msgid "{0} easy ways to get started with ZuluSwap"
+msgstr "{0} easy ways to get started with ZuluSwap"
 
 #: 
 #~ msgid "{0} on {1}"
@@ -4757,8 +4757,8 @@ msgid "{0}Skip"
 msgstr "{0}Skip"
 
 #: src/components/Tutorial/TutorialSwap/TutorialMobile.tsx
-#~ msgid "{TOTAL_STEP} easy ways to get started with KyberSwap"
-#~ msgstr "{TOTAL_STEP} easy ways to get started with KyberSwap"
+#~ msgid "{TOTAL_STEP} easy ways to get started with ZuluSwap"
+#~ msgstr "{TOTAL_STEP} easy ways to get started with ZuluSwap"
 
 #: src/components/Popups/ListUpdatePopup.tsx
 #~ msgid "{numTokensChanged} tokens updated"

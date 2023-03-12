@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from '@kyberswap/ks-sdk-core'
+import { CurrencyAmount, Token } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { BigNumber } from 'ethers'
 import { Text } from 'rebass'

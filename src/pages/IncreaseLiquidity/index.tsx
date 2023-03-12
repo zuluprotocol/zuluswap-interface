@@ -1,6 +1,6 @@
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, CurrencyAmount, Percent, WETH } from '@kyberswap/ks-sdk-core'
-import { FeeAmount, NonfungiblePositionManager } from '@kyberswap/ks-sdk-elastic'
+import { Currency, CurrencyAmount, Percent, WETH } from '@zuluswap/zs-sdk-core'
+import { FeeAmount, NonfungiblePositionManager } from '@zuluswap/zs-sdk-elastic'
 import { Trans, t } from '@lingui/macro'
 import { BigNumber } from 'ethers'
 import JSBI from 'jsbi'

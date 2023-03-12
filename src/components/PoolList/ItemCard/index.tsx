@@ -1,4 +1,4 @@
-import { ChainId, Fraction, Percent } from '@kyberswap/ks-sdk-core'
+import { ChainId, Fraction, Percent } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { parseUnits } from 'ethers/lib/utils'
 import JSBI from 'jsbi'

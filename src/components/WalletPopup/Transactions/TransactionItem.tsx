@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import dayjs from 'dayjs'
 import { Fragment, ReactNode, forwardRef } from 'react'
@@ -65,16 +65,16 @@ const DescriptionBasic = (transaction: TransactionDetails) => {
   return <PrimaryText>{summary}</PrimaryText>
 }
 
-// ex: claim 3knc
+// ex: claim 3zpx
 const Description1Token = (transaction: TransactionDetails) => {
   const { extraInfo = {}, type } = transaction
   const { tokenSymbol, tokenAmount, tokenAddress } = extraInfo as TransactionExtraInfo1Token
-  // +10KNC or -10KNC
-  const plus = [TRANSACTION_TYPE.KYBERDAO_CLAIM].includes(type)
+  // +10ZPX or -10ZPX
+  const plus = [TRANSACTION_TYPE.ZULUDAO_CLAIM].includes(type)
   return <DeltaTokenAmount tokenAddress={tokenAddress} symbol={tokenSymbol} amount={tokenAmount} plus={plus} />
 }
 
-//ex: +3knc -2usdt
+//ex: +3zpx -2usdt
 const Description2Token = (transaction: TransactionDetails) => {
   const { extraInfo = {}, type } = transaction
   const { tokenAmountIn, tokenAmountOut, tokenSymbolIn, tokenSymbolOut, tokenAddressIn, tokenAddressOut } =
@@ -112,12 +112,12 @@ const Description2Token = (transaction: TransactionDetails) => {
   )
 }
 
-// ex: stake -3knc
-const DescriptionKyberDaoStake = (transaction: TransactionDetails) => {
+// ex: stake -3zpx
+const DescriptionZuluDaoStake = (transaction: TransactionDetails) => {
   const { extraInfo = {}, type } = transaction
   const { tokenSymbol, tokenAmount, tokenAddress } = extraInfo as TransactionExtraInfo1Token
   const votingPower = extraInfo?.arbitrary?.votingPower
-  const isUnstake = type === TRANSACTION_TYPE.KYBERDAO_UNSTAKE
+  const isUnstake = type === TRANSACTION_TYPE.ZULUDAO_UNSTAKE
   return (
     <>
       {isUnstake ? null : <DeltaTokenAmount symbol={t`voting power`} amount={votingPower + '%'} plus={!isUnstake} />}
@@ -226,7 +226,7 @@ const DescriptionBridge = (transaction: TransactionDetails) => {
   }
 }
 
-// ex: approve elastic farm, approve knc, claim 3knc
+// ex: approve elastic farm, approve zpx, claim 3zpx
 const DescriptionApproveClaim = (transaction: TransactionDetails) => {
   const { extraInfo = {}, type } = transaction
   const { tokenSymbol, tokenAmount, tokenAddress } = extraInfo as TransactionExtraInfo1Token
@@ -281,28 +281,28 @@ const DESCRIPTION_MAP: {
   ) => null | JSX.Element | { leftComponent: ReactNode; rightComponent: ReactNode }
 } = {
   [TRANSACTION_TYPE.ELASTIC_FORCE_WITHDRAW_LIQUIDITY]: DescriptionBasic,
-  [TRANSACTION_TYPE.KYBERDAO_VOTE]: DescriptionBasic,
-  [TRANSACTION_TYPE.KYBERDAO_DELEGATE]: DescriptionBasic,
-  [TRANSACTION_TYPE.KYBERDAO_UNDELEGATE]: DescriptionBasic,
+  [TRANSACTION_TYPE.ZULUDAO_VOTE]: DescriptionBasic,
+  [TRANSACTION_TYPE.ZULUDAO_DELEGATE]: DescriptionBasic,
+  [TRANSACTION_TYPE.ZULUDAO_UNDELEGATE]: DescriptionBasic,
 
   [TRANSACTION_TYPE.UNSTAKE]: DescriptionStakeFarm,
   [TRANSACTION_TYPE.STAKE]: DescriptionStakeFarm,
   [TRANSACTION_TYPE.ELASTIC_DEPOSIT_LIQUIDITY]: DescriptionStakeFarm,
   [TRANSACTION_TYPE.ELASTIC_WITHDRAW_LIQUIDITY]: DescriptionStakeFarm,
 
-  [TRANSACTION_TYPE.KYBERDAO_CLAIM]: Description1Token,
+  [TRANSACTION_TYPE.ZULUDAO_CLAIM]: Description1Token,
 
   [TRANSACTION_TYPE.APPROVE]: DescriptionApproveClaim,
   [TRANSACTION_TYPE.CLAIM_REWARD]: DescriptionApproveClaim,
 
-  [TRANSACTION_TYPE.KYBERDAO_STAKE]: DescriptionKyberDaoStake,
-  [TRANSACTION_TYPE.KYBERDAO_UNSTAKE]: DescriptionKyberDaoStake,
+  [TRANSACTION_TYPE.ZULUDAO_STAKE]: DescriptionZuluDaoStake,
+  [TRANSACTION_TYPE.ZULUDAO_UNSTAKE]: DescriptionZuluDaoStake,
   [TRANSACTION_TYPE.TRANSFER_TOKEN]: Description1Token,
 
   [TRANSACTION_TYPE.UNWRAP_TOKEN]: Description2Token,
   [TRANSACTION_TYPE.WRAP_TOKEN]: Description2Token,
   [TRANSACTION_TYPE.SWAP]: Description2Token,
-  [TRANSACTION_TYPE.KYBERDAO_MIGRATE]: Description2Token,
+  [TRANSACTION_TYPE.ZULUDAO_MIGRATE]: Description2Token,
 
   [TRANSACTION_TYPE.BRIDGE]: DescriptionBridge,
   [TRANSACTION_TYPE.CANCEL_LIMIT_ORDER]: DescriptionLimitOrder,

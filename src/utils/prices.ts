@@ -1,5 +1,5 @@
-import { Pair, Trade } from '@kyberswap/ks-sdk-classic'
-import { ChainId, Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@kyberswap/ks-sdk-core'
+import { Pair, Trade } from '@zuluswap/zs-sdk-classic'
+import { ChainId, Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@zuluswap/zs-sdk-core'
 import JSBI from 'jsbi'
 
 import {

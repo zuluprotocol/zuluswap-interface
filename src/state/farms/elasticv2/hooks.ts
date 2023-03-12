@@ -2,8 +2,8 @@ import { gql, useLazyQuery } from '@apollo/client'
 import { defaultAbiCoder } from '@ethersproject/abi'
 import { getCreate2Address } from '@ethersproject/address'
 import { keccak256 } from '@ethersproject/solidity'
-import { CurrencyAmount, Token, TokenAmount, WETH } from '@kyberswap/ks-sdk-core'
-import { FeeAmount, Pool, Position } from '@kyberswap/ks-sdk-elastic'
+import { CurrencyAmount, Token, TokenAmount, WETH } from '@zuluswap/zs-sdk-core'
+import { FeeAmount, Pool, Position } from '@zuluswap/zs-sdk-elastic'
 import { BigNumber } from 'ethers'
 import { Interface } from 'ethers/lib/utils'
 import { useEffect } from 'react'
@@ -14,7 +14,7 @@ import { EVMNetworkInfo } from 'constants/networks/type'
 import { NativeCurrencies } from 'constants/tokens'
 import { useActiveWeb3React } from 'hooks'
 import { useContract, useMulticallContract } from 'hooks/useContract'
-import { useKyberSwapConfig } from 'state/application/hooks'
+import { useZuluSwapConfig } from 'state/application/hooks'
 import { useAppDispatch, useAppSelector } from 'state/hooks'
 import { isAddressString } from 'utils'
 
@@ -103,7 +103,7 @@ export const useElasticFarmsV2 = (subscribe = false) => {
   const dispatch = useAppDispatch()
   const { networkInfo, isEVM, chainId, account } = useActiveWeb3React()
   const elasticFarm = useAppSelector(state => state.elasticFarmV2[chainId] || defaultChainData)
-  const { elasticClient } = useKyberSwapConfig()
+  const { elasticClient } = useZuluSwapConfig()
 
   const multicallContract = useMulticallContract()
   const farmv2QuoterContract = useContract(

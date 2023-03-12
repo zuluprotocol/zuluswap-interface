@@ -1,5 +1,5 @@
-import { BigintIsh, Currency, CurrencyAmount, TokenAmount } from '@kyberswap/ks-sdk-core'
-import { Pool, Position } from '@kyberswap/ks-sdk-elastic'
+import { BigintIsh, Currency, CurrencyAmount, TokenAmount } from '@zuluswap/zs-sdk-core'
+import { Pool, Position } from '@zuluswap/zs-sdk-elastic'
 import { BigNumber } from 'ethers'
 
 import { PositionDetails } from 'types/position'

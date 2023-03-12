@@ -1,4 +1,4 @@
-import { ChainId, getChainType } from '@kyberswap/ks-sdk-core'
+import { ChainId, getChainType } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { darken, rgba } from 'polished'
 import { stringify } from 'querystring'

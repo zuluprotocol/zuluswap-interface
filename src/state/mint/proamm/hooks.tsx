@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { ZERO } from '@kyberswap/ks-sdk-classic'
-import { Currency, CurrencyAmount, Fraction, Price, Rounding, Token } from '@kyberswap/ks-sdk-core'
+import { ZERO } from '@zuluswap/zs-sdk-classic'
+import { Currency, CurrencyAmount, Fraction, Price, Rounding, Token } from '@zuluswap/zs-sdk-core'
 import {
   FeeAmount,
   FullMath,
@@ -13,7 +13,7 @@ import {
   nearestUsableTick,
   priceToClosestTick,
   tickToPrice,
-} from '@kyberswap/ks-sdk-elastic'
+} from '@zuluswap/zs-sdk-elastic'
 import { Trans } from '@lingui/macro'
 import dayjs from 'dayjs'
 import JSBI from 'jsbi'
@@ -26,7 +26,7 @@ import { PoolRatesEntry } from 'data/type'
 import { useActiveWeb3React } from 'hooks'
 import { PoolState, usePool } from 'hooks/usePools'
 import { RANGE_LIST } from 'pages/AddLiquidityV2/constants'
-import { useKyberSwapConfig } from 'state/application/hooks'
+import { useZuluSwapConfig } from 'state/application/hooks'
 import { useAppDispatch, useAppSelector } from 'state/hooks'
 import { AppState } from 'state/index'
 import { tryParseAmount } from 'state/swap/hooks'
@@ -1399,7 +1399,7 @@ export function useHourlyRateData(
   const dispatch = useAppDispatch()
   const { chainId } = useActiveWeb3React()
   const [ratesData, setRatesData] = useState<[PoolRatesEntry[], PoolRatesEntry[]] | null>(null)
-  const { elasticClient, blockClient } = useKyberSwapConfig()
+  const { elasticClient, blockClient } = useZuluSwapConfig()
   useEffect(() => {
     const controller = new AbortController()
     const currentTime = dayjs.utc()

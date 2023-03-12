@@ -36,7 +36,7 @@ export const TutorialIds = {
 }
 
 export const LIST_TITLE = {
-  WELCOME: t`Welcome to KyberSwap!`,
+  WELCOME: t`Welcome to ZuluSwap!`,
   YOUR_WALLET: t`Your wallet address`,
   CONNECT_WALLET: t`Connect a wallet`,
   SELECT_NETWORK: t`Select your network`,
@@ -45,6 +45,6 @@ export const LIST_TITLE = {
   EARN: t`Earn trading fees through our Pools / Farms`,
   DISCOVER: t`Discover trending soon tokens`,
   CAMPAIGN: t`Participate in our campaigns`,
-  VIEW_GUIDE: t`View our KyberSwap Guide again`,
+  VIEW_GUIDE: t`View our ZuluSwap Guide again`,
   BRIDGE: t`Place Limit Orders, Bridge Tokens or Buy Crypto`,
 }

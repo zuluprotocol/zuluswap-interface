@@ -175,7 +175,7 @@ export const GridWrapper = styled.div`
   overflow-x: auto;
 `
 
-export const KyberSwapSlippage = styled.div`
+export const ZuluSwapSlippage = styled.div`
   border-radius: 8px;
   background-color: ${({ theme }) => `${theme.primary}33`};
   padding: 20px 16px 12px;
@@ -290,7 +290,7 @@ export const CommittedToSecurityDivider = styled.div<{ height?: string }>`
   background: ${({ theme }) => theme.border};
 `
 
-export const AboutKNC = styled.div`
+export const AboutZPX = styled.div`
   margin-top: 160px;
   gap: 76px;
   display: flex;

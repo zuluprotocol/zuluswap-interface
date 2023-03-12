@@ -1,4 +1,4 @@
-import { Price, Token } from '@kyberswap/ks-sdk-core'
+import { Price, Token } from '@zuluswap/zs-sdk-core'
 import {
   FeeAmount,
   TICK_SPACINGS,
@@ -6,7 +6,7 @@ import {
   encodeSqrtRatioX96,
   nearestUsableTick,
   priceToClosestTick,
-} from '@kyberswap/ks-sdk-elastic'
+} from '@zuluswap/zs-sdk-elastic'
 import JSBI from 'jsbi'
 
 import { rangeData } from 'pages/AddLiquidityV2/constants'

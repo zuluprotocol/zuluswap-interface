@@ -1,5 +1,5 @@
-import { Currency } from '@kyberswap/ks-sdk-core'
-import { Pool, Route } from '@kyberswap/ks-sdk-elastic'
+import { Currency } from '@zuluswap/zs-sdk-core'
+import { Pool, Route } from '@zuluswap/zs-sdk-elastic'
 
 function poolEquals(poolA: Pool, poolB: Pool): boolean {
   return (

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { BigNumber } from 'ethers'
 import { X } from 'react-feather'

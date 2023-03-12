@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { MaxUint256 } from '@ethersproject/constants'
-import { Fraction, Token, TokenAmount } from '@kyberswap/ks-sdk-core'
+import { Fraction, Token, TokenAmount } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { ethers } from 'ethers'
 import JSBI from 'jsbi'

@@ -1,5 +1,5 @@
-import { Token } from '@kyberswap/ks-sdk-core'
-import { tickToPrice } from '@kyberswap/ks-sdk-elastic'
+import { Token } from '@zuluswap/zs-sdk-core'
+import { tickToPrice } from '@zuluswap/zs-sdk-elastic'
 import JSBI from 'jsbi'
 
 import { Tick } from 'apollo/queries/promm'

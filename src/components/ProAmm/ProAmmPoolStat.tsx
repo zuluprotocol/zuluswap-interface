@@ -1,4 +1,4 @@
-import { ChainId, Token, WETH } from '@kyberswap/ks-sdk-core'
+import { ChainId, Token, WETH } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { rgba } from 'polished'
 import { useMemo } from 'react'

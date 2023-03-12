@@ -1,4 +1,4 @@
-import { Position } from '@kyberswap/ks-sdk-elastic'
+import { Position } from '@zuluswap/zs-sdk-elastic'
 import { Trans } from '@lingui/macro'
 import { Flex, Text } from 'rebass'
 import styled from 'styled-components'

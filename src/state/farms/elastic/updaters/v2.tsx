@@ -1,5 +1,5 @@
-import { CurrencyAmount, Token, TokenAmount, WETH } from '@kyberswap/ks-sdk-core'
-import { FeeAmount, Pool } from '@kyberswap/ks-sdk-elastic'
+import { CurrencyAmount, Token, TokenAmount, WETH } from '@zuluswap/zs-sdk-core'
+import { FeeAmount, Pool } from '@zuluswap/zs-sdk-elastic'
 import { useEffect } from 'react'
 import useSWR from 'swr'
 

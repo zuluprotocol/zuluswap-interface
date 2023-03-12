@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 
 import EthereumLogo from 'assets/images/ethereum-logo.png'
 import Mainnet from 'assets/networks/mainnet-network.svg'
@@ -36,7 +36,7 @@ const görliInfo: EVMNetworkInfo = {
   defaultRpcUrl: 'https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161',
   multicall: '0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974',
   classic: {
-    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-ethereum',
+    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/zulunetwork/zuluswap-exchange-ethereum',
     static: {
       zap: EMPTY,
       router: '0x4F4994415B72FE87E01345f522D0A62A584D19b4',
@@ -49,7 +49,7 @@ const görliInfo: EVMNetworkInfo = {
     fairlaunchV2: EMPTY_ARRAY,
   },
   elastic: {
-    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/viet-nv/kyberswap-elastic-goerli',
+    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/viet-nv/zuluswap-elastic-goerli',
     startBlock: 14932476,
     coreFactory: '0x1a91f5ADc7cB5763d35A26e98A18520CB9b67e70',
     nonfungiblePositionManager: '0x8B76f8e008570686aD5933e5669045c5B01DB7bE',
@@ -68,13 +68,13 @@ const görliInfo: EVMNetworkInfo = {
   deBankSlug: EMPTY,
   trueSightId: NOT_SUPPORT,
   dexToCompare: NOT_SUPPORT,
-  kyberDAO: {
+  zuluDAO: {
     staking: '0x9bc1214E28005e9c3f5E99Ff01C23D42796702CF',
     dao: '0x583c0A1a49CdC99f4709337fa5500844316366dc',
     rewardsDistributor: '0x62D82BC6aa44a4340F29E629b43859b7e0C1E915',
-    daoStatsApi: 'https://kyberswap-dao-stats.dev.kyberengineering.io',
-    KNCAddress: '0xd19e5119Efc73FeA1e70f9fbbc105DaB89D914e4',
-    KNCLAddress: '0x03010458f00F1B9fEb6Ad5d67A065971126fBBc1',
+    daoStatsApi: 'https://zuluswap-dao-stats.dev.zuluengineering.io',
+    ZPXAddress: '0xd19e5119Efc73FeA1e70f9fbbc105DaB89D914e4',
+    ZPXLAddress: '0x03010458f00F1B9fEb6Ad5d67A065971126fBBc1',
   },
 }
 

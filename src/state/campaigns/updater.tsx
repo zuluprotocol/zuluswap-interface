@@ -1,5 +1,5 @@
-import { ZERO } from '@kyberswap/ks-sdk-classic'
-import { Fraction } from '@kyberswap/ks-sdk-core'
+import { ZERO } from '@zuluswap/zs-sdk-classic'
+import { Fraction } from '@zuluswap/zs-sdk-core'
 import axios from 'axios'
 import { parseUnits } from 'ethers/lib/utils'
 import JSBI from 'jsbi'

@@ -6,7 +6,7 @@ import { QRCode, IProps as QRCodeProps } from 'react-qrcode-logo'
 import { Flex, Text } from 'rebass'
 import styled from 'styled-components'
 
-import KncLogo from 'assets/images/kyber_logo_for_qr.png'
+import ZpxLogo from 'assets/images/zulu_logo_for_qr.png'
 import { AddressInput } from 'components/AddressInputPanel'
 import Column from 'components/Column'
 import CopyHelper from 'components/Copy'
@@ -54,7 +54,7 @@ export default function ReceiveToken() {
     }
 
     return {
-      logoImage: KncLogo,
+      logoImage: ZpxLogo,
       logoWidth: 32,
       logoHeight: 32,
       size: QR_SIZE,

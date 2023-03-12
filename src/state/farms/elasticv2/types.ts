@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount, Token } from '@kyberswap/ks-sdk-core'
-import { Pool, Position } from '@kyberswap/ks-sdk-elastic'
+import { Currency, CurrencyAmount, Token } from '@zuluswap/zs-sdk-core'
+import { Pool, Position } from '@zuluswap/zs-sdk-elastic'
 import { BigNumber } from 'ethers'
 
 export interface ElasticFarmV2 {

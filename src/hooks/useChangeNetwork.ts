@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { t } from '@lingui/macro'
 import { UnsupportedChainIdError } from '@web3-react/core'
 import { useCallback } from 'react'
@@ -13,7 +13,7 @@ import { updateChainId } from 'state/user/actions'
 import { isEVMWallet, isSolanaWallet } from 'utils'
 
 import { useActivationWallet } from './useActivationWallet'
-import { useLazyKyberswapConfig } from './useKyberSwapConfig'
+import { useLazyZuluswapConfig } from './useZuluSwapConfig'
 
 const getEVMAddNetworkParams = (chainId: EVM_NETWORK, rpc: string) => ({
   chainId: '0x' + chainId.toString(16),
@@ -31,7 +31,7 @@ export function useChangeNetwork() {
   const { chainId, walletKey, walletEVM, walletSolana } = useActiveWeb3React()
   const { library, error } = useWeb3React()
   const { tryActivationEVM, tryActivationSolana } = useActivationWallet()
-  const fetchKyberswapConfig = useLazyKyberswapConfig()
+  const fetchZuluswapConfig = useLazyZuluswapConfig()
 
   const dispatch = useAppDispatch()
   const notify = useNotify()
@@ -103,7 +103,7 @@ export function useChangeNetwork() {
               typeof switchError === 'object' && switchError && Object.keys(switchError)?.length === 0
             // This error code indicates that the chain has not been added to MetaMask.
             if ([4902, -32603, -32002].includes(switchError?.code) || isSwitchError) {
-              const { rpc } = await fetchKyberswapConfig(desiredChainId)
+              const { rpc } = await fetchZuluswapConfig(desiredChainId)
               const addNetworkParams = getEVMAddNetworkParams(desiredChainId, rpc)
               const value = await activeProvider.request({
                 method: 'wallet_addEthereumChain',
@@ -116,7 +116,7 @@ export function useChangeNetwork() {
                 notify({
                   title: t`Failed to switch network`,
                   type: NotificationType.ERROR,
-                  summary: t`In order to use KyberSwap on ${NETWORKS_INFO[desiredChainId].name}, you must accept the network in your wallet.`,
+                  summary: t`In order to use ZuluSwap on ${NETWORKS_INFO[desiredChainId].name}, you must accept the network in your wallet.`,
                 })
                 failureCallback?.()
               }
@@ -126,7 +126,7 @@ export function useChangeNetwork() {
               notify({
                 title: t`Failed to switch network`,
                 type: NotificationType.ERROR,
-                summary: t`In order to use KyberSwap on ${NETWORKS_INFO[desiredChainId].name}, you must change the network in your wallet.`,
+                summary: t`In order to use ZuluSwap on ${NETWORKS_INFO[desiredChainId].name}, you must change the network in your wallet.`,
               })
             }
           }
@@ -147,7 +147,7 @@ export function useChangeNetwork() {
       walletEVM.chainId,
       walletSolana.isConnected,
       chainId,
-      fetchKyberswapConfig,
+      fetchZuluswapConfig,
     ],
   )
 

@@ -1,4 +1,4 @@
-import { Token } from '@kyberswap/ks-sdk-core'
+import { Token } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import React, { CSSProperties } from 'react'
 import styled from 'styled-components'

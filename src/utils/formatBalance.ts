@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Fraction } from '@kyberswap/ks-sdk-core'
+import { Fraction } from '@zuluswap/zs-sdk-core'
 import { formatUnits } from 'ethers/lib/utils'
 import JSBI from 'jsbi'
 import Numeral from 'numeral'
@@ -12,7 +12,7 @@ export const getFullDisplayBalance = (balance: BigNumber, decimals = 18, signifi
   if (amount.lessThan(new Fraction('1'))) {
     return amount.toSignificant(significant)
   }
-  // parseFloat here help 10.0000 KNC => 10 KNC
+  // parseFloat here help 10.0000 ZPX => 10 ZPX
   return parseFloat(amount.toFixed(significant)).toString()
 }
 

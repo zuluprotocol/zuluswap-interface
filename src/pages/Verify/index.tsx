@@ -41,7 +41,7 @@ enum STATUS {
 
 function validateUrl(url: string) {
   if (!url) return ''
-  const whitelistDomain = ['https://blog.kyberswap.com', 'http://blog.kyberswap.com']
+  const whitelistDomain = ['https://blog.zuluswap.com', 'http://blog.zuluswap.com']
   if (whitelistDomain.some(e => url.startsWith(e))) return url
   return ''
 }
@@ -141,7 +141,7 @@ function Verify() {
                 )}
               </Text>
               <Text as="p" color={theme.subText} fontSize="14px">
-                <Trans>KyberSwap team.</Trans>
+                <Trans>ZuluSwap team.</Trans>
               </Text>
             </>
           )}

@@ -1,11 +1,11 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { t } from '@lingui/macro'
 import { memo, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import styled, { css } from 'styled-components'
 
 import Row from 'components/Row'
 import { useActiveWeb3React } from 'hooks'
-import { isSupportKyberDao } from 'hooks/kyberdao'
+import { isSupportZuluDao } from 'hooks/zuludao'
 import { TRANSACTION_GROUP } from 'state/transactions/type'
 
 const ListTab = styled.div`
@@ -117,7 +117,7 @@ const listTab = [
   { text: t`All`, value: '' },
   { text: t`Swaps`, value: TRANSACTION_GROUP.SWAP },
   { text: t`Liquidity`, value: TRANSACTION_GROUP.LIQUIDITY },
-  { text: t`KyberDAO`, value: TRANSACTION_GROUP.KYBERDAO },
+  { text: t`ZuluDAO`, value: TRANSACTION_GROUP.ZULUDAO },
   { text: t`Others`, value: TRANSACTION_GROUP.OTHER },
 ] as const
 
@@ -173,8 +173,8 @@ const Tab: React.FC<Props> = ({ activeTab, setActiveTab }) => {
 
   const filterTab = useMemo(() => {
     return listTab.filter(tab => {
-      if (tab.value === TRANSACTION_GROUP.KYBERDAO) {
-        return isSupportKyberDao(chainId)
+      if (tab.value === TRANSACTION_GROUP.ZULUDAO) {
+        return isSupportZuluDao(chainId)
       }
       if (tab.value === TRANSACTION_GROUP.LIQUIDITY) {
         return chainId !== ChainId.SOLANA

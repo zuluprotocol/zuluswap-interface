@@ -1,4 +1,4 @@
-import { ChainId, Currency, Token, WETH } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency, Token, WETH } from '@zuluswap/zs-sdk-core'
 
 import { NativeCurrencies } from 'constants/tokens'
 

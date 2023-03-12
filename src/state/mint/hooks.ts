@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Pair } from '@kyberswap/ks-sdk-classic'
-import { Currency, CurrencyAmount, Percent, Price, TokenAmount, WETH } from '@kyberswap/ks-sdk-core'
+import { Pair } from '@zuluswap/zs-sdk-classic'
+import { Currency, CurrencyAmount, Percent, Price, TokenAmount, WETH } from '@zuluswap/zs-sdk-core'
 import { t } from '@lingui/macro'
 import JSBI from 'jsbi'
 import { useCallback, useMemo } from 'react'

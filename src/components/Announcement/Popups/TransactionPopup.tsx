@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { Box, Text } from 'rebass'
 import styled from 'styled-components'
@@ -29,27 +29,27 @@ const RowNoFlex = styled(AutoRow)`
 
 type SummaryFunction = (summary: TransactionDetails) => { success: string; error: string } | string
 
-// ex: approve 3 knc
+// ex: approve 3 zpx
 const summary1Token = (txs: TransactionDetails) => {
   const { tokenAmount, tokenSymbol } = (txs.extraInfo || {}) as TransactionExtraInfo1Token
   return `${txs.type} ${tokenAmount} ${tokenSymbol}`
 }
 
-// ex: swap 2knc to 3eth
+// ex: swap 2zpx to 3eth
 const summary2Token = (txs: TransactionDetails, withType = true) => {
   const { tokenAmountIn, tokenSymbolIn, tokenAmountOut, tokenSymbolOut } = (txs.extraInfo ||
     {}) as TransactionExtraInfo2Token
   return `${withType ? txs.type : ''} ${tokenAmountIn} ${tokenSymbolIn} to ${tokenAmountOut} ${tokenSymbolOut}`
 }
 
-// ex: approve knc, approve elastic farm
+// ex: approve zpx, approve elastic farm
 const summaryApprove = (txs: TransactionDetails) => {
   const { tokenSymbol } = (txs.extraInfo || {}) as TransactionExtraInfo1Token
   const { summary } = (txs.extraInfo || {}) as TransactionExtraBaseInfo
   return `${txs.type} ${summary ?? tokenSymbol}`
 }
 
-// ex: claim rewards, claim 3 knc
+// ex: claim rewards, claim 3 zpx
 const summaryClaim = (txs: TransactionDetails) => {
   const { tokenSymbol } = (txs.extraInfo || {}) as TransactionExtraInfo1Token
   const { summary } = (txs.extraInfo || {}) as TransactionExtraBaseInfo
@@ -60,7 +60,7 @@ const summaryStakeUnstakeFarm = (txs: TransactionDetails) => {
   return txs.type === TRANSACTION_TYPE.STAKE ? t`Stake liquidity into farm` : t`Unstake liquidity from farm`
 }
 
-// ex: elastic add liquidity 30 knc and 40 usdt
+// ex: elastic add liquidity 30 zpx and 40 usdt
 const summaryLiquidity = (txs: TransactionDetails) => {
   const extraInfo = txs.extraInfo || {}
   const {
@@ -93,7 +93,7 @@ const summaryBridge = (txs: TransactionDetails) => {
 const summaryDelegateDao = (txs: TransactionDetails) => {
   const { contract = '' } = (txs.extraInfo || {}) as TransactionExtraBaseInfo
   const summary =
-    txs.type === TRANSACTION_TYPE.KYBERDAO_UNDELEGATE
+    txs.type === TRANSACTION_TYPE.ZULUDAO_UNDELEGATE
       ? t`undelegated your voting power`
       : t`delegated voting power to ${contract.slice(0, 6)}...${contract.slice(-4)}`
 
@@ -140,13 +140,13 @@ const SUMMARY: { [type in TRANSACTION_TYPE]: SummaryFunction } = {
   [TRANSACTION_TYPE.CANCEL_LIMIT_ORDER]: summaryCancelLimitOrder,
   [TRANSACTION_TYPE.TRANSFER_TOKEN]: summary1Token,
 
-  [TRANSACTION_TYPE.KYBERDAO_CLAIM]: summary1Token,
-  [TRANSACTION_TYPE.KYBERDAO_UNDELEGATE]: summaryDelegateDao,
-  [TRANSACTION_TYPE.KYBERDAO_MIGRATE]: summary2Token,
-  [TRANSACTION_TYPE.KYBERDAO_STAKE]: summary1Token,
-  [TRANSACTION_TYPE.KYBERDAO_UNSTAKE]: summary1Token,
-  [TRANSACTION_TYPE.KYBERDAO_VOTE]: summaryTypeOnly,
-  [TRANSACTION_TYPE.KYBERDAO_DELEGATE]: summaryDelegateDao,
+  [TRANSACTION_TYPE.ZULUDAO_CLAIM]: summary1Token,
+  [TRANSACTION_TYPE.ZULUDAO_UNDELEGATE]: summaryDelegateDao,
+  [TRANSACTION_TYPE.ZULUDAO_MIGRATE]: summary2Token,
+  [TRANSACTION_TYPE.ZULUDAO_STAKE]: summary1Token,
+  [TRANSACTION_TYPE.ZULUDAO_UNSTAKE]: summary1Token,
+  [TRANSACTION_TYPE.ZULUDAO_VOTE]: summaryTypeOnly,
+  [TRANSACTION_TYPE.ZULUDAO_DELEGATE]: summaryDelegateDao,
 }
 
 const CUSTOM_SUCCESS_STATUS: { [key in string]: string } = {

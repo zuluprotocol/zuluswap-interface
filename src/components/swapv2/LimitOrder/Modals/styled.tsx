@@ -1,4 +1,4 @@
-import { Currency } from '@kyberswap/ks-sdk-core'
+import { Currency } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { ReactNode, useState } from 'react'
 import { X } from 'react-feather'

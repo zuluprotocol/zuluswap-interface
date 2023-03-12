@@ -1,4 +1,4 @@
-import { Token } from '@kyberswap/ks-sdk-core'
+import { Token } from '@zuluswap/zs-sdk-core'
 import { useEffect, useMemo } from 'react'
 
 import { KS_SETTING_API } from 'constants/env'

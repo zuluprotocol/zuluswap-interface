@@ -1,8 +1,8 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 
 import EthereumLogo from 'assets/images/ethereum-logo.png'
 import Mainnet from 'assets/networks/mainnet-network.svg'
-import { KS_SETTING_API, KYBER_DAO_STATS_API } from 'constants/env'
+import { KS_SETTING_API, ZULU_DAO_STATS_API } from 'constants/env'
 import { EVMNetworkInfo } from 'constants/networks/type'
 
 const EMPTY = ''
@@ -33,10 +33,10 @@ const ethereumInfo: EVMNetworkInfo = {
     decimal: 18,
     minForGas: 10 ** 16,
   },
-  defaultRpcUrl: 'https://ethereum.kyberengineering.io',
+  defaultRpcUrl: 'https://ethereum.zuluengineering.io',
   multicall: '0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696',
   classic: {
-    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-ethereum',
+    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/zulunetwork/zuluswap-exchange-ethereum',
     static: {
       zap: '0x2abE8750e4a65584d7452316356128C936273e0D',
       router: '0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0',
@@ -58,7 +58,7 @@ const ethereumInfo: EVMNetworkInfo = {
     fairlaunchV2: EMPTY_ARRAY,
   },
   elastic: {
-    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-mainnet',
+    defaultSubgraph: 'https://api.thegraph.com/subgraphs/name/zulunetwork/zuluswap-elastic-mainnet',
     startBlock: 14932476,
     coreFactory: '0x5F1dddbf348aC2fbe22a163e30F99F9ECE3DD50a',
     nonfungiblePositionManager: '0x2B1c7b41f6A8F2b2bc45C3233a5d5FB3cD6dC9A8',
@@ -75,13 +75,13 @@ const ethereumInfo: EVMNetworkInfo = {
   deBankSlug: 'eth',
   trueSightId: 'eth',
   dexToCompare: 'uniswapv3',
-  kyberDAO: {
+  zuluDAO: {
     staking: '0xeadb96F1623176144EBa2B24e35325220972b3bD',
     dao: '0x7Ec8FcC26bE7e9E85B57E73083E5Fe0550d8A7fE',
     rewardsDistributor: '0x5ec0dcf4f6f55f28550c70b854082993fdc0d3b2',
-    daoStatsApi: KYBER_DAO_STATS_API,
-    KNCAddress: '0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202',
-    KNCLAddress: '0xdd974D5C2e2928deA5F71b9825b8b646686BD200',
+    daoStatsApi: ZULU_DAO_STATS_API,
+    ZPXAddress: '0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202',
+    ZPXLAddress: '0xdd974D5C2e2928deA5F71b9825b8b646686BD200',
   },
 }
 

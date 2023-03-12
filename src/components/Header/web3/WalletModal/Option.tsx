@@ -223,7 +223,7 @@ const Option = ({
         placement="bottom"
         text={
           <Trans>
-            You will need to install {wallet.name} extension/dapp before you can connect with it on KyberSwap. Get it{' '}
+            You will need to install {wallet.name} extension/dapp before you can connect with it on ZuluSwap. Get it{' '}
             <ExternalLink href={wallet.installLink || ''}>here↗</ExternalLink>
           </Trans>
         }

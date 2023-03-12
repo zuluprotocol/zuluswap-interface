@@ -1,4 +1,4 @@
-import { Currency } from '@kyberswap/ks-sdk-core'
+import { Currency } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { Text } from 'rebass'
 
@@ -86,7 +86,7 @@ export default function ActionButtonLimitOrder({
             <ButtonApprove
               forceApprove={!enoughAllowance}
               tokenSymbol={currencyIn?.symbol}
-              tooltipMsg={t`You need to first allow KyberSwap smart contracts to use your ${currencyIn?.symbol}. This has to be done only once for each token.`}
+              tooltipMsg={t`You need to first allow ZuluSwap smart contracts to use your ${currencyIn?.symbol}. This has to be done only once for each token.`}
               approveCallback={approveCallback}
               disabled={!!disableBtnApproved}
               approval={approval}

@@ -2,7 +2,7 @@ import { defaultAbiCoder } from '@ethersproject/abi'
 import { getCreate2Address } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
 import { keccak256 } from '@ethersproject/solidity'
-import { computePoolAddress } from '@kyberswap/ks-sdk-elastic'
+import { computePoolAddress } from '@zuluswap/zs-sdk-elastic'
 import { useMemo } from 'react'
 
 import { EVMNetworkInfo } from 'constants/networks/type'

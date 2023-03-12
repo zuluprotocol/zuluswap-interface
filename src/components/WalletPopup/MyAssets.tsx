@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Token, TokenAmount } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount, Token, TokenAmount } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { stringify } from 'querystring'
 import { useState } from 'react'
@@ -140,7 +140,7 @@ export default function MyAssets({
             <Trans>
               Find a token by searching for name, symbol or address.
               <br />
-              You can select and import any token on KyberSwap.
+              You can select and import any token on ZuluSwap.
             </Trans>
           </Text>
         }

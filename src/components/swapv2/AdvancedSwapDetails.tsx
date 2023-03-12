@@ -1,4 +1,4 @@
-import { Currency, TradeType } from '@kyberswap/ks-sdk-core'
+import { Currency, TradeType } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import React, { useMemo, useState } from 'react'
 import { Flex, Text } from 'rebass'

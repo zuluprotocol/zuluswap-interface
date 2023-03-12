@@ -105,23 +105,23 @@ const HighlightText = styled.span`
 function Welcome() {
   return (
     <Layout>
-      <img src={WelcomeImage} alt="welcome to kyberswap" style={{ maxWidth: '100%', marginTop: 10 }} />
+      <img src={WelcomeImage} alt="welcome to zuluswap" style={{ maxWidth: '100%', marginTop: 10 }} />
       <Desc>
         <Trans>
-          KyberSwap is a decentralized exchange (DEX) aggregator. We provide our traders with the{' '}
+          ZuluSwap is a decentralized exchange (DEX) aggregator. We provide our traders with the{' '}
           <HighlightText>best token prices</HighlightText> by analyzing rates across thousands of exchanges instantly!
         </Trans>
       </Desc>
       <Desc>
         <Trans>
-          KyberSwap is also an automated market maker (AMM) with industry-leading liquidity protocols and{' '}
+          ZuluSwap is also an automated market maker (AMM) with industry-leading liquidity protocols and{' '}
           <HighlightText>concentrated liquidity</HighlightText>. Liquidity providers can add liquidity to our pools &{' '}
           <HighlightText>earn fees</HighlightText>!
         </Trans>
       </Desc>
       <Desc>
         <Trans>
-          We created this <HighlightText>quick tutorial</HighlightText> guide for you to highlight KyberSwap&#39;s main
+          We created this <HighlightText>quick tutorial</HighlightText> guide for you to highlight ZuluSwap&#39;s main
           features.
         </Trans>
       </Desc>
@@ -139,7 +139,7 @@ function ConnectWallet() {
   return (
     <Layout title={LIST_TITLE.CONNECT_WALLET}>
       <Desc>
-        <Trans>Choose your preferred wallet, connect it, and get started with KyberSwap!</Trans>
+        <Trans>Choose your preferred wallet, connect it, and get started with ZuluSwap!</Trans>
       </Desc>
       <ImageMobile imageName="step1.png" />
       <BrowserView>
@@ -194,7 +194,7 @@ function VideoSwap({ videoStyle = {} }: { videoStyle: CSSProperties }) {
     <Layout title={LIST_TITLE.START_TRADING}>
       <Desc>
         <Trans>
-          Select from over thousands of tokens and start trading. KyberSwap finds you the best prices across multiple
+          Select from over thousands of tokens and start trading. ZuluSwap finds you the best prices across multiple
           exchanges & combines them into one trade!
         </Trans>
       </Desc>
@@ -206,7 +206,7 @@ function VideoSwap({ videoStyle = {} }: { videoStyle: CSSProperties }) {
           style={videoStyle}
           src={`https://www.youtube.com/embed/${getTutorialVideoId(TutorialType.SWAP)}`}
           frameBorder="0"
-          title="Tutorial kyberswap"
+          title="Tutorial zuluswap"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
@@ -264,7 +264,7 @@ const getListSteps = (isLogin: boolean, isSolana: boolean) => {
         <Layout title={LIST_TITLE.SELECT_NETWORK}>
           <Desc>
             <Trans>
-              Choose your preferred network. KyberSwap is a multi chain platform that supports over 12 networks!
+              Choose your preferred network. ZuluSwap is a multi chain platform that supports over 12 networks!
             </Trans>
           </Desc>
           <ImageMobile imageName="step2.png" />
@@ -404,7 +404,7 @@ const getListSteps = (isLogin: boolean, isSolana: boolean) => {
           <Desc>
             <Trans>
               For a more detailed user guide,{' '}
-              <ExternalLink href="https://docs.kyberswap.com/guides/getting-started">click here.</ExternalLink>
+              <ExternalLink href="https://docs.zuluswap.com/guides/getting-started">click here.</ExternalLink>
             </Trans>
           </Desc>
           <ImageMobile imageName="step8.1.png" />

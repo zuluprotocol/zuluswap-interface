@@ -1,5 +1,5 @@
-import { ChainId, CurrencyAmount, Fraction } from '@kyberswap/ks-sdk-core'
-import { computePoolAddress } from '@kyberswap/ks-sdk-elastic'
+import { ChainId, CurrencyAmount, Fraction } from '@zuluswap/zs-sdk-core'
+import { computePoolAddress } from '@zuluswap/zs-sdk-elastic'
 import { Trans, t } from '@lingui/macro'
 import dayjs from 'dayjs'
 import { BigNumber } from 'ethers'

@@ -1,4 +1,4 @@
-import { Currency, Price } from '@kyberswap/ks-sdk-core'
+import { Currency, Price } from '@zuluswap/zs-sdk-core'
 
 import { Bound } from 'state/mint/proamm/type'
 

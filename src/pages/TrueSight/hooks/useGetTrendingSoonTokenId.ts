@@ -1,4 +1,4 @@
-import { Token } from '@kyberswap/ks-sdk-core'
+import { Token } from '@zuluswap/zs-sdk-core'
 import useSWR from 'swr'
 
 import { TRUESIGHT_API } from 'constants/env'

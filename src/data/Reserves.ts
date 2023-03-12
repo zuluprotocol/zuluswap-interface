@@ -1,5 +1,5 @@
-import { JSBI, Pair } from '@kyberswap/ks-sdk-classic'
-import { Currency, Token, TokenAmount } from '@kyberswap/ks-sdk-core'
+import { JSBI, Pair } from '@zuluswap/zs-sdk-classic'
+import { Currency, Token, TokenAmount } from '@zuluswap/zs-sdk-core'
 import { useMemo } from 'react'
 
 import DMM_POOL_INTERFACE from 'constants/abis/dmmPool'

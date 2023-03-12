@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 import { WalletLinkConnector } from '@web3-react/walletlink-connector'
@@ -49,8 +49,8 @@ export const walletconnect = new WalletConnectConnector({
 export const walletlink = new WalletLinkConnector({
   // TODO: check this later=> walletlink connect maybe failed because of this
   url: NETWORK_URL,
-  appName: 'KyberSwap',
-  appLogoUrl: 'https://kyberswap.com/favicon.ico',
+  appName: 'ZuluSwap',
+  appLogoUrl: 'https://zuluswap.com/favicon.ico',
 })
 
 export const trustWalletConnector = new InjectedConnector(injectedConnectorParam)

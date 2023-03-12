@@ -11,7 +11,7 @@ import {
   TokenAmount,
   WETH,
   computePriceImpact,
-} from '@kyberswap/ks-sdk-core'
+} from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { captureException } from '@sentry/react'
 import JSBI from 'jsbi'
@@ -197,7 +197,7 @@ export default function ZapOut({
     const nonce = await pairContract.nonces(account)
 
     const domain = {
-      name: isStaticFeePair ? 'KyberSwap LP' : 'KyberDMM LP',
+      name: isStaticFeePair ? 'ZuluSwap LP' : 'ZuluDMM LP',
       version: '1',
       chainId: chainId,
       verifyingContract: pair.liquidityToken.address,

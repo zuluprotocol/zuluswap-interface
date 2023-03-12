@@ -1,4 +1,4 @@
-import { ChainId, Percent } from '@kyberswap/ks-sdk-core'
+import { ChainId, Percent } from '@zuluswap/zs-sdk-core'
 import { t } from '@lingui/macro'
 import JSBI from 'jsbi'
 import { v4 as uuid } from 'uuid'
@@ -22,7 +22,7 @@ export class AbortedError extends Error {}
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 export const ZERO_ADDRESS_SOLANA = 'zeroooooooooooooooooooooooooooooooooooooooo'
 
-const DMM_ANALYTICS = 'https://analytics.kyberswap.com/classic'
+const DMM_ANALYTICS = 'https://analytics.zuluswap.com/classic'
 
 export const DMM_ANALYTICS_URL: { [chainId in ChainId]: string } = SUPPORTED_NETWORKS.reduce((acc, cur) => {
   if (isEVM(cur))
@@ -36,7 +36,7 @@ export const DMM_ANALYTICS_URL: { [chainId in ChainId]: string } = SUPPORTED_NET
   }
 }, {}) as { [chainId in ChainId]: string }
 
-const PROMM_ANALYTICS = 'https://analytics.kyberswap.com/elastic'
+const PROMM_ANALYTICS = 'https://analytics.zuluswap.com/elastic'
 export const AGGREGATOR_ANALYTICS_URL = 'https://secure.holistics.io/dashboards/v3/55952?_pl=672a0e4ff266f14541b8f54b'
 
 export const PROMM_ANALYTICS_URL: { [chainId in ChainId]: string } = SUPPORTED_NETWORKS.reduce((acc, cur) => {
@@ -149,7 +149,7 @@ export const OUTSIDE_FAIRLAUNCH_ADDRESSES: {
 } = {
   '0x597e3FeDBC02579232799Ecd4B7edeC4827B0435': {
     address: '0x597e3FeDBC02579232799Ecd4B7edeC4827B0435',
-    subgraphAPI: 'https://pancake-subgraph-proxy.kyberswap.com/proxy',
+    subgraphAPI: 'https://pancake-subgraph-proxy.zuluswap.com/proxy',
     query: ` { pair(id: "0x4e241e3e76214635eccc7408620b940f0bda267d") {
     id
     token0 {
@@ -191,7 +191,7 @@ export const OUTSITE_FARM_REWARDS_QUERY: {
   }
 } = {
   '0xc04a23149efdF9A63697f3Eb60705147e9f07FfD': {
-    subgraphAPI: 'https://pancake-subgraph-proxy.kyberswap.com/proxy',
+    subgraphAPI: 'https://pancake-subgraph-proxy.zuluswap.com/proxy',
     query: `{
       tokens(where: {id_in: ["0xc04a23149efdf9a63697f3eb60705147e9f07ffd"]}){
     id
@@ -205,11 +205,11 @@ export const OUTSITE_FARM_REWARDS_QUERY: {
 }
 
 export const COINGECKO_API_URL = 'https://api.coingecko.com/api/v3'
-export const KNC_COINGECKO_ID = 'kyber-network-crystal'
+export const ZPX_COINGECKO_ID = 'zulu-network-crystal'
 
 export const ETHER_ADDRESS = '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE'
-export const KYBER_NETWORK_DISCORD_URL = 'https://discord.com/invite/NB3vc8J9uv'
-export const KYBER_NETWORK_TWITTER_URL = 'https://twitter.com/KyberNetwork'
+export const ZULU_NETWORK_DISCORD_URL = 'https://discord.com/invite/NB3vc8J9uv'
+export const ZULU_NETWORK_TWITTER_URL = 'https://twitter.com/ZuluNetwork'
 
 export const DEFAULT_GAS_LIMIT_MARGIN = 20000
 
@@ -232,7 +232,7 @@ export const CAMPAIGN_LEADERBOARD_ITEM_PER_PAGE = 10
 export const CAMPAIGN_YOUR_TRANSACTIONS_ITEM_PER_PAGE = 10000
 
 export const ELASTIC_BASE_FEE_UNIT = 100_000
-export const KYBERSWAP_SOURCE = '{"source":"kyberswap"}'
+export const ZULUSWAP_SOURCE = '{"source":"zuluswap"}'
 
 export const CAMPAIGN_BASE_URL = `${CAMPAIGN_BASE_DOMAIN}/api/v1/campaigns`
 export const SWR_KEYS = {
@@ -275,18 +275,18 @@ export const APP_PATHS = {
   DISCOVER: '/discover',
   BUY_CRYPTO: '/buy-crypto',
   BRIDGE: '/bridge',
-  KYBERDAO: '/kyberdao',
-  KYBERDAO_STAKE: '/kyberdao/stake-knc',
-  KYBERDAO_VOTE: '/kyberdao/vote',
+  ZULUDAO: '/zuludao',
+  ZULUDAO_STAKE: '/zuludao/stake-zpx',
+  ZULUDAO_VOTE: '/zuludao/vote',
   LIMIT: '/limit',
   VERIFY_EXTERNAL: '/verify-external',
   GRANT_PROGRAMS: '/inter-project-trading-campaigns',
 }
 
 export const TERM_FILES_PATH = {
-  KYBERSWAP_TERMS: '/files/23022023KyberSwapTermsofUse.pdf',
+  ZULUSWAP_TERMS: '/files/23022023ZuluSwapTermsofUse.pdf',
   PRIVACY_POLICY: '/files/privacy.pdf',
-  KYBER_DAO_TERMS: '/files/dao-tac.pdf',
+  ZULU_DAO_TERMS: '/files/dao-tac.pdf',
   // Timestamp of changed date, update this to latest timestamp whenever change any above files. This also used to check on client side for updated to force user to disconnect and re-accept terms.
   VERSION: 1677129615161,
 }

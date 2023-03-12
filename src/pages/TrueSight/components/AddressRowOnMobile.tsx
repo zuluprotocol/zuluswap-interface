@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import React from 'react'
 import { CheckCircle, ChevronDown, Copy } from 'react-feather'

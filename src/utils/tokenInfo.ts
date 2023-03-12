@@ -1,4 +1,4 @@
-import { ChainId, Currency, NativeCurrency, Token, WETH } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency, NativeCurrency, Token, WETH } from '@zuluswap/zs-sdk-core'
 import axios from 'axios'
 
 import { KS_SETTING_API } from 'constants/env'
@@ -24,7 +24,7 @@ export const convertSymbol = (network: string, value: string) => {
 /**
  * check url format /network/sym1-to-sym2, sym1 vs sym2 is in whitelist
  * @param chainId
- * @param symbol1 ex: knc
+ * @param symbol1 ex: zpx
  * @param symbol2 ex: usdt
  * @returns
  */
@@ -88,7 +88,7 @@ export const getTokenSymbolWithHardcode = (
     (chainId === ChainId.ARBITRUM &&
       address?.toLowerCase() === '0x316772cFEc9A3E976FDE42C3Ba21F5A13aAaFf12'.toLowerCase())
   ) {
-    return 'mKNC'
+    return 'mZPX'
   }
   return defaultSymbol ?? ''
 }

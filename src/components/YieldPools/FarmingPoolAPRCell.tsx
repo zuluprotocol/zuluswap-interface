@@ -1,4 +1,4 @@
-import { Fraction } from '@kyberswap/ks-sdk-core'
+import { Fraction } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { Placement } from '@popperjs/core'
 import { parseUnits } from 'ethers/lib/utils'

@@ -1,13 +1,13 @@
 import { gql, useQuery } from '@apollo/client'
-import { CurrencyAmount, Token } from '@kyberswap/ks-sdk-core'
-import { Pool, Position } from '@kyberswap/ks-sdk-elastic'
+import { CurrencyAmount, Token } from '@zuluswap/zs-sdk-core'
+import { Pool, Position } from '@zuluswap/zs-sdk-elastic'
 import dayjs from 'dayjs'
 import JSBI from 'jsbi'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { useActiveWeb3React } from 'hooks'
-import { useKyberSwapConfig } from 'state/application/hooks'
+import { useZuluSwapConfig } from 'state/application/hooks'
 import { AppState } from 'state/index'
 import { getBlocksFromTimestamps } from 'utils'
 
@@ -172,7 +172,7 @@ export interface UserPositionResult {
  */
 export function useUserProMMPositions(): UserPositionResult {
   const { chainId, account, isEVM } = useActiveWeb3React()
-  const { elasticClient } = useKyberSwapConfig()
+  const { elasticClient } = useZuluSwapConfig()
 
   const { loading, error, data } = useQuery(PROMM_USER_POSITIONS, {
     client: elasticClient,
@@ -239,7 +239,7 @@ export function useUserProMMPositions(): UserPositionResult {
 
 export const usePoolBlocks = () => {
   const { chainId } = useActiveWeb3React()
-  const { blockClient } = useKyberSwapConfig()
+  const { blockClient } = useZuluSwapConfig()
 
   const utcCurrentTime = dayjs()
   const last24h = utcCurrentTime.subtract(1, 'day').startOf('minute').unix()
@@ -301,7 +301,7 @@ export function useTopPoolAddresses(): {
   addresses: string[] | undefined
 } {
   const { isEVM } = useActiveWeb3React()
-  const { elasticClient } = useKyberSwapConfig()
+  const { elasticClient } = useZuluSwapConfig()
 
   const { loading, error, data } = useQuery<TopPoolsResponse>(TOP_POOLS, {
     client: elasticClient,

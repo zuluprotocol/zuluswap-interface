@@ -1,4 +1,4 @@
-import { ChainId, Currency, Token, WETH } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency, Token, WETH } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import axios from 'axios'
 import { rgba } from 'polished'
@@ -438,7 +438,7 @@ export function CurrencySearch({
                     <Trans>
                       Find a token by searching for its name or symbol or by pasting its address below.
                       <br />
-                      You can select and trade any token on KyberSwap.
+                      You can select and trade any token on ZuluSwap.
                     </Trans>
                   </Text>
                 )
@@ -449,7 +449,7 @@ export function CurrencySearch({
         </RowBetween>
         <Text style={{ color: theme.subText, fontSize: 12 }}>
           <Trans>
-            You can search and select <span style={{ color: theme.text }}>any token</span> on KyberSwap
+            You can search and select <span style={{ color: theme.text }}>any token</span> on ZuluSwap
           </Trans>
         </Text>
 

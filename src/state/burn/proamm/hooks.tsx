@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount, Percent, Token, TokenAmount } from '@kyberswap/ks-sdk-core'
-import { Position } from '@kyberswap/ks-sdk-elastic'
+import { Currency, CurrencyAmount, Percent, Token, TokenAmount } from '@zuluswap/zs-sdk-core'
+import { Position } from '@zuluswap/zs-sdk-elastic'
 import { Trans } from '@lingui/macro'
 import { ReactNode, useCallback, useMemo } from 'react'
 

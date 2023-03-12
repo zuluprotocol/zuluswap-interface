@@ -1,5 +1,5 @@
-import { Pair, Trade } from '@kyberswap/ks-sdk-classic'
-import { Currency, CurrencyAmount, Token, TradeType } from '@kyberswap/ks-sdk-core'
+import { Pair, Trade } from '@zuluswap/zs-sdk-classic'
+import { Currency, CurrencyAmount, Token, TradeType } from '@zuluswap/zs-sdk-core'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 
@@ -19,7 +19,7 @@ import { useUserSlippageTolerance } from 'state/user/hooks'
 import { isAddress } from 'utils'
 import { Aggregator } from 'utils/aggregator'
 
-import { useKyberswapGlobalConfig } from './useKyberSwapConfig'
+import { useZuluswapGlobalConfig } from './useZuluSwapConfig'
 
 function useAllCommonPairs(currencyA?: Currency, currencyB?: Currency): Pair[][] {
   const allPairCombinations = useAllCurrencyCombinations(currencyA, currencyB)
@@ -105,7 +105,7 @@ export function useTradeExactInV2(
   const txsInChain = useAllTransactions()
   const [, setEncodeSolana] = useEncodeSolana()
   const { connection } = useWeb3Solana()
-  const { aggregatorAPI } = useKyberswapGlobalConfig()
+  const { aggregatorAPI } = useZuluswapGlobalConfig()
   const allDexes = useAllDexes()
   const [excludeDexes] = useExcludeDexes()
 
@@ -114,7 +114,7 @@ export function useTradeExactInV2(
   const dexes =
     selectedDexes?.length === allDexes?.length
       ? ''
-      : selectedDexes?.join(',').replace('kyberswapv1', 'kyberswap,kyberswap-static') || ''
+      : selectedDexes?.join(',').replace('zuluswapv1', 'zuluswap,zuluswap-static') || ''
 
   const [trade, setTrade] = useState<Aggregator | null>(null)
   const [comparer, setComparer] = useState<AggregationComparer | null>(null)

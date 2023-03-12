@@ -1,4 +1,4 @@
-import { Currency, Token } from '@kyberswap/ks-sdk-core'
+import { Currency, Token } from '@zuluswap/zs-sdk-core'
 import { useEffect } from 'react'
 import { usePrevious } from 'react-use'
 

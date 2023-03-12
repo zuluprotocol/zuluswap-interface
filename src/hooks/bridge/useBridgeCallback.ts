@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { captureException } from '@sentry/react'
 import axios from 'axios'
 import { useCallback, useMemo } from 'react'

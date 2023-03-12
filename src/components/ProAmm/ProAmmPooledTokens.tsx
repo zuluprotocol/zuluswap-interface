@@ -1,5 +1,5 @@
-import { ZERO } from '@kyberswap/ks-sdk-classic'
-import { Currency, CurrencyAmount } from '@kyberswap/ks-sdk-core'
+import { ZERO } from '@zuluswap/zs-sdk-classic'
+import { Currency, CurrencyAmount } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import dayjs from 'dayjs'
 import { Text } from 'rebass'

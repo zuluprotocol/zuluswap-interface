@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { createReducer, nanoid } from '@reduxjs/toolkit'
 import ksSettingApi from 'services/ksSetting'
 
@@ -18,7 +18,7 @@ import {
   setSubscribedNotificationTopic,
   updateBlockNumber,
   updateETHPrice,
-  updateKNCPrice,
+  updateZPXPrice,
   updatePrommETHPrice,
   updateServiceWorker,
 } from './actions'
@@ -35,7 +35,7 @@ interface ApplicationState {
   readonly openModal: ApplicationModal | null
   readonly ethPrice: ETHPrice
   readonly prommEthPrice: ETHPrice
-  readonly kncPrice?: string
+  readonly zpxPrice?: string
   readonly serviceWorkerRegistration: ServiceWorkerRegistration | null
   readonly notification: {
     isLoading: boolean
@@ -76,7 +76,7 @@ const initialState: ApplicationState = {
   openModal: null,
   ethPrice: {},
   prommEthPrice: {},
-  kncPrice: '',
+  zpxPrice: '',
   serviceWorkerRegistration: null,
   notification: initialStateNotification,
   config: {},
@@ -125,8 +125,8 @@ export default createReducer(initialState, builder =>
       state.ethPrice.oneDayBackPrice = oneDayBackPrice
       state.ethPrice.pricePercentChange = pricePercentChange
     })
-    .addCase(updateKNCPrice, (state, { payload: kncPrice }) => {
-      state.kncPrice = kncPrice
+    .addCase(updateZPXPrice, (state, { payload: zpxPrice }) => {
+      state.zpxPrice = zpxPrice
     })
     .addCase(updateServiceWorker, (state, { payload }) => {
       state.serviceWorkerRegistration = payload
@@ -153,7 +153,7 @@ export default createReducer(initialState, builder =>
         announcementDetail,
       }
     })
-    .addMatcher(ksSettingApi.endpoints.getKyberswapConfiguration.matchFulfilled, (state, action) => {
+    .addMatcher(ksSettingApi.endpoints.getZuluswapConfiguration.matchFulfilled, (state, action) => {
       const { chainId } = action.meta.arg.originalArgs
       const evm = isEVM(chainId)
       const data = action.payload.data.config

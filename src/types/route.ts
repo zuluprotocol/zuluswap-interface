@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Price } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount, Price } from '@zuluswap/zs-sdk-core'
 
 export type Route = {
   pool: string

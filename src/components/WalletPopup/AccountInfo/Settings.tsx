@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { rgba } from 'polished'
 import { BarChart2, LogOut, Settings as SettingsIcon } from 'react-feather'

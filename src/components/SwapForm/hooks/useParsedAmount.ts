@@ -1,4 +1,4 @@
-import { Currency } from '@kyberswap/ks-sdk-core'
+import { Currency } from '@zuluswap/zs-sdk-core'
 import { useMemo } from 'react'
 
 import { tryParseAmount } from 'state/swap/hooks'

@@ -1,5 +1,5 @@
 import { Contract, ContractInterface } from '@ethersproject/contracts'
-import { ChainId, WETH } from '@kyberswap/ks-sdk-core'
+import { ChainId, WETH } from '@zuluswap/zs-sdk-core'
 import { useMemo } from 'react'
 
 import IUniswapV2PairABI from 'constants/abis/IUniswapV2PairABI.json'
@@ -31,7 +31,7 @@ import { MULTICALL_ABI } from 'constants/multicall'
 import { NETWORKS_INFO, isEVM } from 'constants/networks'
 import { EVMNetworkInfo } from 'constants/networks/type'
 import { useWeb3React } from 'hooks'
-import { useKyberSwapConfig } from 'state/application/hooks'
+import { useZuluSwapConfig } from 'state/application/hooks'
 import { FairLaunchVersion, RewardLockerVersion } from 'state/farms/classic/types'
 import { useRewardLockerAddressesWithVersion } from 'state/vesting/hooks'
 import { getContract, getContractForReading } from 'utils/getContract'
@@ -65,7 +65,7 @@ export function useContractForReading(
 ): Contract | null {
   const { chainId: curChainId } = useActiveWeb3React()
   const chainId = customChainId || curChainId
-  const { provider } = useKyberSwapConfig(chainId)
+  const { provider } = useZuluSwapConfig(chainId)
 
   return useMemo(() => {
     if (!address || !isEVM(chainId) || !provider) return null
@@ -88,7 +88,7 @@ export function useMultipleContracts(
 } | null {
   const { account, isEVM } = useActiveWeb3React()
   const { library } = useWeb3React()
-  const { provider } = useKyberSwapConfig()
+  const { provider } = useZuluSwapConfig()
 
   return useMemo(() => {
     if (!isEVM || !addresses || !Array.isArray(addresses) || addresses.length === 0 || !ABI || !library || !provider)

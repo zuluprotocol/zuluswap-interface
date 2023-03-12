@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, Fraction, TokenAmount, WETH } from '@kyberswap/ks-sdk-core'
+import { Currency, Fraction, TokenAmount, WETH } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { parseUnits } from 'ethers/lib/utils'
 import JSBI from 'jsbi'

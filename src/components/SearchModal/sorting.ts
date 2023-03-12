@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, Token, TokenAmount } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency, CurrencyAmount, Token, TokenAmount } from '@zuluswap/zs-sdk-core'
 import JSBI from 'jsbi'
 import { useMemo } from 'react'
 

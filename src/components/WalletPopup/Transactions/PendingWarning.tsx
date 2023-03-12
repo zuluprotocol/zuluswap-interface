@@ -20,7 +20,7 @@ export default function PendingWarning() {
             <MouseoverTooltip
               text={t`Stuck transaction. Your transaction has been processing for more than ${NUMBERS.STALLED_MINS} mins.`}
             >
-              <ExternalLink href="https://support.kyberswap.com/hc/en-us/articles/13785666409881-Why-is-my-transaction-stuck-in-Pending-state-">
+              <ExternalLink href="https://support.zuluswap.com/hc/en-us/articles/13785666409881-Why-is-my-transaction-stuck-in-Pending-state-">
                 See here
               </ExternalLink>
             </MouseoverTooltip>

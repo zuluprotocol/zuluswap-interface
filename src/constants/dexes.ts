@@ -1,12 +1,12 @@
-export const kyberswapDexes = [
+export const zuluswapDexes = [
   {
-    name: 'KyberSwap Elastic',
-    id: 'kyberswapv2',
-    logoURL: 'https://kyberswap.com/favicon.ico',
+    name: 'ZuluSwap Elastic',
+    id: 'zuluswapv2',
+    logoURL: 'https://zuluswap.com/favicon.ico',
   },
   {
-    name: 'KyberSwap Classic',
-    id: 'kyberswapv1',
-    logoURL: 'https://kyberswap.com/favicon.ico',
+    name: 'ZuluSwap Classic',
+    id: 'zuluswapv1',
+    logoURL: 'https://zuluswap.com/favicon.ico',
   },
 ]

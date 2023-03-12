@@ -2,7 +2,7 @@ import { BigNumber } from '@ethersproject/bignumber'
 import { splitSignature } from '@ethersproject/bytes'
 import { Contract } from '@ethersproject/contracts'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, CurrencyAmount, Fraction, Percent, Token, WETH } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount, Fraction, Percent, Token, WETH } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { captureException } from '@sentry/react'
 import JSBI from 'jsbi'
@@ -160,7 +160,7 @@ export default function TokenPair({
     const nonce = await pairContract.nonces(account)
 
     const domain = {
-      name: isStaticFeePair ? 'KyberSwap LP' : 'KyberDMM LP',
+      name: isStaticFeePair ? 'ZuluSwap LP' : 'ZuluDMM LP',
       version: '1',
       chainId: chainId,
       verifyingContract: pair.liquidityToken.address,

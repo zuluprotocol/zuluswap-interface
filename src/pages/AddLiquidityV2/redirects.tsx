@@ -1,4 +1,4 @@
-import { WETH } from '@kyberswap/ks-sdk-core'
+import { WETH } from '@zuluswap/zs-sdk-core'
 import { Navigate, useParams } from 'react-router-dom'
 
 import { APP_PATHS } from 'constants/index'

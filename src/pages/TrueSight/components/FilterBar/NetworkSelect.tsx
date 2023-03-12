@@ -6,7 +6,7 @@ import { Flex, Image, Text } from 'rebass'
 import styled from 'styled-components'
 
 import { ReactComponent as ChevronDown } from 'assets/svg/down.svg'
-import Kyber from 'components/Icons/Kyber'
+import Zulu from 'components/Icons/Zulu'
 import TrueSightNetworkModal from 'components/TrueSightNetworkModal'
 import { NETWORKS_INFO, TRENDING_SOON_SUPPORTED_NETWORKS } from 'constants/networks'
 import { useOnClickOutside } from 'hooks/useOnClickOutside'
@@ -68,7 +68,7 @@ const NetworkSelect = ({
         {selectedNetwork ? (
           <Image minHeight={20} minWidth={20} height={20} width={20} src={NETWORKS_INFO[selectedNetwork].icon} />
         ) : (
-          <Kyber size={24} color={theme.border} />
+          <Zulu size={24} color={theme.border} />
         )}
         <Text color={selectedNetwork ? theme.subText : theme.border} fontSize="14px" lineHeight="24px">
           {selectedNetwork ? NETWORKS_INFO[selectedNetwork].name : <Trans>All Chains</Trans>}

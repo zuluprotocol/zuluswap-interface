@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from '@kyberswap/ks-sdk-core'
+import { Token, TokenAmount } from '@zuluswap/zs-sdk-core'
 import { useMemo } from 'react'
 
 import { useActiveWeb3React } from 'hooks'

@@ -10,7 +10,7 @@ import PoweredByIconDark from 'components/Icons/PoweredByIconDark'
 import PoweredByIconLight from 'components/Icons/PoweredByIconLight'
 import TwitterIcon from 'components/Icons/TwitterIcon'
 import InfoHelper from 'components/InfoHelper'
-import { KYBER_NETWORK_DISCORD_URL, KYBER_NETWORK_TWITTER_URL } from 'constants/index'
+import { ZULU_NETWORK_DISCORD_URL, ZULU_NETWORK_TWITTER_URL } from 'constants/index'
 import useTheme from 'hooks/useTheme'
 import { useIsDarkMode } from 'state/user/hooks'
 import { ExternalLink, ExternalLinkNoLineHeight } from 'theme'
@@ -84,16 +84,16 @@ export const FooterSocialLink = () => {
   const theme = useTheme()
   return (
     <Flex alignItems="center" justifyContent="center" sx={{ gap: '24px' }}>
-      <ExternalLinkNoLineHeight href="https://t.me/kybernetwork">
+      <ExternalLinkNoLineHeight href="https://t.me/zulunetwork">
         <Telegram size={16} color={theme.subText} />
       </ExternalLinkNoLineHeight>
-      <ExternalLinkNoLineHeight href={KYBER_NETWORK_TWITTER_URL}>
+      <ExternalLinkNoLineHeight href={ZULU_NETWORK_TWITTER_URL}>
         <TwitterIcon color={theme.subText} />
       </ExternalLinkNoLineHeight>
-      <ExternalLinkNoLineHeight href={KYBER_NETWORK_DISCORD_URL}>
+      <ExternalLinkNoLineHeight href={ZULU_NETWORK_DISCORD_URL}>
         <Discord width={16} height={12} color={theme.subText} />
       </ExternalLinkNoLineHeight>
-      <ExternalLinkNoLineHeight href={`https://blog.kyber.network`}>
+      <ExternalLinkNoLineHeight href={`https://blog.zulu.network`}>
         <Medium />
       </ExternalLinkNoLineHeight>
     </Flex>
@@ -112,7 +112,7 @@ function Footer() {
             <Text marginRight="6px">
               <Trans>Powered By</Trans>
             </Text>
-            <ExternalLink href="https://kyber.network" style={{ display: 'flex' }}>
+            <ExternalLink href="https://zulu.network" style={{ display: 'flex' }}>
               {isDarkMode ? <PoweredByIconDark width={48} /> : <PoweredByIconLight width={48} />}
             </ExternalLink>
           </Item>
@@ -123,7 +123,7 @@ function Footer() {
               <Trans>Audited By</Trans>
               {!above768 && <InfoHelper size={14} text={t`Covers smart-contracts`} placement="top" />}
             </Text>
-            <ExternalLink href="https://chainsecurity.com/security-audit/kyberswap-elastic" style={{ display: 'flex' }}>
+            <ExternalLink href="https://chainsecurity.com/security-audit/zuluswap-elastic" style={{ display: 'flex' }}>
               <img
                 src={
                   !isDarkMode

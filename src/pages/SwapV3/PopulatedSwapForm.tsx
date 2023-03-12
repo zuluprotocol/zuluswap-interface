@@ -1,4 +1,4 @@
-import { Currency } from '@kyberswap/ks-sdk-core'
+import { Currency } from '@zuluswap/zs-sdk-core'
 import { useCallback, useMemo } from 'react'
 
 import SwapForm, { SwapFormProps } from 'components/SwapForm'

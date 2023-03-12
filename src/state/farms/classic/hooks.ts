@@ -1,5 +1,5 @@
 import { Interface } from '@ethersproject/abi'
-import { Fraction, Token } from '@kyberswap/ks-sdk-core'
+import { Fraction, Token } from '@zuluswap/zs-sdk-core'
 import { ethers } from 'ethers'
 import JSBI from 'jsbi'
 import { useMemo } from 'react'

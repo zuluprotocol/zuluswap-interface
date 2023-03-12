@@ -1,11 +1,11 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 
 export interface SerializableTransactionReceipt {
   blockHash: string
   status?: number
 }
 
-// ex: approve knc, stake 2 knc
+// ex: approve zpx, stake 2 zpx
 export type TransactionExtraInfo1Token = {
   tokenAddress: string
   tokenSymbol: string
@@ -13,7 +13,7 @@ export type TransactionExtraInfo1Token = {
   contract?: string // recipient, contract, spender, ...
 }
 
-// ex: swap 2knc to 2usdt
+// ex: swap 2zpx to 2usdt
 export type TransactionExtraInfo2Token = {
   tokenAddressIn: string
   tokenAddressOut: string
@@ -140,13 +140,13 @@ export enum TRANSACTION_TYPE {
   ELASTIC_FORCE_WITHDRAW_LIQUIDITY = 'Elastic Force Withdraw Liquidity',
   SETUP_SOLANA_SWAP = 'Set Up Swap Solana',
 
-  KYBERDAO_STAKE = 'KyberDAO Stake',
-  KYBERDAO_UNSTAKE = 'KyberDAO Unstake',
-  KYBERDAO_DELEGATE = 'KyberDAO Delegate',
-  KYBERDAO_UNDELEGATE = 'KyberDAO Undelegate',
-  KYBERDAO_MIGRATE = 'KyberDAO Migrate',
-  KYBERDAO_VOTE = 'KyberDAO Vote',
-  KYBERDAO_CLAIM = 'KyberDAO Claim Voting Reward',
+  ZULUDAO_STAKE = 'ZuluDAO Stake',
+  ZULUDAO_UNSTAKE = 'ZuluDAO Unstake',
+  ZULUDAO_DELEGATE = 'ZuluDAO Delegate',
+  ZULUDAO_UNDELEGATE = 'ZuluDAO Undelegate',
+  ZULUDAO_MIGRATE = 'ZuluDAO Migrate',
+  ZULUDAO_VOTE = 'ZuluDAO Vote',
+  ZULUDAO_CLAIM = 'ZuluDAO Claim Voting Reward',
 
   CANCEL_LIMIT_ORDER = 'Cancel Limit Order',
   TRANSFER_TOKEN = 'Send',
@@ -175,14 +175,14 @@ export const GROUP_TRANSACTION_BY_TYPE = {
     TRANSACTION_TYPE.ELASTIC_COLLECT_FEE,
     TRANSACTION_TYPE.ELASTIC_FORCE_WITHDRAW_LIQUIDITY,
   ],
-  KYBERDAO: [
-    TRANSACTION_TYPE.KYBERDAO_STAKE,
-    TRANSACTION_TYPE.KYBERDAO_UNSTAKE,
-    TRANSACTION_TYPE.KYBERDAO_DELEGATE,
-    TRANSACTION_TYPE.KYBERDAO_UNDELEGATE,
-    TRANSACTION_TYPE.KYBERDAO_MIGRATE,
-    TRANSACTION_TYPE.KYBERDAO_VOTE,
-    TRANSACTION_TYPE.KYBERDAO_CLAIM,
+  ZULUDAO: [
+    TRANSACTION_TYPE.ZULUDAO_STAKE,
+    TRANSACTION_TYPE.ZULUDAO_UNSTAKE,
+    TRANSACTION_TYPE.ZULUDAO_DELEGATE,
+    TRANSACTION_TYPE.ZULUDAO_UNDELEGATE,
+    TRANSACTION_TYPE.ZULUDAO_MIGRATE,
+    TRANSACTION_TYPE.ZULUDAO_VOTE,
+    TRANSACTION_TYPE.ZULUDAO_CLAIM,
   ],
   OTHER: [
     // to make sure you don't forgot
@@ -197,7 +197,7 @@ export const GROUP_TRANSACTION_BY_TYPE = {
 export enum TRANSACTION_GROUP {
   SWAP = 'swap',
   LIQUIDITY = 'liquidity',
-  KYBERDAO = 'kyber_dao',
+  ZULUDAO = 'zulu_dao',
   OTHER = 'other',
 }
 

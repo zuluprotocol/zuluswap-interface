@@ -1,4 +1,4 @@
-import { ChainId, Fraction } from '@kyberswap/ks-sdk-core'
+import { ChainId, Fraction } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import { useWeb3React } from '@web3-react/core'
 import { parseUnits } from 'ethers/lib/utils'

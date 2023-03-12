@@ -1,4 +1,4 @@
-import { Currency } from '@kyberswap/ks-sdk-core'
+import { Currency } from '@zuluswap/zs-sdk-core'
 import { createAction } from '@reduxjs/toolkit'
 
 import { CreateOrderParam } from 'components/swapv2/LimitOrder/type'

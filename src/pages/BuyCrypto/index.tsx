@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { rgba } from 'polished'
 import { stringify } from 'querystring'
@@ -37,7 +37,7 @@ import { useActiveWeb3React } from 'hooks'
 import useMixpanel, { MIXPANEL_TYPE } from 'hooks/useMixpanel'
 import useParsedQueryString from 'hooks/useParsedQueryString'
 import useTheme from 'hooks/useTheme'
-import { KSStatistic } from 'pages/About/AboutKyberSwap'
+import { KSStatistic } from 'pages/About/AboutZuluSwap'
 import { useWalletModalToggle } from 'state/application/hooks'
 import { useDarkModeManager } from 'state/user/hooks'
 import { ButtonText, ExternalLink } from 'theme'
@@ -232,7 +232,7 @@ function BuyCrypto() {
   ]
 
   const redirectURL = window.location.hostname.includes('localhost')
-    ? 'https://kyberswap.com/swap'
+    ? 'https://zuluswap.com/swap'
     : window.location.origin + '/swap'
   const transakUrl = `${TRANSAK_URL}?apiKey=${TRANSAK_API_KEY}&cryptoCurrencyList=${supportedCurrencies.join(
     ',',
@@ -410,10 +410,10 @@ function BuyCrypto() {
                 <Text color={theme.subText} lineHeight={1.5} marginTop={upToMedium ? '40px' : '48px'}>
                   <Trans>
                     A cryptocurrency wallet gives you access to your digital tokens and acts as a gateway to many
-                    blockchain applications like KyberSwap. You can buy, store, send and swap tokens using this wallet.
+                    blockchain applications like ZuluSwap. You can buy, store, send and swap tokens using this wallet.
                     <br />
                     <br />
-                    On KyberSwap we support a list of wallets including: MetaMask, Coin98, Wallet Connect, Coinbase
+                    On ZuluSwap we support a list of wallets including: MetaMask, Coin98, Wallet Connect, Coinbase
                     Wallet, Ledger and others
                   </Trans>
                 </Text>
@@ -509,7 +509,7 @@ function BuyCrypto() {
 
                 <Text color={'#A7B6BD'} lineHeight={1.5} marginTop={upToMedium ? '40px' : '48px'}>
                   Note: Clicking &quot;Buy Crypto&quot; will bring you to a third party website, owned and operated by
-                  an independent party over which KyberSwap has no control (&quot;
+                  an independent party over which ZuluSwap has no control (&quot;
                   <ExternalLink href="https://app.transak.com/">Third Party Website</ExternalLink>&quot;).
                   <br />
                   <br />
@@ -619,11 +619,11 @@ function BuyCrypto() {
                   <Trans>Step 3</Trans>
                 </Text>
                 <Text fontSize={upToMedium ? '28px' : '36px'} fontWeight="500" marginTop="8px">
-                  <Trans>Swap on KyberSwap</Trans>
+                  <Trans>Swap on ZuluSwap</Trans>
                 </Text>
                 <Text color={theme.subText} lineHeight={1.5} marginTop={upToMedium ? '40px' : '48px'}>
                   <Trans>
-                    Now that you have purchased your crypto, you can trade from over 20,000+ tokens on KyberSwap! We
+                    Now that you have purchased your crypto, you can trade from over 20,000+ tokens on ZuluSwap! We
                     give you the best trading rates in the market!
                   </Trans>
                 </Text>

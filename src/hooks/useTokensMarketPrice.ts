@@ -1,16 +1,16 @@
-import { Token, WETH } from '@kyberswap/ks-sdk-core'
+import { Token, WETH } from '@zuluswap/zs-sdk-core'
 import { useMemo } from 'react'
 import useSWR from 'swr'
 
-import { COINGECKO_API_URL, KNC_COINGECKO_ID, ZERO_ADDRESS } from 'constants/index'
+import { COINGECKO_API_URL, ZPX_COINGECKO_ID, ZERO_ADDRESS } from 'constants/index'
 import { NETWORKS_INFO } from 'constants/networks'
-import { KNC } from 'constants/tokens'
+import { ZPX } from 'constants/tokens'
 import { useActiveWeb3React } from 'hooks'
 
 const fetcher = (url: string) => fetch(url).then(r => r.json())
 
-function useKNCMarketPrice() {
-  const url = `${COINGECKO_API_URL}/simple/price?ids=${KNC_COINGECKO_ID}&vs_currencies=usd`
+function useZPXMarketPrice() {
+  const url = `${COINGECKO_API_URL}/simple/price?ids=${ZPX_COINGECKO_ID}&vs_currencies=usd`
 
   const { data } = useSWR(url, fetcher, {
     refreshInterval: 30000,
@@ -32,12 +32,12 @@ function useKNCMarketPrice() {
     },
   })
 
-  return data?.[KNC_COINGECKO_ID]?.usd || 0
+  return data?.[ZPX_COINGECKO_ID]?.usd || 0
 }
 
 export default function useTokensMarketPrice(tokens: (Token | null | undefined)[]) {
   const { chainId } = useActiveWeb3React()
-  const kncPrice = useKNCMarketPrice()
+  const zpxPrice = useZPXMarketPrice()
 
   const tokenAddress = tokens
     .filter(Boolean)
@@ -75,7 +75,7 @@ export default function useTokensMarketPrice(tokens: (Token | null | undefined)[
     return tokens.map(token => {
       if (!token || !token.address) return 0
 
-      if (token.address.toLowerCase() === KNC[chainId].address.toLowerCase()) return kncPrice
+      if (token.address.toLowerCase() === ZPX[chainId].address.toLowerCase()) return zpxPrice
 
       if (!data || !data[token?.address?.toLowerCase()]) return 0
 

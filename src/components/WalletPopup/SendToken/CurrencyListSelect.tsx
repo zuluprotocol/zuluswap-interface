@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, TokenAmount } from '@kyberswap/ks-sdk-core'
+import { Currency, CurrencyAmount, TokenAmount } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { memo } from 'react'
 import { Flex, Text } from 'rebass'

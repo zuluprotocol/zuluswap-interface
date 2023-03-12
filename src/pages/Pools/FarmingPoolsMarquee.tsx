@@ -1,4 +1,4 @@
-import { Token, WETH } from '@kyberswap/ks-sdk-core'
+import { Token, WETH } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import { Link } from 'react-router-dom'
 import { Text } from 'rebass'

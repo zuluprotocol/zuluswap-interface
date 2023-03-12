@@ -1,4 +1,4 @@
-import { Currency, NativeCurrency, Token } from '@kyberswap/ks-sdk-core'
+import { Currency, NativeCurrency, Token } from '@zuluswap/zs-sdk-core'
 import { t } from '@lingui/macro'
 import { debounce } from 'lodash'
 import { stringify } from 'querystring'

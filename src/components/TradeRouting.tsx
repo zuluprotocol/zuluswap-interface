@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency, CurrencyAmount } from '@zuluswap/zs-sdk-core'
 import React, { memo, useCallback, useEffect, useRef } from 'react'
 import ScrollContainer from 'react-indiana-drag-scroll'
 import styled, { css } from 'styled-components'
@@ -27,7 +27,7 @@ const getDexInfoByPool = (pool: SwapPool, allDexes?: Dex[]) => {
   return allDexes?.find(
     dex =>
       dex.id === pool.exchange ||
-      ((pool.exchange === 'kyberswap' || pool.exchange === 'kyberswap-static') && dex.id === 'kyberswapv1'), // Mapping for kyberswap classic dex
+      ((pool.exchange === 'zuluswap' || pool.exchange === 'zuluswap-static') && dex.id === 'zuluswapv1'), // Mapping for zuluswap classic dex
   )
 }
 

@@ -6,7 +6,7 @@ import { RouteSummary } from 'services/route/types/getRoute'
 
 import { NETWORKS_INFO } from 'constants/networks'
 import { useActiveWeb3React } from 'hooks'
-import { useKyberswapGlobalConfig } from 'hooks/useKyberSwapConfig'
+import { useZuluswapGlobalConfig } from 'hooks/useZuluSwapConfig'
 
 export type BuildRouteResult =
   | {
@@ -29,7 +29,7 @@ const useBuildRoute = (args: Args) => {
   const { recipient, routeSummary, slippage, transactionTimeout, skipSimulateTx } = args
   const { chainId, account } = useActiveWeb3React()
   const abortControllerRef = useRef(new AbortController())
-  const { aggregatorDomain } = useKyberswapGlobalConfig()
+  const { aggregatorDomain } = useZuluswapGlobalConfig()
 
   const fetcher = useCallback(async (): Promise<BuildRouteResult> => {
     if (!account) {
@@ -50,7 +50,7 @@ const useBuildRoute = (args: Args) => {
       slippageTolerance: slippage,
       sender: account,
       recipient: recipient || account,
-      source: 'kyberswap',
+      source: 'zuluswap',
       skipSimulateTx,
     }
 

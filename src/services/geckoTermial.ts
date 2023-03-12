@@ -65,7 +65,7 @@ const geckoTerminalApi = createApi({
   reducerPath: 'geckoTerminalApi',
   baseQuery: fetchBaseQuery({
     // TODO(viet-nv): check prod env
-    baseUrl: 'https://ks-proxy.dev.kyberengineering.io/geckoterminal',
+    baseUrl: 'https://ks-proxy.dev.zuluengineering.io/geckoterminal',
   }),
   endpoints: builder => ({
     geckoTerminalSearch: builder.query<SearchResponse, string>({

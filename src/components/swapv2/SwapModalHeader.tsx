@@ -1,4 +1,4 @@
-import { TradeType } from '@kyberswap/ks-sdk-core'
+import { TradeType } from '@zuluswap/zs-sdk-core'
 import { Trans, t } from '@lingui/macro'
 import React, { useMemo } from 'react'
 import { AlertTriangle, ArrowDown } from 'react-feather'

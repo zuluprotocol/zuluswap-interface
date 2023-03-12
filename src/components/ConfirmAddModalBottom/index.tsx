@@ -1,5 +1,5 @@
-import { Pair } from '@kyberswap/ks-sdk-classic'
-import { Currency, CurrencyAmount, Fraction, Percent, Price } from '@kyberswap/ks-sdk-core'
+import { Pair } from '@zuluswap/zs-sdk-classic'
+import { Currency, CurrencyAmount, Fraction, Percent, Price } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import JSBI from 'jsbi'
 import { Flex, Text } from 'rebass'

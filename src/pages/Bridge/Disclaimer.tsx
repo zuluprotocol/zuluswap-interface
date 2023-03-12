@@ -37,15 +37,15 @@ export default function Disclaimer() {
         </Flex>
         <TextWrapper>
           <Trans>
-            KyberSwap strives to offer its users the best DeFi experience on a single platform. In order to do that,
-            KyberSwap partners with 3rd party platforms like Multichain.
+            ZuluSwap strives to offer its users the best DeFi experience on a single platform. In order to do that,
+            ZuluSwap partners with 3rd party platforms like Multichain.
           </Trans>
         </TextWrapper>
         <TextWrapper>
           <Trans>
             <ExternalLink href="https://multichain.org/">Multichain</ExternalLink> is a well-known cross-chain router
             protocol that facilitates transfer of tokens between chains. However, in the event of a security breach on
-            our partners platform, KyberSwap won&apos;t assume any liability for any losses incurred.
+            our partners platform, ZuluSwap won&apos;t assume any liability for any losses incurred.
           </Trans>
         </TextWrapper>
         <ButtonWarning style={{ marginTop: 20 }} onClick={onDismiss}>

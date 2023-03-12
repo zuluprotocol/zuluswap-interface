@@ -1,4 +1,4 @@
-import { Currency, Price } from '@kyberswap/ks-sdk-core'
+import { Currency, Price } from '@zuluswap/zs-sdk-core'
 import { useCallback, useMemo, useState } from 'react'
 import { Flex, Text } from 'rebass'
 import styled, { css } from 'styled-components'

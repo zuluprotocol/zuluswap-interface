@@ -1,5 +1,5 @@
 import { datadogRum } from '@datadog/browser-rum'
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { Trans } from '@lingui/macro'
 import * as Sentry from '@sentry/react'
 import { Suspense, lazy, useEffect } from 'react'
@@ -71,10 +71,10 @@ const IncreaseLiquidity = lazy(() => import(/* webpackChunkName: 'add-liquidity-
 
 const RemoveLiquidity = lazy(() => import(/* webpackChunkName: 'remove-liquidity-page' */ './RemoveLiquidity'))
 
-const KyberDAOStakeKNC = lazy(() => import(/* webpackChunkName: 'stake-knc' */ './KyberDAO/StakeKNC'))
-const KyberDAOVote = lazy(() => import(/* webpackChunkName: 'vote' */ './KyberDAO/Vote'))
-const AboutKyberSwap = lazy(() => import(/* webpackChunkName: 'about-page' */ './About/AboutKyberSwap'))
-const AboutKNC = lazy(() => import(/* webpackChunkName: 'about-knc' */ './About/AboutKNC'))
+const ZuluDAOStakeZPX = lazy(() => import(/* webpackChunkName: 'stake-zpx' */ './ZuluDAO/StakeZPX'))
+const ZuluDAOVote = lazy(() => import(/* webpackChunkName: 'vote' */ './ZuluDAO/Vote'))
+const AboutZuluSwap = lazy(() => import(/* webpackChunkName: 'about-page' */ './About/AboutZuluSwap'))
+const AboutZPX = lazy(() => import(/* webpackChunkName: 'about-zpx' */ './About/AboutZPX'))
 
 const CreateReferral = lazy(() => import(/* webpackChunkName: 'create-referral-page' */ './CreateReferral'))
 
@@ -188,7 +188,7 @@ export default function App() {
             <Text marginTop="24px" fontSize="14px" lineHeight={2}>
               The US Treasury&apos;s OFAC has published a list of addresses associated with Tornado Cash. Your wallet
               address below is flagged as one of the addresses on this list, provided by our compliance vendor. As a
-              result, it is blocked from using KyberSwap and all of its related services at this juncture.
+              result, it is blocked from using ZuluSwap and all of its related services at this juncture.
             </Text>
             <Flex
               marginTop="24px"
@@ -296,10 +296,10 @@ export default function App() {
                       path={`${APP_PATHS.ELASTIC_INCREASE_LIQ}/:currencyIdA/:currencyIdB/:feeAmount/:tokenId`}
                       element={<IncreaseLiquidity />}
                     />
-                    <Route path={`${APP_PATHS.KYBERDAO_STAKE}`} element={<KyberDAOStakeKNC />} />
-                    <Route path={`${APP_PATHS.KYBERDAO_VOTE}`} element={<KyberDAOVote />} />
-                    <Route path={`${APP_PATHS.ABOUT}/kyberswap`} element={<AboutKyberSwap />} />
-                    <Route path={`${APP_PATHS.ABOUT}/knc`} element={<AboutKNC />} />
+                    <Route path={`${APP_PATHS.ZULUDAO_STAKE}`} element={<ZuluDAOStakeZPX />} />
+                    <Route path={`${APP_PATHS.ZULUDAO_VOTE}`} element={<ZuluDAOVote />} />
+                    <Route path={`${APP_PATHS.ABOUT}/zuluswap`} element={<AboutZuluSwap />} />
+                    <Route path={`${APP_PATHS.ABOUT}/zpx`} element={<AboutZPX />} />
                     <Route path={`${APP_PATHS.REFERRAL}`} element={<CreateReferral />} />
                     <Route path={`${APP_PATHS.DISCOVER}`} element={<TrueSight />} />
                     <Route path={`${APP_PATHS.BUY_CRYPTO}`} element={<BuyCrypto />} />

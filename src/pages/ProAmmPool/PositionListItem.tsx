@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount, Price, Token } from '@kyberswap/ks-sdk-core'
-import { Position } from '@kyberswap/ks-sdk-elastic'
+import { Currency, CurrencyAmount, Price, Token } from '@zuluswap/zs-sdk-core'
+import { Position } from '@zuluswap/zs-sdk-elastic'
 import { Trans, t } from '@lingui/macro'
 import { BigNumber } from 'ethers'
 import { stringify } from 'querystring'

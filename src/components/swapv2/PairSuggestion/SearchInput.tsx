@@ -116,7 +116,7 @@ export default forwardRef<HTMLInputElement, Props>(function SearchComponent(
         hasBorder={hasBorder}
         onBlur={onBlurInput}
         onFocus={disabled ? undefined : showListViewWithTracking}
-        placeholder={t`Try typing "10 ETH to KNC"`}
+        placeholder={t`Try typing "10 ETH to ZPX"`}
         value={value}
         onChange={onChange}
         autoComplete="off"

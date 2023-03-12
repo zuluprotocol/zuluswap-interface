@@ -9,7 +9,7 @@ import {
   TokenAmount,
   TradeType,
   WETH,
-} from '@kyberswap/ks-sdk-core'
+} from '@zuluswap/zs-sdk-core'
 import { DexInstructions, OpenOrders } from '@project-serum/serum'
 import { captureException } from '@sentry/react'
 import {
@@ -26,7 +26,7 @@ import { toByteArray } from 'base64-js'
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 
-import { AbortedError, ETHER_ADDRESS, KYBERSWAP_SOURCE, ZERO_ADDRESS_SOLANA, sentryRequestId } from 'constants/index'
+import { AbortedError, ETHER_ADDRESS, ZULUSWAP_SOURCE, ZERO_ADDRESS_SOLANA, sentryRequestId } from 'constants/index'
 import { NETWORKS_INFO, isEVM } from 'constants/networks'
 import { FeeConfig } from 'hooks/useSwapV2Callback'
 import { AggregationComparer, SolanaEncode } from 'state/swap/types'
@@ -257,7 +257,7 @@ export class Aggregator {
         programState: programState.publicKey.toBase58() ?? '',
 
         // Client data
-        clientData: KYBERSWAP_SOURCE,
+        clientData: ZULUSWAP_SOURCE,
       })
       try {
         const response = await fetchWaiting(
@@ -390,7 +390,7 @@ export class Aggregator {
         feeAmount: feeConfig?.feeAmount ?? '',
 
         // Client data
-        clientData: KYBERSWAP_SOURCE,
+        clientData: ZULUSWAP_SOURCE,
       })
       try {
         const response = await fetchWaiting(

@@ -1,4 +1,4 @@
-import { ChainId } from '@kyberswap/ks-sdk-core'
+import { ChainId } from '@zuluswap/zs-sdk-core'
 import { createReducer } from '@reduxjs/toolkit'
 
 import { MultiChainTokenInfo } from 'pages/Bridge/type'

@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount } from '@kyberswap/ks-sdk-core'
+import { ChainId, Currency, CurrencyAmount } from '@zuluswap/zs-sdk-core'
 import { formatUnits, isAddress } from 'ethers/lib/utils'
 import mixpanel from 'mixpanel-browser'
 import { useCallback, useEffect, useMemo } from 'react'
@@ -21,7 +21,7 @@ import { ELASTIC_BASE_FEE_UNIT } from 'constants/index'
 import { NETWORKS_INFO } from 'constants/networks'
 import { useActiveWeb3React } from 'hooks'
 import { AppDispatch, AppState } from 'state'
-import { useETHPrice, useKyberSwapConfig } from 'state/application/hooks'
+import { useETHPrice, useZuluSwapConfig } from 'state/application/hooks'
 import { RANGE } from 'state/mint/proamm/type'
 import { Field } from 'state/swap/actions'
 import { useSwapState } from 'state/swap/hooks'
@@ -71,7 +71,7 @@ export enum MIXPANEL_TYPE {
   ABOUT_START_EARNING_CLICKED,
   ABOUT_VIEW_FARMS_CLICKED,
   ABOUT_CREATE_NEW_POOL_CLICKED,
-  ABOUT_STAKE_KNC_CLICKED,
+  ABOUT_STAKE_ZPX_CLICKED,
   ANALYTICS_MENU_CLICKED,
   BLOG_MENU_CLICKED,
   CREATE_REFERRAL_CLICKED,
@@ -148,13 +148,13 @@ export enum MIXPANEL_TYPE {
   BRIDGE_TRANSACTION_SUBMIT,
   BRIDGE_CLICK_HISTORY_TRANSFER_TAB,
 
-  //Kyber DAO
-  KYBER_DAO_STAKE_CLICK,
-  KYBER_DAO_UNSTAKE_CLICK,
-  KYBER_DAO_DELEGATE_CLICK,
-  KYBER_DAO_VOTE_CLICK,
-  KYBER_DAO_CLAIM_CLICK,
-  KYBER_DAO_FEATURE_REQUEST_CLICK,
+  //Zulu DAO
+  ZULU_DAO_STAKE_CLICK,
+  ZULU_DAO_UNSTAKE_CLICK,
+  ZULU_DAO_DELEGATE_CLICK,
+  ZULU_DAO_VOTE_CLICK,
+  ZULU_DAO_CLAIM_CLICK,
+  ZULU_DAO_FEATURE_REQUEST_CLICK,
 
   // notification
   NOTIFICATION_CLICK_MENU,
@@ -210,7 +210,7 @@ export default function useMixpanel(currencies?: { [field in Field]?: Currency }
   const dispatch = useDispatch<AppDispatch>()
   const selectedCampaign = useSelector((state: AppState) => state.campaigns.selectedCampaign)
   const [allowedSlippage] = useUserSlippageTolerance()
-  const { elasticClient, classicClient } = useKyberSwapConfig()
+  const { elasticClient, classicClient } = useZuluSwapConfig()
 
   const mixpanelHandler = useCallback(
     (type: MIXPANEL_TYPE, payload?: any) => {
@@ -494,8 +494,8 @@ export default function useMixpanel(currencies?: { [field in Field]?: Currency }
           mixpanel.track('About - Create New Pool Clicked')
           break
         }
-        case MIXPANEL_TYPE.ABOUT_STAKE_KNC_CLICKED: {
-          mixpanel.track('About - Stake KNC Clicked')
+        case MIXPANEL_TYPE.ABOUT_STAKE_ZPX_CLICKED: {
+          mixpanel.track('About - Stake ZPX Clicked')
           break
         }
         case MIXPANEL_TYPE.ANALYTICS_MENU_CLICKED: {
@@ -700,11 +700,11 @@ export default function useMixpanel(currencies?: { [field in Field]?: Currency }
           break
         }
         case MIXPANEL_TYPE.TRANSAK_SWAP_NOW_CLICKED: {
-          mixpanel.track('Buy Crypto - Swap token on KyberSwap "Swap" button')
+          mixpanel.track('Buy Crypto - Swap token on ZuluSwap "Swap" button')
           break
         }
         case MIXPANEL_TYPE.SWAP_BUY_CRYPTO_CLICKED: {
-          mixpanel.track('Buy Crypto - Click on Buy Crypto on KyberSwap')
+          mixpanel.track('Buy Crypto - Click on Buy Crypto on ZuluSwap')
           break
         }
         case MIXPANEL_TYPE.TUTORIAL_CLICK_START: {
@@ -831,28 +831,28 @@ export default function useMixpanel(currencies?: { [field in Field]?: Currency }
           break
         }
 
-        case MIXPANEL_TYPE.KYBER_DAO_STAKE_CLICK: {
-          mixpanel.track('KyberDAO - Stake Click', payload)
+        case MIXPANEL_TYPE.ZULU_DAO_STAKE_CLICK: {
+          mixpanel.track('ZuluDAO - Stake Click', payload)
           break
         }
-        case MIXPANEL_TYPE.KYBER_DAO_UNSTAKE_CLICK: {
-          mixpanel.track('KyberDAO - Unstake Click', payload)
+        case MIXPANEL_TYPE.ZULU_DAO_UNSTAKE_CLICK: {
+          mixpanel.track('ZuluDAO - Unstake Click', payload)
           break
         }
-        case MIXPANEL_TYPE.KYBER_DAO_DELEGATE_CLICK: {
-          mixpanel.track('KyberDAO - Delegate Click', payload)
+        case MIXPANEL_TYPE.ZULU_DAO_DELEGATE_CLICK: {
+          mixpanel.track('ZuluDAO - Delegate Click', payload)
           break
         }
-        case MIXPANEL_TYPE.KYBER_DAO_VOTE_CLICK: {
-          mixpanel.track('KyberDAO - Vote Click', payload)
+        case MIXPANEL_TYPE.ZULU_DAO_VOTE_CLICK: {
+          mixpanel.track('ZuluDAO - Vote Click', payload)
           break
         }
-        case MIXPANEL_TYPE.KYBER_DAO_CLAIM_CLICK: {
-          mixpanel.track('KyberDAO - Claim Reward Click', payload)
+        case MIXPANEL_TYPE.ZULU_DAO_CLAIM_CLICK: {
+          mixpanel.track('ZuluDAO - Claim Reward Click', payload)
           break
         }
-        case MIXPANEL_TYPE.KYBER_DAO_FEATURE_REQUEST_CLICK: {
-          mixpanel.track('KyberDAO - Feature Request Click', payload)
+        case MIXPANEL_TYPE.ZULU_DAO_FEATURE_REQUEST_CLICK: {
+          mixpanel.track('ZuluDAO - Feature Request Click', payload)
           break
         }
         case MIXPANEL_TYPE.LO_CLICK_PLACE_ORDER: {
@@ -1265,8 +1265,8 @@ export const useGlobalMixpanelEvents = () => {
         'elastic/increase': 'Elastic - Increase Liquidity',
         'buy-crypto': 'Buy Crypto',
         bridge: 'Bridge',
-        '/kyberdao/stake-knc': 'KyberDAO Stake',
-        '/kyberdao/vote': 'KyberDAO Vote',
+        '/zuludao/stake-zpx': 'ZuluDAO Stake',
+        '/zuludao/vote': 'ZuluDAO Vote',
         limit: 'Limit Order',
       }
       const pageName = map[pathName] || map[location.pathname]

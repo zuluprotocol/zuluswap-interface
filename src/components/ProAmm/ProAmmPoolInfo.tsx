@@ -1,4 +1,4 @@
-import { FeeAmount, Position } from '@kyberswap/ks-sdk-elastic'
+import { FeeAmount, Position } from '@zuluswap/zs-sdk-elastic'
 import { Trans, t } from '@lingui/macro'
 import { BigNumber } from 'ethers'
 import { useCallback, useState } from 'react'

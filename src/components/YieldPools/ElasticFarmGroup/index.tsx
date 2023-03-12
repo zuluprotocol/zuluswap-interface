@@ -1,5 +1,5 @@
-import { ChainId, Currency, CurrencyAmount, Token } from '@kyberswap/ks-sdk-core'
-import { computePoolAddress } from '@kyberswap/ks-sdk-elastic'
+import { ChainId, Currency, CurrencyAmount, Token } from '@zuluswap/zs-sdk-core'
+import { computePoolAddress } from '@zuluswap/zs-sdk-elastic'
 import { Trans, t } from '@lingui/macro'
 import { useState } from 'react'
 import { ArrowDown, ArrowUp, Info } from 'react-feather'
@@ -468,7 +468,7 @@ const ProMMFarmGroup: React.FC<Props> = ({ address, onOpenModal, pools, userInfo
                   Adjusting the staked amount will recalculate the target volume.
                   <br />
                   Learn more{' '}
-                  <ExternalLink href="https://docs.kyberswap.com/guides/farming-mechanisms">here.</ExternalLink>
+                  <ExternalLink href="https://docs.zuluswap.com/guides/farming-mechanisms">here.</ExternalLink>
                 </Trans>
               </Text>
             }

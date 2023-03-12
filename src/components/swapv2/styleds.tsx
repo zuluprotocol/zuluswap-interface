@@ -261,7 +261,7 @@ export const SwapFormActions = styled.div`
   gap: 0.5rem;
 `
 
-export const KyberTag = styled.div`
+export const ZuluTag = styled.div`
   position: absolute;
   align-items: center;
   display: flex;
